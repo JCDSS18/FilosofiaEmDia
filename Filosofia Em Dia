@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+        href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.pJDu9m0B4XW9mWj_WHFCsgAAAA%26pid%3DApi&f=1&ipt=917f2a543a590663c6b69c259464b4025b0424294e003bf1ad2feb21ce0792c1&ipo=images"
+        type="img/png">
+    <title>Filosofia Em Dia</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: white;
+        }
+
+        header {
+            display: flex;
+            /* margin: 0px 0px 10px 0px; */
+            background-color: wheat;
+            box-shadow: 2px 2px 0px 0px black;
+        }
+
+        nav {
+            margin: 20px 10px 20px 60px;
+            display: flex;
+        }
+
+        form {
+            margin: 0px 0px -10px 220px;
+        }
+
+        input {
+            width: 100px;
+            padding: 1px 1px 1px 7px;
+            border-radius: 10px;
+        }
+
+        main {
+            display: flex;
+        }
+
+        section {
+            width: 700px;
+            padding: 20px 20px 20px 20px;
+        }
+
+        article {
+            box-shadow: 2px 2px 2px 2px black;
+            padding: 30px;
+            border: 1px solid white;
+            border-radius: 10px;
+            color: black;
+            background-color: wheat;
+        }
+
+        img {
+            margin: 0px 0px 5px 0px;
+        }
+
+        aside {
+            width: 400px;
+            padding: 20px;
+        }
+
+        h4 {
+            margin-bottom: 2px;
+        }
+
+        hr {
+            margin: 10px 0px 10px 0px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            display: block;
+            margin-top: 2px;
+            margin-right: -10px;
+            margin-bottom: 10px;
+            padding-left: 10px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+
+        footer {
+            padding: 60px 0px 150px 70px;
+            background-color: bisque;
+            box-shadow: 0px 0px 2px 2px black;
+        }
+
+        picture {
+            margin: 0px 0px 0px -240px;
+        }
+
+        address {
+            margin: 50px 0px 0px 30px;
+            display: flex;
+        }
+
+        .espaço {
+            margin-bottom: 20px;
+        }
+
+        .tamanho {
+            width: 100px;
+            box-shadow: 2px 2px 2px 2px black;
+            margin: 0px 20px 0px 0px;
+            float: left;
+        }
+
+        .link {
+            margin: 5px 40px 0px 50px;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+        }
+
+        .pesquisar {
+            width: 30px;
+            height: 25px;
+        }
+
+        .comentarios {
+            width: 425px;
+            background-color: wheat;
+            margin: 0px 0px 30px 20px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 2px black;
+        }
+
+        .largura {
+            width: 410px;
+            margin: 5px 0px 10px 0px;
+        }
+
+        .comentar {
+            width: 420px;
+            margin: 10px 0px 0px 0px;
+            border-radius: 10px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+
+        .comentario {
+            width: 410px;
+            padding-top: 10px;
+            padding-bottom: 100px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .numero {
+            text-decoration: none;
+            font-weight: normal;
+            color: black;
+            margin: 0px 30px 0px 30px;
+        }
+
+        .formato {
+            width: 20px;
+            margin: 0px 10px 0px 10px;
+        }
+
+        .url {
+            text-decoration: none;
+        }
+
+        .contato {
+            margin-bottom: 10px;
+        }
+    </style>
+    <header>
+        <nav>
+            <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/Filosofia%20Em%20Dia.html"
+                class="link">FiloSofos</a>
+            <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/CiTa%C3%A7%C3%B5es.html"
+                class="link">CiTações</a>
+            <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/BioGrafia.html" class="link">BioGrafia</a>
+            <form>
+                <input type="text" class="">
+            </form>
+            <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/Log%20In.html" class="link">Log In</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h1 class="espaço">Os MaiOres FilóSofos da HisTória</h1>
+                <h2 class="espaço">Tales de Mileto</h2>
+                <a href="https://pt.wikipedia.org/wiki/Tales_de_Mileto">
+                    <img src="https://duckduckgo.com/i/e202edb6.jpg" alt="" class="espaço tamanho">
+                </a>
+                <p class="espaço">
+                    Tales (c. 624-546 a.C.) nasceu na cidade de Mileto, na Grécia antiga. Tales é considerado o primeiro
+                    filósofo. Sua obra tem como objetivo buscar explicações racionais para o universo, dando início à
+                    filosofia.
+                    <br><br>
+                    Se dedicou também à matemática, criando o teorema que leva seu nome (Teorema de Tales), no qual
+                    demonstra relações de proporcionalidade de um feixe de retas paralelas cortadas por transversais.
+                    <br><br>
+                    Na filosofia, a busca pela essência do universo (physis), fez com que ele definisse a água como
+                    elemento primordial que constitui tudo aquilo que existe na natureza.
+                </p>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
+                <h2 class="espaço">Heráclito</h2>
+                <a href="https://pt.wikipedia.org/wiki/Her%C3%A1clito">
+                    <img src="https://duckduckgo.com/i/878ea6ea.jpg" alt="" class="espaço tamanho">
+                </a>
+                <p class="espaço">
+                    Heráclito de Éfeso (540-470 a.C.), o Obscuro, foi um filósofo grego que desenvolveu sua filosofia
+                    tomando como base o tempo.
+                    <br><br>
+                    De acordo com Heráclito, todas as coisas estão situadas no tempo e, desse modo, tudo está em
+                    movimento, tudo está em constante <br><br> modificação. O que é novo, envelhece; o que está vivo,
+                    morre; a
+                    semente vira árvore; o bebê vira um idoso.
+                    <br><br>
+                    Assim, o mundo só pode ser compreendido a partir dessa condição chamada de devir. O devir é a
+                    condição de tudo o que existe, de tudo que há na natureza e está em constante transformação.
+                    <br><br>
+                    Assim, diferente de Tales, o filósofo escolheu o fogo como elemento primordial por ser um elemento
+                    que transforma tudo aquilo que toca e, para ele, todas as coisas se modificam porque possuem o fogo
+                    em sua composição.
+                </p>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
+                <h2 class="espaço">Parmênides</h2>
+                <a href="https://pt.wikipedia.org/wiki/Parm%C3%AAnides">
+                    <img src="https://duckduckgo.com/i/2d5606ee.jpg" alt="" class="espaço tamanho">
+                </a>
+                <p class="espaço">
+                    Parmênides de Eleia (530-460 a.C.) desenvolveu seu pensamento em oposição ao pensamento de
+                    Heráclito. Para ele, o movimento é uma ilusão causada pelos sentidos. Na verdade, nada muda, tudo
+                    permanece.
+                    <br><br>
+                    Em outras palavras, a essência das coisas é permanente, não sofre ação do tempo. Parmênides afirma
+                    que se as coisas não possuíssem uma permanência e mudassem o tempo todo, nada poderia ser conhecido
+                    e o conhecimento seria impossível.
+                    <br><br>
+                    Para Parmênides, tudo o que pode ser pensado existe, já que não se pode pensar no não-ser. Não é
+                    possível pensar naquilo que não existe. Assim, a mudança seria falsa, baseada na ideia do que é
+                    (ser) se modificando para aquilo que não é (não-ser).
+                    <br><br>
+                    A principal obra de Parmênides é Fragmentos, uma coletânea de partes recuperadas de seus escritos.
+                </p>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
+                <h2 class="espaço">Sócrates</h2>
+                <a href="https://pt.wikipedia.org/wiki/S%C3%B3crates">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/%CE%A3%CF%89%CE%BA%CF%81%CE%AC%CF%84%CE%B7%CF%82%2C_%CE%91%CE%BA%CE%B1%CE%B4%CE%B7%CE%BC%CE%AF%CE%B1_%CE%91%CE%B8%CE%B7%CE%BD%CF%8E%CE%BD_6616.jpg/360px-%CE%A3%CF%89%CE%BA%CF%81%CE%AC%CF%84%CE%B7%CF%82%2C_%CE%91%CE%BA%CE%B1%CE%B4%CE%B7%CE%BC%CE%AF%CE%B1_%CE%91%CE%B8%CE%B7%CE%BD%CF%8E%CE%BD_6616.jpg"
+                        alt="" class="espaço tamanho">
+                </a>
+                <p class="espaço">
+                    Sócrates (469-399 a.C.), apesar de não ser o primeiro filósofo, é conhecido como o “pai da
+                    filosofia”.
+                    <br><br>
+                    Foi responsável por uma mudança no modo de fazer filosofia. Dedicou-se a pensar sobre as relações
+                    humanas e a refletir sobre as condições do próprio pensamento.
+                    <br><br>
+                    Essa transformação rompeu com a jovem tradição da filosofia que era dedicada à compreensão da
+                    natureza e do universo.
+                    <br><br>
+                    Com isso, Sócrates inaugurou o período antropológico da filosofia - o conhecimento sobre o ser
+                    humano, fazendo a transição do período anterior chamado de cosmológico - conhecimento sobre o cosmos
+                    (universo).
+                    <br><br>
+                    Para Sócrates, o conhecimento das pessoas, mesmo os sábios, era parcial, já que era baseado na
+                    opinião e e na autoridade daqueles que se diziam sábios, e não no pensamento racional.
+                    <br><br>
+                    Por sua atitude crítica em relação ao conhecimento, por questionar e enfurecer os poderosos de
+                    Atenas, Sócrates foi condenado à morte, acusado de atentar contra os deuses gregos e corromper a
+                    juventude de ateniense. O julgamento de Sócrates está descrito no livro A República, de Platão.
+                </p>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
+                <h2 class="espaço">Platão</h2>
+                <a href="https://pt.wikipedia.org/wiki/Plat%C3%A3o">
+                    <img src="https://duckduckgo.com/i/62278acf.jpg" alt="" class="tamanho">
+                </a>
+                <p class="espaço">
+                    Platão foi o principal discípulo de Sócrates, seu pensamento é um dos pilares da cultura ocidental.
+                    <br><br>
+                    As teorias desenvolvidas por Platão, sobretudo, seu mundo das ideias - a distinção entre aparência e
+                    essência - definem o pensamento e a alma como sendo superiores aos sentidos e o corpo.
+                    <br><br>
+                    Assim, Platão cria o seu chamado dualismo, divisão do mundo em dois, entre o mundo das ideias e o
+                    mundo sensível:
+                    <br><br>
+                    Mundo das Ideias (mundo inteligível) - Lugar onde residem as ideias, as essências das coisas, que só
+                    podem ser conhecidas através da razão. Lugar da alma, da pureza e da verdade.
+                    <br><br>
+                    Mundo Sensível - Lugar das imitações das ideias, onde residem as coisas que são conhecidas através
+                    dos sentidos. Lugar do corpo, do erro e da opinião.
+                </p>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
+                <h2 class="espaço">Aristóteles</h2>
+                <a href="https://pt.wikipedia.org/wiki/Arist%C3%B3teles">
+                    <img src="https://duckduckgo.com/i/c42fe295.jpg" alt="" class="tamanho">
+                </a>
+                <p class="espaço">
+                    Aristóteles foi um discípulo crítico de Platão. O filósofo tornou-se muito conhecido no mundo
+                    antigo, tornando-se até mesmo professor do imperador Alexandre, o Grande.
+                    <br><br>
+                    A produção de Aristóteles é muito vasta, seus escritos possuem como temas: ética, política, lógica,
+                    física, poética, retórica, etc.
+                    <br><br>
+                    Diferente de Platão, Aristóteles afirmava que o conhecimento <br><br> tem início nos sentidos, mas
+                    que podem
+                    evoluir ao pensamento racional.
+                    <br><br>
+                    Seus escritos sobre a política afirmam que os seres humanos são determinados pela natureza a viver
+                    em sociedade.
+                    <br><br>
+                    Assim, para Aristóteles, fazer política é o que diferencia o ser humano dos outros animais.
+                    <br><br>
+                    No campo da ética, o filósofo acreditava que o objetivo da vida humana era a felicidade e o Bem, que
+                    só poderia ser alcançado através do conhecimento e da prática das virtudes.
+                    <br><br>
+                    Aristóteles contribuiu também para o desenvolvimento da lógica como "um instrumento para o correto
+                    pensar", ainda hoje, a lógica aristotélica é base para o conhecimento científico.
+                </p>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
+                <h2 class="espaço">Santo Agostinho</h2>
+                <a href="https://pt.wikipedia.org/wiki/Agostinho_de_Hipona">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Saint_Augustine_by_Philippe_de_Champaigne.jpg/400px-Saint_Augustine_by_Philippe_de_Champaigne.jpg"
+                        alt="" class="tamanho">
+                </a>
+                <p class="espaço">
+                    Agostinho de Hipona (354-430 d.C) foi um importante pensador da filosofia cristã desenvolvida na
+                    Idade Média.
+                    <br><br>
+                    O filósofo buscou unir a tradição da filosofia grega desenvolvida em um período politeísta, no qual
+                    se acreditava em muitos deuses, com a religião cristã, monoteísta (crença em apenas um Deus).
+                    <br><br><br>
+                    Para isso, Agostinho de Hipona, tomou como base o pensamento de Platão. A distinção feita por Platão
+                    entre aparência (falsa) e essência (verdadeira) e a compreensão da alma como sendo superior e mais
+                    pura que o corpo serviu de base para o desenvolvimento da doutrina cristã.
+                    <br><br>
+                    Assim, a busca pela verdade através da razão, encontrada no pensamento de Platão, tornou-se a busca
+                    pelo conhecimento baseado na fé de Santo Agostinho.
+                    <br><br>
+                    O filósofo é o grande representante de um período da filosofia chamado de "patrística", por ser
+                    desenvolvida pelos padres da Igreja.
+                </p>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
+                <h2 class="espaço">São Tomás de Aquino</h2>
+                <a href="https://pt.wikipedia.org/wiki/Tom%C3%A1s_de_Aquino">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Gentile_da_Fabriano_052.jpg/420px-Gentile_da_Fabriano_052.jpg"
+                        alt="" class="tamanho">
+                </a>
+                <p class="espaço">
+                    Tomás de Aquino (1225–1274) foi o principal filósofo do período da filosofia escolástica. Assim como
+                    Agostinho de Hipona que resgatou o pensamento de Platão e ligou à religião cristã, Tomás de Aquino
+                    fundamentou sua filosofia cristã no pensamento de Aristóteles.
+                    <br><br>
+                    Ao longo de sua obra, o filósofo buscou criar fundamentações <br><br> lógicas para a fé cristã. A
+                    união entre
+                    a lógica e a fé é uma marca importante do período podendo ser vista na obra Cinco provas da
+                    existência de Deus.
+                </p>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
+                <h2 class="espaço">Maquiavel</h2>
+                <a href="https://pt.wikipedia.org/wiki/Nicolau_Maquiavel">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Portrait_of_Niccol%C3%B2_Machiavelli_by_Santi_di_Tito.jpg/520px-Portrait_of_Niccol%C3%B2_Machiavelli_by_Santi_di_Tito.jpg"
+                        alt="" class="tamanho">
+                </a>
+                <p class="espaço">
+                    O filósofo Maquiavel marca o fim da Idade Média e o início da Idade Moderna.
+                    <br><br>
+                    Sua obra principal, o livro O Príncipe, é uma revolução no pensamento sobre a política. Nele, o
+                    filósofo separa a concepção tradicional da moral que orienta as ações dos indivíduos da razão que
+                    deve orientar as ações dos governos.
+                    <br><br>
+                    O que pode ser compreendido como bom e uma qualidade de um indivíduo pode ser mal e representar uma
+                    fraqueza para o príncipe. Ao pensamento de Maquiavel é atribuída a frase que afirma que “os fins
+                    justificam os meios”.
+                </p>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
+                <h2 class="espaço">René Descartes</h2>
+                <a href="https://pt.wikipedia.org/wiki/Ren%C3%A9_Descartes">
+                    <img src="https://duckduckgo.com/i/787ba3a1.jpg" alt="" class="tamanho">
+                </a>
+                <p class="espaço">
+                    O filósofo René Descartes (1596–1650) é conhecido como o “pai do pensamento moderno”. É com
+                    Descartes que o pensamento racional atinge o patamar de superioridades a outras formas de
+                    compreensão e assim inaugura a corrente do racionalismo.
+                    <br><br>
+                    Desenvolveu um método (método cartesiano) que serviu de base para o desenvolvimento da ciência.
+                    <br><br>
+                    O método cartesiano se fundamenta em quatro etapas:
+                    <br><br>
+                    Verificar - observar se aquilo o que se pretende estudar é real.
+                    <br><br>
+                    Analisar - desmembrar o objeto a ser conhecido em partes simples de serem compreendidas.
+                    <br><br>
+                    Sintetizar - reagrupar os conhecimentos obtidos em um todo verdadeiro e essencial.
+                    <br><br>
+                    Enumerar - definir e concluir todo o conhecimento que pode ser extraído do objeto estudado.
+                    <br><br>
+                    A Principal obra de Descartes é o Discurso do Método (1637). Nela, o filósofo desenvolve o princípio
+                    da dúvida como método para o conhecimento (dúvida metódica).
+                    <br><br>
+                    Descartes busca algo de concreto que possa servir de base para o conhecimento e, assim, duvida de
+                    tudo o que possa existir até chegar na certeza fundamental: o cogito.
+                    <br><br>
+                    O cogito ("penso, logo existo") é o fundamento para todo o conhecimento, tudo o que existe pode ser
+                    questionado, menos que se pode duvidar. Para duvidar de algo é preciso pensar e para pensar é
+                    necessário existir.
+                </p>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
+                <h2 class="espaço">John Locke</h2>
+                <a href="https://pt.wikipedia.org/wiki/John_Locke">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.XC4jtxRRgLpAug6mghCdYQHaJQ%26pid%3DApi&f=1&ipt=7cc386e11dafad5e1282e9a2fee1a0d82e40c15d911a0b6887f4b8cf813ec83f&ipo=images"
+                        alt="" class="tamanho">
+                </a>
+                <p class="espaço">
+                    John Locke (1632–1704) é conhecido como o ‘pai do liberalismo’, definiu que o direito à propriedade
+                    é um direito natural dos seres humanos.
+                    <br><br>
+                    O filósofo, de base empirista, criou a teoria do ser humano como tábula rasa, uma folha em branco
+                    que vai sendo preenchida através de suas experiências de vida. <br><br> A experiência torna-se base
+                    para o
+                    pensamento e ponto de partida para o conhecimento.
+                    <br><br>
+                    Também foi responsável pelo desenvolvimento da teoria das leis e do surgimento do Estado. Para
+                    Locke, os seres humanos vivem em comunidade e essa experiência partilhada é fonte de litígios,
+                    disputas entre as pessoas, essas disputas só podem ser resolvidas por um terceiro elemento que possa
+                    agir com o juiz.
+                    <br><br>
+                    Assim, o Estado surge como regulador da sociedade, como garantidor da liberdade e dos direitos
+                    fundamentais, sobretudo, o direito à propriedade privada. Os indivíduos firmam um "contrato social",
+                    no qual passam a viver sob as regras do Estado.
+                    <br><br>
+                    Essa teoria pertence a uma corrente de pensamento chamada de contratualismo.
+                </p>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
+                <h2 class="espaço">Immanuel Kant</h2>
+                <a href="https://pt.wikipedia.org/wiki/Immanuel_Kant">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Kant_foto.jpg/400px-Kant_foto.jpg"
+                        alt="" class="tamanho">
+                </a>
+                <p class="espaço">
+                    Immanuel Kant (1724–1804) é um dos principais filósofos da Idade Moderna. Ele buscou criar uma
+                    revolução do conhecimento filosófico assim como Copérnico havia realizado com a física.
+                    <br><br>
+                    Influenciado pelas ideias do iluminismo, demonstrou a importância da educação e para o
+                    esclarecimento e a autonomia moral dos indivíduos.
+                    <br><br>
+                    Para isso, Kant buscou unir as concepções empiristas e racionalistas e criar uma nova compreensão
+                    sobre a razão e os <br><br> limites do conhecimento humano.
+                    <br><br>
+                    No campo da Ética, Kant buscou fundamentar a moral na própria razão, não mais em agentes externos
+                    como a religião e criar regras para o seu desenvolvimento.
+                </p>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
+                <h2 class="espaço">Georg Wilhelm Friedrich Hegel</h2>
+                <a href="https://pt.wikipedia.org/wiki/Georg_Wilhelm_Friedrich_Hegel">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/1831_Schlesinger_Philosoph_Georg_Friedrich_Wilhelm_Hegel_anagoria.JPG/400px-1831_Schlesinger_Philosoph_Georg_Friedrich_Wilhelm_Hegel_anagoria.JPG"
+                        alt="" class="tamanho">
+                </a>
+                <p class="espaço">
+                    Georg Wilhelm Friedrich Hegel (1770–1831) foi um filósofo idealista alemão. É considerado um marco
+                    da filosofia moderna e uma influência para todo o pensamento posterior.
+                    <br><br>
+                    Seu pensamento é centrado na figura do ser, o sujeito, que compreende a si e a tudo o que existe
+                    através de sua estrutura dialética: tese, antítese e síntese:
+                    <br><br>
+                    Tese: aquilo que é dito ou pensado.
+                    <br><br>
+                    Antítese: o oposto da tese.
+                    <br><br>
+                    Síntese: união entre os opostos e formação de uma nova tese.
+                </p>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
+                <h2 class="espaço">Friedrich Nietzsche</h2>
+                <a href="https://pt.wikipedia.org/wiki/Friedrich_Nietzsche">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Nietzsche187a.jpg/500px-Nietzsche187a.jpg"
+                        alt="" class="tamanho">
+                </a>
+                <p class="espaço">
+                    Friedrich Nietzsche (1844-1900) foi um pensador alemão que se dedicou a criticar duramente a
+                    tradição filosófica e a cultura ocidental, sobretudo, a moral judaico-cristã.
+                    <br><br>
+                    Boa parte de sua obra se desenvolve através de aforismos, frases curtas que transmitem uma ideia ou
+                    preceito, talvez isso faça com que o autor possua muitas frases conhecidas.
+                    <br><br><br>
+                    Para o filósofo, a cultura judaico-cristã é a negação da vida por estar fundamentada na morte e no
+                    desprezo ao corpo.
+                    <br><br>
+                    Sua filosofia buscou valorizar o ser humano tal como ele. Nietzsche a firma a necessidade do
+                    indivíduo superar a si próprio, rompendo com as amarras da "moral de rebanho", como chamou a moral
+                    cristã.
+                    <br><br>
+                    Essa superação levaria o ser humano a se tonar o super-homem ou o além do homem (übermensch, em
+                    alemão) e “viver a vida como uma obra de arte”.
+                </p>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
+                <h2 class="espaço">Simone de Beauvoir</h2>
+                <a href="https://pt.wikipedia.org/wiki/Simone_de_Beauvoir">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Simone_de_Beauvoir2.png/440px-Simone_de_Beauvoir2.png"
+                        alt="" class="tamanho">
+                </a>
+                <p class="espaço">
+                    Simone de Beauvoir (1908–1986) foi uma filósofa feminista do existencialismo francês. Seu livro, O
+                    Segundo Sexo, é uma das principais obras do século XX. Nele, a filósofa desenvolve uma teoria
+                    crítica da sociedade que nega a mulher como sujeito.
+                    <br><br>
+                    Para ela, na perspectiva tradicional, o homem é tomado como o ser humano universal, enquanto a
+                    mulher é empurrada para uma condição de subalternidade, como o outro, o não-homem, <br><br> o
+                    segundo sexo.
+                    <br><br>
+                    Com isso, a autora reforça a ideia existencialista de que as mulheres, enquanto seres humanos, não
+                    possuem uma essência predeterminada. É a partir da experiência que constroem o seu próprio ser.
+                </p>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
+            </article>
+        </section>
+        <aside>
+            <article>
+                <!-- <h4>Instagram</h4>
+                <a href="" class="link">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.KUBhMZ4KB4SALX6my_C5FwHaHa%26pid%3DApi&f=1&ipt=10cca496580bd6d5d93f31d1a1e9907f3adebbc8a5d9f46b58230670b6dd5291&ipo=images"
+                        alt="">
+                </a>
+                <h4>Whatsapp</h4>
+                <a href="" class="link">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.IdQaIKyUhG6lo2weLh7RVgHaHa%26pid%3DApi&f=1&ipt=4f9aa28119277b006cff86a0f96680e68670a413c648c9b657405e39437441a5&ipo=images"
+                        alt="">
+                </a> -->
+                <h3 class="espaço">InFormaÇões CompLemenTares</h3>
+                <a href="" class="url">TeOrias FiLoSoFicas</a>
+                <hr>
+                <a href="" class="url">Link</a>
+                <hr>
+                <a href="" class="url">Link</a>
+                <hr>
+            </article>
+        </aside>
+    </main>
+    <div class="flex">
+        <form action="" class="comentarios">
+            <h3 class="espaço">Deixe seu comentario</h3>
+            <input type="text" class="comentario" placeholder="Sua mensagem*">
+        </form>
+        <form class="comentarios">
+            <label for="">Nome</label>
+            <input type="text" name="" id="" class="largura" placeholder="Seu nome*">
+            <label for="">Email</label>
+            <input type="text" name="" id="" class="largura" placeholder="Seu email*">
+            <button class="comentar">Comentar</button>
+        </form>
+    </div>
+    <footer>
+        <h2 class="contato">Contato</h2>
+        <p class="contato">(79) 99989-6270</p>
+        <p class="contato">(79) 99860-7239</p>
+    </footer>
+    <script></script>
+</body>
+
+</html>
