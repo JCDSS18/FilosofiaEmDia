@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+        href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.pJDu9m0B4XW9mWj_WHFCsgAAAA%26pid%3DApi&f=1&ipt=917f2a543a590663c6b69c259464b4025b0424294e003bf1ad2feb21ce0792c1&ipo=images"
+        type="img/png">
+    <title>Filosofia Em Dia</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: wheat;
+        }
+
+        picture {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+        }
+
+        img {
+            width: 460px;
+            border-radius: 10px;
+        }
+
+        form {
+            width: 410px;
+            height: 280px;
+            padding: 100px 0px 0px 80px;
+            margin: 100px 0px 0px 280px;
+            border-radius: 10px;
+            background-color: wheat;
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg/670px-%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg);
+            box-shadow: 2px 2px 2px 2px black;
+        }
+
+        label {
+            display: block;
+            margin: 0px 0px 10px 250px;
+        }
+
+        input {
+            display: block;
+            width: 300px;
+            height: 20px;
+            padding: 5px 0px 5px 15px;
+            margin: 0px 0px 15px 0px;
+            border-radius: 20px;
+        }
+
+        button {
+            width: 100px;
+            padding: 5px 0px 5px 0px;
+            margin: 0px 0px 0px 110px;
+            border-radius: 20px;
+        }
+    </style>
+    <form action="">
+        <label for="">LoG In</label>
+        <input type="text" name="" id="" value="" placeholder="Email">
+        <input type="text" name="" id="" value="" placeholder="Senha">
+        <button>LoG In</button>
+    </form>
+    <script></script>
+</body>
+
+</html>
