@@ -19,6 +19,8 @@
 
         body {
             background-color: white;
+            background-image: url();
+            background-size: cover;
         }
 
         header {
@@ -28,13 +30,17 @@
             box-shadow: 2px 2px 0px 0px black;
         }
 
+        header:hover {
+            box-shadow: 2px 2px 0px 0px white;
+        }
+
         nav {
             margin: 20px 10px 20px 60px;
             display: flex;
         }
 
         form {
-            margin: 0px 0px -10px 220px;
+            margin: 0px 0px -10px 270px;
         }
 
         input {
@@ -61,6 +67,10 @@
             background-color: wheat;
         }
 
+        article:hover {
+            box-shadow: 2px 2px 2px 2px white;
+        }
+
         img {
             margin: 0px 0px 5px 0px;
         }
@@ -84,18 +94,23 @@
 
         input {
             display: block;
-            margin-top: 2px;
-            margin-right: -10px;
+            margin-top: 3px;
+            margin-right: -40px;
             margin-bottom: 10px;
-            padding-left: 10px;
-            padding-top: 3px;
-            padding-bottom: 3px;
+            padding-left: 20px;
+            padding-top: 2px;
+            padding-right: 20px;
+            padding-bottom: 2px;
         }
 
         footer {
-            padding: 60px 0px 150px 70px;
+            padding: 100px 100px 50px 100px;
             background-color: bisque;
             box-shadow: 0px 0px 2px 2px black;
+        }
+
+        footer:hover {
+            box-shadow: 0px 0px 2px 2px white;
         }
 
         picture {
@@ -118,11 +133,19 @@
             float: left;
         }
 
+        .tamanho:hover {
+            box-shadow: 2px 2px 2px 2px white;
+        }
+
         .link {
             margin: 5px 40px 0px 50px;
             font-weight: bold;
             color: black;
             text-decoration: none;
+        }
+
+        .link:hover {
+            color: white;
         }
 
         .pesquisar {
@@ -131,7 +154,7 @@
         }
 
         .comentarios {
-            width: 425px;
+            width: 455px;
             background-color: wheat;
             margin: 0px 0px 30px 20px;
             padding: 30px;
@@ -139,23 +162,50 @@
             box-shadow: 2px 2px 2px 2px black;
         }
 
+        .comentarios:hover {
+            box-shadow: 2px 2px 2px 2px white;
+        }
+
         .largura {
             width: 410px;
-            margin: 5px 0px 10px 0px;
+            margin: 10px 0px 10px 0px;
+            padding: 5px 0px 5px 10px;
+            border-radius: 12px;
+            box-shadow: 1px 1px 1px 1px black;
+        }
+
+        .largura:hover {
+            box-shadow: 1px 1px 1px 1px white;
         }
 
         .comentar {
-            width: 420px;
+            width: 425px;
             margin: 10px 0px 0px 0px;
             border-radius: 10px;
             padding-top: 3px;
             padding-bottom: 3px;
+            box-shadow: 1px 1px 1px 1px black;
+            color: black;
+            font-weight: bold;
+            background-color: white;
+        }
+
+        .comentar:hover {
+            box-shadow: 1px 1px 1px 1px white;
+            cursor: pointer;
+            background-color: black;
+            color: white;
         }
 
         .comentario {
             width: 410px;
             padding-top: 10px;
             padding-bottom: 100px;
+            box-shadow: 2px 2px 1px 1px black;
+        }
+
+        .comentario:hover {
+            box-shadow: 1px 1px 1px 1px white;
         }
 
         .flex {
@@ -178,8 +228,22 @@
             text-decoration: none;
         }
 
+        .url:hover {
+            color: white;
+        }
+
         .contato {
             margin-bottom: 10px;
+        }
+
+        .nomes {
+            color: black;
+            text-decoration: none;
+        }
+
+        .nomes:hover {
+            color: white;
+            cursor: pointer;
         }
     </style>
     <header>
@@ -198,8 +262,12 @@
     <main>
         <section>
             <article>
-                <h1 class="espaço">Os MaiOres FilóSofos da HisTória</h1>
-                <h2 class="espaço">Tales de Mileto</h2>
+                <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="nomes">
+                    <h1 class="espaço">Os MaiOres FilóSofos da HisTória</h1>
+                </a>
+                <a href="https://pt.wikipedia.org/wiki/Tales_de_Mileto" class="nomes">
+                    <h2 class="espaço">Tales de Mileto</h2>
+                </a>
                 <a href="https://pt.wikipedia.org/wiki/Tales_de_Mileto">
                     <img src="https://duckduckgo.com/i/e202edb6.jpg" alt="" class="espaço tamanho">
                 </a>
@@ -214,8 +282,11 @@
                     Na filosofia, a busca pela essência do universo (physis), fez com que ele definisse a água como
                     elemento primordial que constitui tudo aquilo que existe na natureza.
                 </p>
-                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
-                <h2 class="espaço">Heráclito</h2>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/"
+                        class="url">todamateria</a></p>
+                <a href="https://pt.wikipedia.org/wiki/Her%C3%A1clito" class="nomes">
+                    <h2 class="espaço">Heráclito</h2>
+                </a>
                 <a href="https://pt.wikipedia.org/wiki/Her%C3%A1clito">
                     <img src="https://duckduckgo.com/i/878ea6ea.jpg" alt="" class="espaço tamanho">
                 </a>
@@ -235,8 +306,11 @@
                     que transforma tudo aquilo que toca e, para ele, todas as coisas se modificam porque possuem o fogo
                     em sua composição.
                 </p>
-                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
-                <h2 class="espaço">Parmênides</h2>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/"
+                        class="url">todamateria</a></p>
+                <a href="https://pt.wikipedia.org/wiki/Parm%C3%AAnides" class="nomes">
+                    <h2 class="espaço">Parmênides</h2>
+                </a>
                 <a href="https://pt.wikipedia.org/wiki/Parm%C3%AAnides">
                     <img src="https://duckduckgo.com/i/2d5606ee.jpg" alt="" class="espaço tamanho">
                 </a>
@@ -247,7 +321,7 @@
                     <br><br>
                     Em outras palavras, a essência das coisas é permanente, não sofre ação do tempo. Parmênides afirma
                     que se as coisas não possuíssem uma permanência e mudassem o tempo todo, nada poderia ser conhecido
-                    e o conhecimento seria impossível.
+                    <br><br>e o conhecimento seria impossível.
                     <br><br>
                     Para Parmênides, tudo o que pode ser pensado existe, já que não se pode pensar no não-ser. Não é
                     possível pensar naquilo que não existe. Assim, a mudança seria falsa, baseada na ideia do que é
@@ -255,8 +329,11 @@
                     <br><br>
                     A principal obra de Parmênides é Fragmentos, uma coletânea de partes recuperadas de seus escritos.
                 </p>
-                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
-                <h2 class="espaço">Sócrates</h2>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/"
+                        class="url">todamateria</a></p>
+                <a href="https://pt.wikipedia.org/wiki/S%C3%B3crates" class="nomes">
+                    <h2 class="espaço">Sócrates</h2>
+                </a>
                 <a href="https://pt.wikipedia.org/wiki/S%C3%B3crates">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/%CE%A3%CF%89%CE%BA%CF%81%CE%AC%CF%84%CE%B7%CF%82%2C_%CE%91%CE%BA%CE%B1%CE%B4%CE%B7%CE%BC%CE%AF%CE%B1_%CE%91%CE%B8%CE%B7%CE%BD%CF%8E%CE%BD_6616.jpg/360px-%CE%A3%CF%89%CE%BA%CF%81%CE%AC%CF%84%CE%B7%CF%82%2C_%CE%91%CE%BA%CE%B1%CE%B4%CE%B7%CE%BC%CE%AF%CE%B1_%CE%91%CE%B8%CE%B7%CE%BD%CF%8E%CE%BD_6616.jpg"
                         alt="" class="espaço tamanho">
@@ -267,6 +344,7 @@
                     <br><br>
                     Foi responsável por uma mudança no modo de fazer filosofia. Dedicou-se a pensar sobre as relações
                     humanas e a refletir sobre as condições do próprio pensamento.
+                    <br>
                     <br><br>
                     Essa transformação rompeu com a jovem tradição da filosofia que era dedicada à compreensão da
                     natureza e do universo.
@@ -282,8 +360,11 @@
                     Atenas, Sócrates foi condenado à morte, acusado de atentar contra os deuses gregos e corromper a
                     juventude de ateniense. O julgamento de Sócrates está descrito no livro A República, de Platão.
                 </p>
-                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
-                <h2 class="espaço">Platão</h2>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/"
+                        class="url">todamateria</a></p>
+                <a href="https://pt.wikipedia.org/wiki/Plat%C3%A3o" class="nomes">
+                    <h2 class="espaço">Platão</h2>
+                </a>
                 <a href="https://pt.wikipedia.org/wiki/Plat%C3%A3o">
                     <img src="https://duckduckgo.com/i/62278acf.jpg" alt="" class="tamanho">
                 </a>
@@ -302,8 +383,11 @@
                     Mundo Sensível - Lugar das imitações das ideias, onde residem as coisas que são conhecidas através
                     dos sentidos. Lugar do corpo, do erro e da opinião.
                 </p>
-                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
-                <h2 class="espaço">Aristóteles</h2>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/"
+                        class="url">todamateria</a></p>
+                <a href="https://pt.wikipedia.org/wiki/Arist%C3%B3teles" class="nomes">
+                    <h2 class="espaço">Aristóteles</h2>
+                </a>
                 <a href="https://pt.wikipedia.org/wiki/Arist%C3%B3teles">
                     <img src="https://duckduckgo.com/i/c42fe295.jpg" alt="" class="tamanho">
                 </a>
@@ -329,8 +413,11 @@
                     Aristóteles contribuiu também para o desenvolvimento da lógica como "um instrumento para o correto
                     pensar", ainda hoje, a lógica aristotélica é base para o conhecimento científico.
                 </p>
-                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
-                <h2 class="espaço">Santo Agostinho</h2>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/"
+                        class="url">todamateria</a></p>
+                <a href="https://pt.wikipedia.org/wiki/Agostinho_de_Hipona" class="nomes">
+                    <h2 class="espaço">Santo Agostinho</h2>
+                </a>
                 <a href="https://pt.wikipedia.org/wiki/Agostinho_de_Hipona">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Saint_Augustine_by_Philippe_de_Champaigne.jpg/400px-Saint_Augustine_by_Philippe_de_Champaigne.jpg"
                         alt="" class="tamanho">
@@ -352,8 +439,11 @@
                     O filósofo é o grande representante de um período da filosofia chamado de "patrística", por ser
                     desenvolvida pelos padres da Igreja.
                 </p>
-                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
-                <h2 class="espaço">São Tomás de Aquino</h2>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/"
+                        class="url">todamateria</a></p>
+                <a href="https://pt.wikipedia.org/wiki/Tom%C3%A1s_de_Aquino" class="nomes">
+                    <h2 class="espaço">São Tomás de Aquino</h2>
+                </a>
                 <a href="https://pt.wikipedia.org/wiki/Tom%C3%A1s_de_Aquino">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Gentile_da_Fabriano_052.jpg/420px-Gentile_da_Fabriano_052.jpg"
                         alt="" class="tamanho">
@@ -363,13 +453,15 @@
                     Agostinho de Hipona que resgatou o pensamento de Platão e ligou à religião cristã, Tomás de Aquino
                     fundamentou sua filosofia cristã no pensamento de Aristóteles.
                     <br><br>
-                    Ao longo de sua obra, o filósofo buscou criar fundamentações <br><br> lógicas para a fé cristã. A
-                    união entre
-                    a lógica e a fé é uma marca importante do período podendo ser vista na obra Cinco provas da
-                    existência de Deus.
+                    Ao longo de sua obra, o filósofo buscou criar fundamentações lógicas para a fé cristã.
+                    <br><br> A união entre a lógica e a fé é uma marca importante do período podendo ser vista na obra
+                    Cinco provas da existência de Deus.
                 </p>
-                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
-                <h2 class="espaço">Maquiavel</h2>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/"
+                        class="url">todamateria</a></p>
+                <a href="https://pt.wikipedia.org/wiki/Nicolau_Maquiavel" class="nomes">
+                    <h2 class="espaço">Maquiavel</h2>
+                </a>
                 <a href="https://pt.wikipedia.org/wiki/Nicolau_Maquiavel">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Portrait_of_Niccol%C3%B2_Machiavelli_by_Santi_di_Tito.jpg/520px-Portrait_of_Niccol%C3%B2_Machiavelli_by_Santi_di_Tito.jpg"
                         alt="" class="tamanho">
@@ -385,8 +477,11 @@
                     fraqueza para o príncipe. Ao pensamento de Maquiavel é atribuída a frase que afirma que “os fins
                     justificam os meios”.
                 </p>
-                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
-                <h2 class="espaço">René Descartes</h2>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/"
+                        class="url">todamateria</a></p>
+                <a href="https://pt.wikipedia.org/wiki/Ren%C3%A9_Descartes" class="nomes">
+                    <h2 class="espaço">René Descartes</h2>
+                </a>
                 <a href="https://pt.wikipedia.org/wiki/Ren%C3%A9_Descartes">
                     <img src="https://duckduckgo.com/i/787ba3a1.jpg" alt="" class="tamanho">
                 </a>
@@ -417,8 +512,11 @@
                     questionado, menos que se pode duvidar. Para duvidar de algo é preciso pensar e para pensar é
                     necessário existir.
                 </p>
-                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
-                <h2 class="espaço">John Locke</h2>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/"
+                        class="url">todamateria</a></p>
+                <a href="https://pt.wikipedia.org/wiki/John_Locke" class="nomes">
+                    <h2 class="espaço">John Locke</h2>
+                </a>
                 <a href="https://pt.wikipedia.org/wiki/John_Locke">
                     <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.XC4jtxRRgLpAug6mghCdYQHaJQ%26pid%3DApi&f=1&ipt=7cc386e11dafad5e1282e9a2fee1a0d82e40c15d911a0b6887f4b8cf813ec83f&ipo=images"
                         alt="" class="tamanho">
@@ -443,8 +541,11 @@
                     <br><br>
                     Essa teoria pertence a uma corrente de pensamento chamada de contratualismo.
                 </p>
-                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
-                <h2 class="espaço">Immanuel Kant</h2>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/"
+                        class="url">todamateria</a></p>
+                <a href="https://pt.wikipedia.org/wiki/Immanuel_Kant" class="nomes">
+                    <h2 class="espaço">Immanuel Kant</h2>
+                </a>
                 <a href="https://pt.wikipedia.org/wiki/Immanuel_Kant">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Kant_foto.jpg/400px-Kant_foto.jpg"
                         alt="" class="tamanho">
@@ -462,8 +563,11 @@
                     No campo da Ética, Kant buscou fundamentar a moral na própria razão, não mais em agentes externos
                     como a religião e criar regras para o seu desenvolvimento.
                 </p>
-                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
-                <h2 class="espaço">Georg Wilhelm Friedrich Hegel</h2>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/"
+                        class="url">todamateria</a></p>
+                <a href="https://pt.wikipedia.org/wiki/Georg_Wilhelm_Friedrich_Hegel" class="nomes">
+                    <h2 class="espaço">Georg Wilhelm Friedrich Hegel</h2>
+                </a>
                 <a href="https://pt.wikipedia.org/wiki/Georg_Wilhelm_Friedrich_Hegel">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/1831_Schlesinger_Philosoph_Georg_Friedrich_Wilhelm_Hegel_anagoria.JPG/400px-1831_Schlesinger_Philosoph_Georg_Friedrich_Wilhelm_Hegel_anagoria.JPG"
                         alt="" class="tamanho">
@@ -481,8 +585,11 @@
                     <br><br>
                     Síntese: união entre os opostos e formação de uma nova tese.
                 </p>
-                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
-                <h2 class="espaço">Friedrich Nietzsche</h2>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/"
+                        class="url">todamateria</a></p>
+                <a href="https://pt.wikipedia.org/wiki/Friedrich_Nietzsche" class="nomes">
+                    <h2 class="espaço">Friedrich Nietzsche</h2>
+                </a>
                 <a href="https://pt.wikipedia.org/wiki/Friedrich_Nietzsche">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Nietzsche187a.jpg/500px-Nietzsche187a.jpg"
                         alt="" class="tamanho">
@@ -504,8 +611,11 @@
                     Essa superação levaria o ser humano a se tonar o super-homem ou o além do homem (übermensch, em
                     alemão) e “viver a vida como uma obra de arte”.
                 </p>
-                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
-                <h2 class="espaço">Simone de Beauvoir</h2>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/"
+                        class="url">todamateria</a></p>
+                <a href="https://pt.wikipedia.org/wiki/Simone_de_Beauvoir" class="nomes">
+                    <h2 class="espaço">Simone de Beauvoir</h2>
+                </a>
                 <a href="https://pt.wikipedia.org/wiki/Simone_de_Beauvoir">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Simone_de_Beauvoir2.png/440px-Simone_de_Beauvoir2.png"
                         alt="" class="tamanho">
@@ -522,7 +632,8 @@
                     Com isso, a autora reforça a ideia existencialista de que as mulheres, enquanto seres humanos, não
                     possuem uma essência predeterminada. É a partir da experiência que constroem o seu próprio ser.
                 </p>
-                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="url">todamateria</a></p>
+                <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/"
+                        class="url">todamateria</a></p>
             </article>
         </section>
         <aside>
@@ -561,9 +672,7 @@
         </form>
     </div>
     <footer>
-        <h2 class="contato">Contato</h2>
-        <p class="contato">(79) 99989-6270</p>
-        <p class="contato">(79) 99860-7239</p>
+
     </footer>
     <script></script>
 </body>
