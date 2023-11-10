@@ -24,6 +24,7 @@
         }
 
         header {
+            width: 100%;
             display: flex;
             /* margin: 0px 0px 10px 0px; */
             background-color: wheat;
@@ -35,7 +36,8 @@
         }
 
         nav {
-            margin: 20px 10px 20px 80px;
+            width: 100%;
+            margin: 20px 10px 20px 100px;
             display: flex;
         }
 
@@ -43,18 +45,12 @@
             margin: 0px 0px -10px 270px;
         }
 
-        input {
-            width: 100px;
-            padding: 1px 1px 1px 7px;
-            border-radius: 10px;
-        }
-
         main {
             display: flex;
         }
 
         section {
-            width: 700px;
+            width: 70%;
             padding: 20px;
         }
 
@@ -76,7 +72,7 @@
         }
 
         aside {
-            width: 400px;
+            width: 40%;
             padding: 20px;
         }
 
@@ -93,13 +89,20 @@
         }
 
         input {
+            width: 100px;
+            padding: 1px 1px 1px 7px;
+            border-radius: 10px;
+        }
+
+        input {
             display: block;
             margin-top: 3px;
+            margin-left: 80px;
             margin-right: -40px;
             margin-bottom: 10px;
-            padding-left: 20px;
+            padding-left: 10px;
             padding-top: 2px;
-            padding-right: 20px;
+            padding-right: 40px;
             padding-bottom: 2px;
         }
 
@@ -120,6 +123,12 @@
         address {
             margin: 50px 0px 0px 30px;
             display: flex;
+        }
+
+        .ComentariosDoPublico {
+            padding: 30px;
+            background-color: bisque;
+            box-shadow: 1px 1px 1px 1px black;
         }
 
         .espaço {
@@ -154,7 +163,7 @@
         }
 
         .comentarios {
-            width: 585px;
+            width: 54.5%;
             background-color: wheat;
             margin: 0px 0px 30px 20px;
             padding: 30px;
@@ -167,45 +176,53 @@
         }
 
         .largura {
-            width: 565px;
-            margin: 10px 0px 10px 0px;
+            width: 97%;
+            margin: 10px 0px 15px 0px;
             padding: 5px 0px 5px 10px;
             border-radius: 12px;
-            box-shadow: 1px 1px 1px 1px black;
+            box-shadow: 2px 2px 0px 0px black;
+            color: black;
+            background-color: white;
         }
 
         .largura:hover {
-            box-shadow: 1px 1px 1px 1px white;
+            box-shadow: 2px 2px 0px 0px white;
+            color: white;
+            background-color: black;
         }
 
         .comentar {
-            width: 580px;
+            width: 99%;
             margin: 10px 0px 20px 0px;
             border-radius: 10px;
             padding-top: 3px;
             padding-bottom: 3px;
-            box-shadow: 1px 1px 1px 1px black;
+            box-shadow: 2px 2px 0px 0px black;
             color: black;
             font-weight: bold;
             background-color: white;
         }
 
         .comentar:hover {
-            box-shadow: 1px 1px 1px 1px white;
+            box-shadow: 2px 2px 0px 0px white;
             cursor: pointer;
             background-color: black;
             color: white;
         }
 
         .comentario {
-            width: 535px;
+            width: 96%;
             padding-top: 10px;
             padding-bottom: 100px;
-            box-shadow: 2px 2px 1px 1px black;
+            box-shadow: 2px 2px 0px 0px black;
+            color: black;
+            background-color: white;
         }
 
         .comentario:hover {
-            box-shadow: 1px 1px 1px 1px white;
+            box-shadow: 2px 2px 0px 0px white;
+            color: white;
+            background-color: black;
         }
 
         .flex {
@@ -535,9 +552,8 @@
                     é um direito natural dos seres humanos.
                     <br><br>
                     O filósofo, de base empirista, criou a teoria do ser humano como tábula rasa, uma folha em branco
-                    que vai sendo preenchida através de suas experiências de vida. <br><br> A experiência torna-se base
-                    para o
-                    pensamento e ponto de partida para o conhecimento.
+                    que vai sendo preenchida através de suas experiências de vida. A experiência torna-se base
+                    para o pensamento e ponto de partida para o conhecimento.
                     <br><br>
                     Também foi responsável pelo desenvolvimento da teoria das leis e do surgimento do Estado. Para
                     Locke, os seres humanos vivem em comunidade e essa experiência partilhada é fonte de litígios,
@@ -568,8 +584,8 @@
                     esclarecimento e a autonomia moral dos indivíduos.
                     <br><br>
                     Para isso, Kant buscou unir as concepções empiristas e racionalistas e criar uma nova compreensão
-                    sobre a razão e os <br><br> limites do conhecimento humano.
-                    <br><br>
+                    sobre a razão e os limites do conhecimento humano.
+                    <br><br><br>
                     No campo da Ética, Kant buscou fundamentar a moral na própria razão, não mais em agentes externos
                     como a religião e criar regras para o seu desenvolvimento.
                 </p>
@@ -674,21 +690,52 @@
     <div class="">
         <form class="comentarios">
             <label for="">Nome</label>
-            <input type="text" name="" id="" class="largura" placeholder="Seu nome*">
+            <input type="text" name="username" id="EscreverNome" class="largura" placeholder="Seu nome*">
             <label for="">Email</label>
-            <input type="text" name="" id="" class="largura" placeholder="Seu email*">
-            <button class="comentar">Comentar</button>
+            <input type="email" name="email" id="EscreverEmail" class="largura" placeholder="Seu email*">
+            <button type="submit" id="ComentarBotao" class="comentar">Comentar</button>
         </form>
         <form action="" class="comentarios">
             <h3 class="espaço deixeseucomentario">Deixe seu comentario</h3>
-            <input type="text" class="comentario" placeholder="Sua mensagem*">
+            <input type="text" class="comentario largura" placeholder="Sua mensagem*">
         </form>
+        <div id="ComentariosEscritos"></div>
     </div>
     <footer>
-
     </footer>
     <script>
+        const EscreverComentario = () => {
+            let EscreverNome = document.getElementById('EscreverNome')
+            let EscreverEmail = document.getElementById('EscreverEmail')
+            let ComentarBotao = document.getElementById('ComentarBotao')
+            let ComentariosEscritos = document.getElementById('ComentariosEscritos')
+            class MostrarComentario {
+                constructor(NomeComentario, EmailComentario) {
+                    this.NomeComentario = NomeComentario
+                    this.EmailComentario = EmailComentario
+                }
 
+                GetNomeComentario() {
+                    return this.NomeComentario
+                }
+
+                GetEmailComentario() {
+                    return this.EmailComentario
+                }
+
+                GetNomeComentarioEmailComentario() {
+                    console.log(`${GetNomeComentario()}`)
+                    console.log(`${GetEmailComentario()}`)
+                }
+            }
+            let ComentariosArmazenados = []
+            ComentarBotao.addEventListener('click', (EventoComentario) => {
+                let NovoElemento = document.createElement('div')
+                ComentariosEscritos.appendChild(NovoElemento)
+                NovoElemento.classList.add('ComentariosDoPublico')
+            })
+        }
+        EscreverComentario()
     </script>
 </body>
 
