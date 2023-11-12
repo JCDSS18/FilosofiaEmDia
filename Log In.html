@@ -31,17 +31,31 @@
             width: 410px;
             height: 280px;
             padding: 100px 0px 0px 80px;
-            margin: 100px 0px 0px 280px;
+            margin: 130px 0px 0px 350px;
             border-radius: 10px;
             background-color: wheat;
             background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg/670px-%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg);
             box-shadow: 2px 2px 2px 2px black;
         }
 
+        form:hover {
+            box-shadow: 2px 2px 2px 2px white;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
         label {
             display: block;
             margin: 0px 0px 15px 250px;
             font-weight: bold;
+        }
+
+        label:hover {
+            color: white;
+            cursor: pointer;
         }
 
         input {
@@ -51,13 +65,13 @@
             padding: 5px 0px 5px 15px;
             margin: 0px 0px 20px 0px;
             border-radius: 20px;
-            box-shadow: 1px 1px 0px 0px white;
+            box-shadow: 2px 2px 0px 0px white;
             color: black;
             background-color: white;
         }
 
         input:hover {
-            box-shadow: 1px 1px 0px 0px black;
+            box-shadow: 2px 2px 0px 0px black;
             color: white;
             background-color: black;
         }
@@ -67,19 +81,22 @@
             padding: 5px 0px 5px 0px;
             margin: 0px 0px 0px 110px;
             border-radius: 20px;
-            box-shadow: 1px 1px 0px 0px black;
+            box-shadow: 2px 2px 0px 0px black;
             color: black;
             background-color: white;
         }
 
         button:hover {
-            box-shadow: 1px 1px 0px 0px white;
+            box-shadow: 2px 2px 0px 0px white;
             color: white;
             background-color: black;
+            cursor: pointer;
         }
     </style>
     <form action="">
-        <label for="" method="post" action="login.php">LoG In</label>
+        <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/Log%20In.html">
+            <label for="" method="post" action="login.php">LoG In</label>
+        </a>
         <input type="email" name="username" id="" value="" placeholder="Email" required>
         <input type="password" name="password" id="" value="" placeholder="Senha" required>
         <button type="submit">LoG In</button>
