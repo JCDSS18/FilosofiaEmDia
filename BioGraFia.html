@@ -38,7 +38,26 @@
 
         main {
             display: flex;
-            margin-top: 65px;
+            padding: 30px;
+            margin-top: 60px;
+        }
+
+        section {
+            width: 100%;
+        }
+
+        article {
+            padding: 30px;
+            padding-left: 40px;
+            padding-right: 40px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            background-color: wheat;
+            box-shadow: 2px 2px 2px 2px black;
+        }
+
+        article:hover {
+            box-shadow: 2px 2px 2px 2px white;
         }
 
         input {
@@ -57,24 +76,6 @@
             padding-top: 2px;
             padding-right: 40px;
             padding-bottom: 2px;
-        }
-
-        section {
-            width: 50%;
-            padding: 20px;
-        }
-
-        article {
-            padding: 30px;
-            padding-left: 45px;
-            margin-bottom: 20px;
-            border-radius: 100px;
-            background-color: wheat;
-            box-shadow: 2px 2px 2px 2px black;
-        }
-
-        article:hover {
-            box-shadow: 2px 2px 2px 2px white;
         }
 
         footer {
@@ -98,6 +99,20 @@
             color: white;
         }
 
+        .contato {
+            margin-bottom: 10px;
+        }
+
+        .tamanho {
+            width: 80px;
+            box-shadow: 2px 2px 2px 2px black;
+            margin: 0px 20px 0px 0px;
+        }
+
+        .espaço {
+            margin-bottom: 20px;
+        }
+
         .url {
             text-decoration: none;
         }
@@ -106,12 +121,46 @@
             color: white;
         }
 
-        .margin {
-            margin-bottom: 10px;
+        .nomes {
+            color: black;
+            text-decoration: none;
         }
 
-        .contato {
-            margin-bottom: 10px;
+        .nomes:hover {
+            color: white;
+            cursor: pointer;
+        }
+
+        .esquerda {
+            width: 50%;
+            float: left;
+            margin-right: 20px;
+            margin-top: 10px;
+        }
+
+        .linha-vertical {
+            height: 400px;
+            border-left: 1px solid;
+            display: flex;
+            float: left;
+            margin-right: 20px;
+            margin-top: 40px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .FlexItem {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .VerticalLinha {
+            border-left: 1px solid;
+            height: 300px;
+            margin-left: 20px;
+            margin-right: 20px;
         }
 
         .ConteudoFixoNaTela {
@@ -126,8 +175,7 @@
         <nav>
             <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/Filosofia%20Em%20Dia.html"
                 class="link">FiloSofos</a>
-            <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/FraSes.html"
-                class="link">FraSes</a>
+            <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/FraSes.html" class="link">FraSes</a>
             <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/BioGrafia.html" class="link">BioGraFia</a>
             <form>
                 <input type="text" class="">
@@ -138,23 +186,252 @@
     <main>
         <section>
             <article>
-                <p class="margin">"Eles consequem dinheiro para a guerra, mas não consequem acabar com a pobreza."</p>
-                <p>Créditos: <a href="https://www.instagram.com/p/Cyds6VrrOSr/" class="url">filosofia.liquida</a></p>
+                <a href="" class="nomes">
+                    <h2 class="espaço">Tales de Mileto</h2>
+                </a>
+                <div class="flex">
+                    <p class="espaço FlexItem">
+                        Tales de Mileto (cerca de 624-546 a.C.) foi um dos primeiros filósofos pré-socráticos da Grécia
+                        Antiga e é frequentemente considerado o "pai da filosofia". Ele é conhecido por suas
+                        contribuições
+                        no campo da matemática, astronomia, geometria e filosofia natural. Aqui está uma breve biografia
+                        de
+                        Tales de Mileto:
+                        <br><br>
+                        <b>Vida e Contexto:</b>
+                        Tales nasceu na cidade de Mileto, na Ásia Menor (atual Turquia), por volta do
+                        século VII a.C. Mileto era uma das cidades-estado gregas da Jônia e, portanto, Tales era um
+                        cidadão
+                        grego.
+                        <br><br>
+                        <b>Matemática:</b>
+                        Tales é conhecido por ter feito importantes contribuições à matemática. Ele é
+                        creditado
+                        por medir a altura de pirâmides usando sombras e propor teoremas geométricos, como o famoso
+                        Teorema
+                        de Tales, que lida com a semelhança de triângulos.
+                        <br><br>
+                        <b>Filosofia Natural:</b>
+                        Tales também é lembrado por suas explorações no campo da filosofia natural,
+                        tentando entender as causas e princípios subjacentes do mundo natural. Ele acreditava que a água
+                        era o princípio fundamental (archê) de todas as coisas, uma ideia precursora das teorias sobre a
+                        substância básica da matéria.
+                        <br><br>
+                        <b>Astronomia:</b>
+                        Tales também fez observações astronômicas e é creditado por prever eclipses solares.
+                        Sua capacidade de prever um eclipse solar é considerada um marco na história da astronomia.
+                    </p>
+                    <p class="espaço FlexItem">
+                        <b>Viagens e Aprendizado:</b>
+                        Diz-se que Tales viajou extensamente, incluindo viagens ao Egito, onde
+                        pode
+                        ter adquirido conhecimentos matemáticos e astronômicos. Sua busca pelo conhecimento e suas
+                        contribuições em várias áreas o tornaram uma figura respeitada em sua época.
+                        <br><br>
+                        <b>Influência:</b>
+                        Tales exerceu influência duradoura sobre a filosofia e a ciência subsequentes na
+                        Grécia
+                        Antiga. Ele foi um dos primeiros a buscar explicações racionais e naturais para fenômenos
+                        naturais,
+                        em vez de recorrer a explicações mitológicas. Suas ideias ajudaram a estabelecer as bases para o
+                        pensamento científico e filosófico ocidental.
+                        <br><br>
+                        Tales de Mileto é lembrado como um dos pioneiros da investigação racional e científica e como um
+                        dos
+                        primeiros filósofos pré-socráticos que buscou entender o mundo natural por meio da observação e
+                        da
+                        razão, em contraste com explicações míticas e religiosas. Suas contribuições nas áreas da
+                        matemática, astronomia e filosofia tiveram um impacto duradouro na história da filosofia e da
+                        ciência.
+                    </p>
+                </div>
             </article>
             <article>
-                <p class="margin">"Chega de homenagens. Eu quero o dinheiro."</p>
-                <p>Créditos: <a href="https://www.instagram.com/p/Cyb_E77rC_I/" class="url">filosofia.liquida</a></p>
+                <a href="" class="nomes">
+                    <h2 class="espaço">Heraclito de Éfeso</h2>
+                </a>
+                <div class="flex">
+                    <p class="espaço FlexItem">
+                        Heraclito de Éfeso (cerca de 535-475 a.C.) foi um filósofo pré-socrático da Grécia Antiga
+                        conhecido
+                        por suas ideias sobre o fluxo constante e a mudança na natureza. Sua filosofia é muitas vezes
+                        resumida na famosa frase: "Ninguém entra no mesmo rio duas vezes, porque tudo flui e nada
+                        permanece."
+                        <br><br>
+                        <b>Vida e Contexto:</b>
+                        Heraclito nasceu na cidade de Éfeso, que estava localizada na região da Ásia
+                        Menor
+                        (atual Turquia). Ele viveu durante o período conhecido como "período axial," um momento de
+                        grandes
+                        avanços filosóficos e culturais na Grécia Antiga.
+                        <br><br>
+                        <b>Filosofia do Fluxo:</b>
+                        Heraclito acreditava que o mundo estava em constante mudança e que a mudança
+                        era
+                        a única constante. Ele argumentou que tudo está em movimento, e que a realidade é caracterizada
+                        por
+                        um fluxo perpétuo. Sua famosa frase sobre o rio ilustra essa ideia: "Ninguém entra no mesmo rio
+                        duas
+                        vezes" porque a água flui continuamente.
+                        <br><br>
+                        <b>Fogo como Princípio:</b>
+                        Heraclito postulou que o fogo era o princípio fundamental que governava a
+                        mudança e a ordem no universo. Ele via o fogo como um símbolo de transformação e energia.
+                    </p>
+                    <p class="espaço FlexItem">
+                        <b>Dialética e Contradição:</b>
+                        Heraclito também introduziu a ideia da dialética, um método de
+                        investigação
+                        filosófica que envolve a análise de opostos e contradições. Ele acreditava que o conflito e a
+                        oposição eram essenciais para a compreensão da realidade.
+                        <br><br>
+                        <b>Influência:</b>
+                        As ideias de Heraclito tiveram um impacto duradouro na filosofia ocidental e
+                        influenciaram muitos filósofos posteriores, incluindo Platão e Friedrich Nietzsche. Sua ênfase
+                        na
+                        mudança e na contradição também é relevante para a filosofia contemporânea.
+                        <br><br>
+                        <b>Obscuridade:</b>
+                        Os escritos originais de Heraclito não sobreviveram, e o que conhecemos de sua
+                        filosofia é baseado em fragmentos e citações em obras de outros filósofos antigos. Muitas vezes,
+                        suas ideias são consideradas enigmáticas e difíceis de interpretar devido à sua linguagem
+                        poética e
+                        metafórica.
+                        <br><br>
+                        Heraclito é lembrado como um dos primeiros filósofos a explorar a natureza do mundo e a natureza
+                        da realidade. Sua ênfase na mudança e na contradição desempenhou um papel significativo no
+                        desenvolvimento da filosofia ocidental.
+                    </p>
+                </div>
             </article>
             <article>
-                <p class="margin">"Infeliz quem não amou mais do que corpos, formas e aparências. A morte irá tirar tudo. Tente amar as
-                    almas e um dia você as encontrará novamente."
-                </p>
-                <p>Créditos: <a href="https://www.instagram.com/p/CybOA6ZgAcL/" class="url">filosofia.incerta</a></p>
+                <a href="" class="nomes">
+                    <h2 class="espaço">Parmênides</h2>
+                </a>
+                <div class="flex">
+                    <p class="espaço FlexItem">
+                        Parmênides foi um filósofo pré-socrático da antiga Grécia, nascido por volta de 515 a.C. na
+                        cidade de Eleia, localizada na Magna Grécia (atual Itália). Ele é conhecido por suas
+                        contribuições significativas à filosofia, especialmente por seus argumentos sobre a natureza da
+                        realidade e a natureza do ser.
+                        <br><br>
+                        A obra mais conhecida associada a Parmênides é um poema filosófico intitulado "Sobre a Natureza"
+                        (Peri Physeos), que chegou até nós apenas em fragmentos. Seu pensamento teve uma influência
+                        duradoura na filosofia ocidental, e ele é frequentemente mencionado e discutido por outros
+                        filósofos, incluindo Platão.
+                        <br><br>
+                        Principais ideias associadas a Parmênides:
+                        <br><br>
+                        <b>Unidade do Ser:</b>
+                        Parmênides argumentava que o ser é uno e imutável. Ele rejeitava a noção de
+                        mudança e pluralidade, acreditando que a mudança implicaria em vir a ser e deixar de ser, o que,
+                        segundo ele, é ilusório.
+                        <br><br>
+                    </p>
+                    <p class="espaço FlexItem">
+                        <b>Negativa da Mudança e da Aparência:</b>
+                        Parmênides contrastava o mundo da aparência, cheio de
+                        mudanças e contradições, com o mundo do ser imutável. Ele argumentava que a realidade verdadeira
+                        era aquela que permanece constante, e a mudança percebida pelos sentidos era enganosa.
+                        <br><br>
+                        <b>Conceito de Opinião Enganosa (Doxa):</b>
+                        Parmênides distinguia entre a verdadeira compreensão do ser
+                        e a mera opinião enganosa. Ele argumentava que as percepções sensoriais eram enganosas e que
+                        apenas a razão poderia levar a um entendimento verdadeiro.
+                        <br><br>
+                        Parmênides influenciou muitos filósofos subsequentes, incluindo Platão, que discute suas ideias
+                        no diálogo "O Sofista". A visão de Parmênides sobre a unidade e a imutabilidade do ser desafiou
+                        os pensadores posteriores a considerar profundamente questões relacionadas à natureza da
+                        realidade e à confiabilidade dos sentidos.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <a href="" class="nomes">
+                    <h2 class="espaço">Sócrates</h2>
+                </a>
+                <div class="flex">
+                    <p class="espaço FlexItem">
+                        Sócrates foi um filósofo grego clássico considerado um dos pensadores mais importantes da
+                        história da filosofia ocidental. Ele nasceu por volta de 469 a.C. e morreu em 399 a.C. em
+                        Atenas, Grécia.
+                        <br><br>
+                        A maior parte do que se conhece sobre Sócrates foi registrada por seus alunos, especialmente por
+                        Platão, seu discípulo mais famoso. Sócrates não deixou nenhum escrito próprio, e sua figura é
+                        conhecida principalmente por meio dos diálogos platônicos.
+                        <br><br>
+                        Principais pontos sobre a vida e filosofia de Sócrates:
+                        <br><br>
+                        <b>Método Socrático:</b>
+                        Sócrates é conhecido por seu método de questionamento, chamado de método socrático. Ele não
+                        afirmava possuir conhecimento, mas questionava as pessoas sobre suas crenças e ideias. Seu
+                        objetivo era levar os outros a examinar criticamente suas próprias convicções e descobrir a
+                        verdade por meio do diálogo e da reflexão.
+                        <br><br>
+                        <b>Conceito de Ignorância Consciente:</b>
+                        Sócrates afirmava que a única coisa que ele sabia com certeza era que não sabia nada. Esse
+                        reconhecimento da própria ignorância era crucial para o método socrático, pois ele acreditava
+                        que a busca do conhecimento começava com a consciência da falta dele.
+                    </p>
+                    <p class="espaço FlexItem">
+                        <b>Preocupação com a Ética:</b>
+                        Sócrates estava profundamente interessado em questões éticas e morais. Ele acreditava que a
+                        virtude era a chave para a verdadeira felicidade e que as pessoas agiam de maneira incorreta
+                        devido à ignorância do que era verdadeiramente bom.
+                        <br><br>
+                        <b>Julgamento e Morte:</b>
+                        Sócrates tornou-se impopular entre alguns setores da sociedade ateniense devido às suas críticas
+                        à democracia e às crenças religiosas estabelecidas. Ele foi julgado por corromper a juventude e
+                        por não acreditar nos deuses da cidade. Foi condenado à morte e tomou veneno de cicuta, seguindo
+                        a sentença. A sua execução é descrita no diálogo "Fédon", de Platão.
+                        <br><br>
+                        <b>Legado Filosófico:</b>
+                        O pensamento de Sócrates teve um impacto duradouro na filosofia ocidental. Seus métodos de
+                        questionamento e ênfase na ética influenciaram muitos filósofos que vieram depois dele. Seu
+                        método socrático também desempenhou um papel importante na forma como a filosofia foi ensinada
+                        ao longo da história.
+                        <br><br>
+                        Embora não tenha deixado nenhum escrito próprio, a figura de Sócrates é uma das mais
+                        emblemáticas na história da filosofia e continua a ser estudada e debatida nos dias de hoje.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <a href="" class="nomes">
+                    <h2 class="espaço">Platão</h2>
+                </a>
+                <div class="flex">
+                    <p class="espaço FlexItem">
+                        Platão foi um filósofo grego antigo, nascido por volta de 427 a.C. ou 428 a.C. em Atenas, e
+                        faleceu em 347 a.C. Ele foi discípulo de Sócrates e o professor de Aristóteles, formando assim
+                        uma tríade fundamental na filosofia ocidental.
+                        <br><br>
+                        Diferentemente de Sócrates, Platão deixou uma quantidade significativa de escritos. A maioria de
+                        suas obras é apresentada em forma de diálogos, nos quais Sócrates é o personagem principal. Não
+                        está claro em que medida os diálogos representam as próprias opiniões de Platão ou se são
+                        veículos para as ideias de Sócrates.
+                        <br><br>
+                        Platão fundou a Academia de Atenas, uma instituição dedicada ao ensino e à pesquisa, que se
+                        tornou uma influência duradoura na história da filosofia. Ele acreditava na existência de um
+                        mundo das "ideias" ou "formas", um reino eterno e imutável de conceitos perfeitos, em contraste
+                        com o mundo sensível e mutável que percebemos pelos sentidos. Esta teoria é central em muitos
+                        dos seus diálogos, especialmente em "A República".
+                    </p>
+                    <p class="espaço FlexItem">
+                        "A República" é uma de suas obras mais conhecidas, onde Platão descreve sua visão de uma
+                        sociedade ideal, governada por filósofos-reis, pessoas sábias e justas. Em seus diálogos, Platão
+                        também abordou temas como a ética, a política, a epistemologia (teoria do conhecimento) e a
+                        metafísica.
+                        <br><br>
+                        A influência de Platão na filosofia ocidental é incalculável. Seu método dialético, sua busca
+                        por verdades universais e seu impacto na teoria política continuam a ser estudados e discutidos
+                        até hoje.
+                    </p>
+                </div>
             </article>
         </section>
     </main>
     <footer>
-        
     </footer>
     <script>
         const EventoDoScrollQuandoRolado = () => {
