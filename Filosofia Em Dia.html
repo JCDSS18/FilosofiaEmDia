@@ -278,9 +278,10 @@
             top: 0;
             left: 0;
             width: 100%;
+            display: block;
         }
     </style>
-    <header class="ConteudoFixoNaTela">
+    <header class="ConteudoFixoNaTela" id="ConteudoFixoNaTela">
         <nav>
             <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/Filosofia%20Em%20Dia.html"
                 class="link">FiloSofos</a>
@@ -756,6 +757,17 @@
             })
         }
         EscreverComentario()
+        const EventoDoScrollQuandoRolado = () => {
+            window.addEventListener('scroll', (EventoDoScroll) => {
+                let ConteudoFixoNaTela = document.getElementById('ConteudoFixoNaTela')
+                if (window.scrollY > 40) {
+                    ConteudoFixoNaTela.style.display = 'none'
+                } else {
+                    ConteudoFixoNaTela.style.display = 'block'
+                }
+            })
+        }   
+        EventoDoScrollQuandoRolado()
     </script>
 </body>
 
