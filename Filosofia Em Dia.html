@@ -355,7 +355,8 @@
                     permanece.
                     <br><br>
                     Em outras palavras, a essência das coisas é permanente, não sofre ação do tempo. Parmênides afirma
-                    que se as coisas não possuíssem uma permanência e mudassem o tempo todo, nada poderia ser conhecido e o conhecimento seria impossível.
+                    que se as coisas não possuíssem uma permanência e mudassem o tempo todo, nada poderia ser conhecido
+                    e o conhecimento seria impossível.
                     <br><br><br>
                     Para Parmênides, tudo o que pode ser pensado existe, já que não se pode pensar no não-ser. Não é
                     possível pensar naquilo que não existe. Assim, a mudança seria falsa, baseada na ideia do que é
@@ -412,10 +413,12 @@
                     Assim, Platão cria o seu chamado dualismo, divisão do mundo em dois, entre o mundo das ideias e o
                     mundo sensível:
                     <br><br>
-                    <b>Mundo das Ideias (mundo inteligível)</b> - Lugar onde residem as ideias, as essências das coisas, que só
+                    <b>Mundo das Ideias (mundo inteligível)</b> - Lugar onde residem as ideias, as essências das coisas,
+                    que só
                     podem ser conhecidas através da razão. Lugar da alma, da pureza e da verdade.
                     <br><br>
-                    <b>Mundo Sensível</b> - Lugar das imitações das ideias, onde residem as coisas que são conhecidas através
+                    <b>Mundo Sensível</b> - Lugar das imitações das ideias, onde residem as coisas que são conhecidas
+                    através
                     dos sentidos. Lugar do corpo, do erro e da opinião.
                 </p>
                 <p class="espaço">Créditos: <a href="https://www.todamateria.com.br/filosofos-mais-importantes/"
@@ -700,28 +703,26 @@
                 <hr>
             </article>
             <article>
-                
+
             </article>
         </aside>
     </main>
-        <form class="comentarios">
-            <label>Nome</label>
-            <input type="text" id="EscreverNome" class="largura" placeholder="Seu nome*">
-            <label>Email</label>
-            <input type="email" id="EscreverEmail" class="largura" placeholder="Seu email*">
-            <button type="button" id="ComentarBotao" class="comentar">Comentar</button>
-        </form>
-        <form class="comentarios">
-            <h3 class="espaço deixeseucomentario">Deixe seu comentario</h3>
-            <input type="text" id="EscrevendoComentarios" class="comentario largura" placeholder="Sua mensagem*">
-        </form>
-        <div id="ComentariosEscritos" class="ComentariosEscritos"></div>
+    <form class="comentarios">
+        <label>Nome</label>
+        <input type="text" id="EscreverNome" class="largura" placeholder="Seu nome*" required>
+        <label>Email</label>
+        <input type="email" id="EscreverEmail" class="largura" placeholder="Seu email*" required>
+        <button type="button" id="ComentarBotao" class="comentar">Comentar</button>
+    </form>
+    <form class="comentarios">
+        <h3 class="espaço deixeseucomentario">Deixe seu comentario</h3>
+        <input type="text" id="EscrevendoComentarios" class="comentario largura" placeholder="Sua mensagem*">
+    </form>
+    <div id="ComentariosEscritos" class="ComentariosEscritos"></div>
     <footer>
     </footer>
     <script>
         const EscreverComentario = () => {
-            let EscreverNome = document.getElementById('EscreverNome')
-            let EscreverEmail = document.getElementById('EscreverEmail')
             let ComentarBotao = document.getElementById('ComentarBotao')
             let ComentariosEscritos = document.getElementById('ComentariosEscritos')
             class MostrarComentario {
@@ -729,7 +730,7 @@
                     this.ComentarioDoComentario = ComentarioDoComentario
                 }
 
-                GetComentarioDoComentario () {
+                GetComentarioDoComentario() {
                     return this.ComentarioDoComentario
                 }
 
@@ -739,7 +740,6 @@
             }
             let ComentariosArmazenados = []
             let ComentariosAdicionados = () => {
-                ComentariosEscritos.innerHTML = ``
                 ComentariosArmazenados.forEach((Comentarios) => {
                     let NovoElemento = document.createElement('div')
                     ComentariosEscritos.appendChild(NovoElemento)
@@ -748,12 +748,19 @@
                 })
             }
             ComentarBotao.addEventListener('click', (EventoComentario) => {
+                let EscreverNome = document.getElementById('EscreverNome').value
+                let EscreverEmail = document.getElementById('EscreverEmail').value
                 let EscrevendoComentarios = document.getElementById('EscrevendoComentarios').value
-                let OsComentarios = new MostrarComentario(EscrevendoComentarios)
-                ComentariosArmazenados.push(OsComentarios)
-                document.getElementById('EscrevendoComentarios').value = ``
-                OsComentarios.GetNomeComentarioEmailComentarioComentarioDoComentario()
-                ComentariosAdicionados()
+                if (EscreverNome && EscreverEmail) {
+                    let OsComentarios = new MostrarComentario(EscrevendoComentarios)
+                    ComentariosArmazenados.push(OsComentarios)
+                    ComentariosEscritos.innerHTML = ``
+                    document.getElementById('EscreverNome').value = ''
+                    document.getElementById('EscreverEmail').value = ''
+                    document.getElementById('EscrevendoComentarios').value = ``
+                    OsComentarios.GetNomeComentarioEmailComentarioComentarioDoComentario()
+                    ComentariosAdicionados()
+                }
             })
         }
         EscreverComentario()
@@ -766,7 +773,7 @@
                     ConteudoFixoNaTela.style.display = 'block'
                 }
             })
-        }   
+        }
         EventoDoScrollQuandoRolado()
     </script>
 </body>
