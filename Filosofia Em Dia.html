@@ -751,7 +751,7 @@
                 let EscreverNome = document.getElementById('EscreverNome').value
                 let EscreverEmail = document.getElementById('EscreverEmail').value
                 let EscrevendoComentarios = document.getElementById('EscrevendoComentarios').value
-                if (EscreverNome && EscreverEmail) {
+                if (EscreverNome && EscreverEmail && EscrevendoComentarios) {
                     let OsComentarios = new MostrarComentario(EscrevendoComentarios)
                     ComentariosArmazenados.push(OsComentarios)
                     ComentariosEscritos.innerHTML = ``
