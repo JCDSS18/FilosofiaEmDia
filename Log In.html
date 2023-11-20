@@ -93,17 +93,25 @@
             cursor: pointer;
         }
     </style>
+
+    <!--Caixa de Login da Página-->
     <form>
         <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/Log%20In.html">
             <label>LoG In</label>
         </a>
+
         <input type="email" name="username" id="Email" value="" placeholder="Email" required>
         <input type="password" name="password" id="Senha" value="" placeholder="Senha" required>
+
         <button type="button" id="ButãoDeLogin">LoG In</button>
     </form>
+
     <script>
+
+        //Fazer Login na Página
         const LoginNoFilosofiaEmDia = () => {
             let ButãoDeLogin = document.getElementById('ButãoDeLogin')
+
             class EmailESenha { 
                 constructor (EmailDeLogin, SenhaDeLogin) {
                     this.EmailDeLogin = EmailDeLogin
@@ -116,22 +124,23 @@
                 }
             }
             let MatrizDeEmailESenha = []
-            const AdicionadosEmailESenha = () => {
-                let 
-            }
+
             ButãoDeLogin.addEventListener('click', () => {
                 let Email = document.getElementById('Email').value
                 let Senha = document.getElementById('Senha').value
                 let OsEmailsESenhas = new EmailESenha(Email, Senha)
+
                 MatrizDeEmailESenha.push(OsEmailsESenhas)
                 document.getElementById('Email').value = ''
                 document.getElementById('Senha').value = ''
                 OsEmailsESenhas.GetDeEmailESenha()
+                
                 if(Email && Senha) {
                     window.location.href = 'http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/Filosofia%20Em%20Dia.html'
                 }
             })
         }
+
         LoginNoFilosofiaEmDia()
     </script>
 </body>
