@@ -177,19 +177,26 @@
         }
     </style>
     <header class="ConteudoFixoNaTela" id="ConteudoFixoNaTela">
+
+        <!--Barra de Navegação da página-->
         <nav>
             <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/Filosofia%20Em%20Dia.html"
                 class="link">FiloSofos</a>
+
             <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/FraSes.html" class="link">FraSes</a>
+
             <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/BioGrafia.html" class="link">BioGraFia</a>
+
             <form>
                 <input type="text" class="">
             </form>
+
             <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/Log%20In.html" class="link">Log In</a>
         </nav>
     </header>
     <main>
         <section>
+            <!--Tales de Mileto-->
             <article>
                 <a href="" class="nomes">
                     <h2 class="espaço">Tales de Mileto</h2>
@@ -251,6 +258,8 @@
                     </p>
                 </div>
             </article>
+
+            <!--Heraclito de Éfeso-->
             <article>
                 <a href="" class="nomes">
                     <h2 class="espaço">Heraclito de Éfeso</h2>
@@ -309,6 +318,8 @@
                     </p>
                 </div>
             </article>
+
+            <!--Parmênides-->
             <article>
                 <a href="" class="nomes">
                     <h2 class="espaço">Parmênides</h2>
@@ -351,6 +362,8 @@
                     </p>
                 </div>
             </article>
+
+            <!--Sócrates-->
             <article>
                 <a href="" class="nomes">
                     <h2 class="espaço">Sócrates</h2>
@@ -401,6 +414,8 @@
                     </p>
                 </div>
             </article>
+
+            <!--Platão-->
             <article>
                 <a href="" class="nomes">
                     <h2 class="espaço">Platão</h2>
@@ -434,6 +449,8 @@
                     </p>
                 </div>
             </article>
+
+            <!--Aristóteles-->
             <article>
                 <a href="" class="nomes">
                     <h2 class="espaço">Aristóteles</h2>
@@ -462,6 +479,8 @@
                     </p>
                 </div>
             </article>
+
+            <!--Santo Agostinho-->
             <article>
                 <a href="" class="nomes">
                     <h2 class="espaço">Santo Agostinho</h2>
@@ -488,7 +507,6 @@
                         Aos 32 anos, após uma experiência de conversão em Milão, Agostinho converteu-se ao cristianismo
                         sob a influência de um sermão de Santo Ambrósio e da perseverança de sua mãe, Mônica. Ele foi
                         batizado por Santo Ambrósio em 387.
-
                     </p>
                     <p class="FlexItem">
                         <b>Vida Monástica e Ordenação:</b>
@@ -517,6 +535,7 @@
         const EventoDoScrollQuandoRolado = () => {
             window.addEventListener('scroll', (EventoDoScroll) => {
                 let ConteudoFixoNaTela = document.getElementById('ConteudoFixoNaTela')
+
                 if (window.scrollY > 40) {
                     ConteudoFixoNaTela.style.display = 'none'
                 } else {
@@ -524,6 +543,7 @@
                 }
             })
         }
+
         EventoDoScrollQuandoRolado()
     </script>
 </body>
