@@ -37,8 +37,10 @@
         }
 
         main {
-            display: flex;
+            padding: 20px;
             margin-top: 65px;
+            margin-bottom: -20px;
+            display: flex;
         }
 
         input {
@@ -61,15 +63,12 @@
 
         section {
             width: 50%;
-            padding: 20px;
         }
 
         article {
-            padding: 30px;
-            padding-left: 50px;
-            padding-right: 50px;
             margin-bottom: 20px;
-            border-radius: 100px;
+            padding: 30px;
+            border-radius: 10px;
             background-color: wheat;
             box-shadow: 2px 2px 2px 2px black;
         }
@@ -78,8 +77,18 @@
             box-shadow: 2px 2px 2px 2px white;
         }
 
+        label {
+            font-weight: bold;
+            margin-left: 5px;
+        }
+
+        h3 {
+            margin-left: 5px;
+        }
+
         footer {
             padding: 100px 100px 50px 100px;
+            margin-top: 30px;
             background-color: bisque;
             box-shadow: 0px 0px 2px 2px black;
         }
@@ -122,13 +131,87 @@
             width: 100%;
             display: block;
         }
+
+        .comentarios {
+            width: 42.5%;
+            background-color: wheat;
+            margin: 0px 0px 20px 20px;
+            padding: 30px;
+            padding-right: 40px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 2px black;
+        }
+
+        .comentarios:hover {
+            box-shadow: 2px 2px 2px 2px white;
+        }
+
+        .largura {
+            width: 97%;
+            margin: 10px 0px 15px 0px;
+            padding: 5px 0px 5px 10px;
+            border-radius: 12px;
+            box-shadow: 2px 2px 0px 0px black;
+            color: black;
+            background-color: white;
+        }
+
+        .largura:hover {
+            box-shadow: 2px 2px 0px 0px white;
+            color: white;
+            background-color: black;
+        }
+
+        .comentar {
+            width: 99%;
+            margin: 10px 0px 20px 0px;
+            border-radius: 10px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            box-shadow: 2px 2px 0px 0px black;
+            color: black;
+            font-weight: bold;
+            background-color: white;
+        }
+
+        .comentar:hover {
+            box-shadow: 2px 2px 0px 0px white;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+        }
+
+        .comentario {
+            width: 96%;
+            padding-top: 10px;
+            padding-bottom: 100px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 0px 0px black;
+            color: black;
+            background-color: white;
+        }
+
+        .comentario:hover {
+            box-shadow: 2px 2px 0px 0px white;
+            color: white;
+            background-color: black;
+        }
+
+        .ComentariosDoPublico {
+            width: 43.4%;
+            background-color: wheat;
+            margin: 0px 0px 30px 20px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 2px black;
+        }
     </style>
+
     <header class="ConteudoFixoNaTela" id="ConteudoFixoNaTela">
         <nav>
             <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/Filosofia%20Em%20Dia.html"
                 class="link">FiloSofos</a>
-            <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/FraSes.html"
-                class="link">FraSes</a>
+            <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/FraSes.html" class="link">FraSes</a>
             <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/BioGrafia.html" class="link">BioGraFia</a>
             <form>
                 <input type="text" class="">
@@ -136,46 +219,134 @@
             <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/Log%20In.html" class="link">Log In</a>
         </nav>
     </header>
+
     <main>
         <section>
             <article>
                 <p class="margin">"Eles consequem dinheiro para a guerra, mas não consequem acabar com a pobreza."</p>
+
                 <p>Créditos: <a href="https://www.instagram.com/p/Cyds6VrrOSr/" class="url">filosofia.liquida</a></p>
             </article>
+
             <article>
                 <p class="margin">"Chega de homenagens. Eu quero o dinheiro."</p>
+
                 <p>Créditos: <a href="https://www.instagram.com/p/Cyb_E77rC_I/" class="url">filosofia.liquida</a></p>
             </article>
+
             <article>
-                <p class="margin">"Infeliz quem não amou mais do que corpos, formas e aparências. A morte irá tirar tudo. Tente amar as
+                <p class="margin">"Infeliz quem não amou mais do que corpos, formas e aparências. A morte irá tirar
+                    tudo. Tente amar as
                     almas e um dia você as encontrará novamente."
                 </p>
+
                 <p>Créditos: <a href="https://www.instagram.com/p/CybOA6ZgAcL/" class="url">filosofia.incerta</a></p>
             </article>
+
             <article>
-                <p class="margin">O que te preocupa te escraviza.</p>
+                <p class="margin">"O que te preocupa te escraviza."</p>
+
                 <p>Créditos: <a href="https://www.instagram.com/p/CzfE5Khr_bK/" class="url">filosofia.liquida</a></p>
             </article>
+
             <article>
-                <p class="margin">Qual é o sentido da vida? Não há sentido algum, mas você pode criar o seu!</p>
+                <p class="margin">"Qual é o sentido da vida? Não há sentido algum, mas você pode criar o seu!"</p>
+
                 <p>Créditos: <a href="https://www.instagram.com/p/CzdpgCdrid_/" class="url">filosofia.liquida</a></p>
+            </article>
+
+            <article>
+                <p class="margin">"Tenho que encontrar uma verdade para mim mesmo, encontrar aquela ideia pela qual quero
+                    viver e morrer. -Soren Kierkegaard-"</p>
+
+                <p>Créditos: <a href="" class="url"></a></p>
             </article>
         </section>
     </main>
+
+    <form class="comentarios">
+        <label>Nome</label>
+        <input type="text" id="EscreverNome" class="largura" placeholder="Seu nome*" required>
+        <label>Email</label>
+        <input type="email" id="EscreverEmail" class="largura" placeholder="Seu email*" required>
+        <button type="button" id="ComentarBotao" class="comentar">Comentar</button>
+    </form>
+
+    <form class="comentarios">
+        <h3 class="espaço deixeseucomentario">Deixe seu comentario</h3>
+        <input type="text" id="EscrevendoComentarios" class="comentario largura" placeholder="Sua mensagem*">
+    </form>
+
+    <div id="ComentariosEscritos" class="ComentariosEscritos"></div>
+
     <footer>
-        
     </footer>
+
     <script>
+
+        //Os Comentarios Dos Espectadores
+        const EscreverComentario = () => {
+            let ComentarBotao = document.getElementById('ComentarBotao')
+            let ComentariosEscritos = document.getElementById('ComentariosEscritos')
+            class MostrarComentario {
+                constructor(ComentarioDoComentario) {
+                    this.ComentarioDoComentario = ComentarioDoComentario
+                }
+
+                GetComentarioDoComentario() {
+                    return this.ComentarioDoComentario
+                }
+
+                GetNomeComentarioEmailComentarioComentarioDoComentario() {
+                    console.log(`Comentario = ${this.ComentarioDoComentario}`)
+                }
+            }
+
+            let ComentariosArmazenados = []
+
+            let ComentariosAdicionados = () => {
+                ComentariosArmazenados.forEach((Comentarios) => {
+                    let NovoElemento = document.createElement('div')
+
+                    ComentariosEscritos.appendChild(NovoElemento)
+                    NovoElemento.classList.add('ComentariosDoPublico')
+                    NovoElemento.innerHTML = `${Comentarios.GetComentarioDoComentario()}`
+                })
+            }
+
+            ComentarBotao.addEventListener('click', (EventoComentario) => {
+                let EscreverNome = document.getElementById('EscreverNome').value
+                let EscreverEmail = document.getElementById('EscreverEmail').value
+                let EscrevendoComentarios = document.getElementById('EscrevendoComentarios').value
+
+                if (EscreverNome && EscreverEmail && EscrevendoComentarios) {
+                    let OsComentarios = new MostrarComentario(EscrevendoComentarios)
+                    ComentariosArmazenados.push(OsComentarios)
+                    ComentariosEscritos.innerHTML = ``
+                    document.getElementById('EscreverNome').value = ''
+                    document.getElementById('EscreverEmail').value = ''
+                    document.getElementById('EscrevendoComentarios').value = ``
+                    OsComentarios.GetNomeComentarioEmailComentarioComentarioDoComentario()
+                    ComentariosAdicionados()
+                }
+            })
+        }
+
+        EscreverComentario()
+
+        //Barra de Navegação Oculta Quando Rola o Scroll
         const EventoDoScrollQuandoRolado = () => {
             window.addEventListener('scroll', (EventoDoScroll) => {
                 let ConteudoFixoNaTela = document.getElementById('ConteudoFixoNaTela')
+
                 if (window.scrollY > 40) {
                     ConteudoFixoNaTela.style.display = 'none'
                 } else {
                     ConteudoFixoNaTela.style.display = 'block'
                 }
             })
-        }   
+        }
+
         EventoDoScrollQuandoRolado()
     </script>
 </body>
