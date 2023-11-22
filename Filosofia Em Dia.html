@@ -48,11 +48,12 @@
         main {
             display: flex;
             margin-top: 70px;
+            padding: 20px;
         }
 
         section {
             width: 70%;
-            padding: 20px;
+            margin-right: 10px;
         }
 
         article {
@@ -74,7 +75,7 @@
 
         aside {
             width: 40%;
-            padding: 20px;
+            margin-left: 10px;
         }
 
         h4 {
@@ -109,6 +110,7 @@
 
         footer {
             padding: 100px 100px 50px 100px;
+            margin-top: 30px;
             background-color: bisque;
             box-shadow: 0px 0px 2px 2px black;
         }
@@ -164,9 +166,9 @@
         }
 
         .comentarios {
-            width: 54.5%;
+            width: 55.5%;
             background-color: wheat;
-            margin: 0px 0px 30px 20px;
+            margin: 0px 0px 20px 20px;
             padding: 30px;
             border-radius: 10px;
             box-shadow: 2px 2px 2px 2px black;
@@ -265,7 +267,7 @@
         }
 
         .ComentariosDoPublico {
-            width: 54.5%;
+            width: 55.5%;
             background-color: wheat;
             margin: 0px 0px 30px 20px;
             padding: 30px;
@@ -561,7 +563,7 @@
 
                 <!--Maquiavel-->
                 <a href="https://pt.wikipedia.org/wiki/Nicolau_Maquiavel" class="nomes">
-                    <h2 class="espaço">Maquiavel</h2>
+                    <h2 class="espaço">Niccolò Machiavelli</h2>
                 </a>
 
                 <a href="https://pt.wikipedia.org/wiki/Nicolau_Maquiavel">
@@ -851,6 +853,8 @@
     </footer>
 
     <script>
+
+        //Os Comentarios Dos Espectadores
         const EscreverComentario = () => {
             let ComentarBotao = document.getElementById('ComentarBotao')
             let ComentariosEscritos = document.getElementById('ComentariosEscritos')
@@ -900,6 +904,7 @@
 
         EscreverComentario()
 
+        //Barra de Navegação Oculta Quando Rola o Scroll
         const EventoDoScrollQuandoRolado = () => {
             window.addEventListener('scroll', (EventoDoScroll) => {
                 let ConteudoFixoNaTela = document.getElementById('ConteudoFixoNaTela')
