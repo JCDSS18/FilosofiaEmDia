@@ -40,6 +40,7 @@
             display: flex;
             padding: 25px;
             margin-top: 60px;
+            margin-bottom: -20px;
         }
 
         section {
@@ -85,7 +86,7 @@
 
         footer {
             padding: 100px 100px 50px 100px;
-            margin-top: -10px;
+            margin-top: 30px;
             background-color: bisque;
             box-shadow: 0px 0px 2px 2px black;
         }
@@ -175,6 +176,78 @@
             left: 0;
             width: 100%;
             display: block;
+        }
+
+        .comentarios {
+            width: 91.5%;
+            background-color: wheat;
+            margin: 0px 0px 20px 20px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 2px black;
+        }
+
+        .comentarios:hover {
+            box-shadow: 2px 2px 2px 2px white;
+        }
+
+        .largura {
+            width: 97.8%;
+            margin: 10px 0px 15px 0px;
+            padding: 5px 0px 5px 10px;
+            border-radius: 12px;
+            box-shadow: 2px 2px 0px 0px black;
+            color: black;
+            background-color: white;
+        }
+
+        .largura:hover {
+            box-shadow: 2px 2px 0px 0px white;
+            color: white;
+            background-color: black;
+        }
+
+        .comentar {
+            width: 99%;
+            margin: 10px 0px 20px 0px;
+            border-radius: 10px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            box-shadow: 2px 2px 0px 0px black;
+            color: black;
+            font-weight: bold;
+            background-color: white;
+        }
+
+        .comentar:hover {
+            box-shadow: 2px 2px 0px 0px white;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+        }
+
+        .comentario {
+            width: 97.8%;
+            padding-top: 10px;
+            padding-bottom: 100px;
+            box-shadow: 2px 2px 0px 0px black;
+            color: black;
+            background-color: white;
+        }
+
+        .comentario:hover {
+            box-shadow: 2px 2px 0px 0px white;
+            color: white;
+            background-color: black;
+        }
+
+        .ComentariosDoPublico {
+            width: 91.5%;
+            background-color: wheat;
+            margin: 0px 0px 30px 20px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 2px black;
         }
     </style>
 
@@ -605,7 +678,7 @@
                     <h2 class="espaço">Niccolò Machiavelli</h2>
                 </a>
 
-                <div class="flex">
+                <div class="flex espaço">
                     <p class="FlexItem">
                         Niccolò Machiavelli (1469-1527) foi um importante pensador político, filósofo, diplomata e
                         historiador italiano durante o Renascimento. Ele é mais conhecido por sua obra "O Príncipe" (Il
@@ -665,11 +738,26 @@
         </section>
     </main>
 
+    <!--Comentarios Dos Espectadores-->
+    <form class="comentarios">
+        <label>Nome</label>
+        <input type="text" id="EscreverNome" class="largura" placeholder="Seu nome*" required>
+        <label>Email</label>
+        <input type="email" id="EscreverEmail" class="largura" placeholder="Seu email*" required>
+        <button type="button" id="ComentarBotao" class="comentar">Comentar</button>
+    </form>
+
+    <form class="comentarios">
+        <h3 class="espaço deixeseucomentario">Deixe seu comentario</h3>
+        <input type="text" id="EscrevendoComentarios" class="comentario largura" placeholder="Sua mensagem*">
+    </form>
+
+    <div id="ComentariosEscritos" class="ComentariosEscritos"></div>
+
     <footer>
     </footer>
 
     <script>
-
         //Barra de Navegação Oculta Quando Rola o Scroll
         const EventoDoScrollQuandoRolado = () => {
             window.addEventListener('scroll', (EventoDoScroll) => {
@@ -684,6 +772,57 @@
         }
 
         EventoDoScrollQuandoRolado()
+
+        //Os Comentarios Dos Espectadores
+        const EscreverComentario = () => {
+            let ComentarBotao = document.getElementById('ComentarBotao')
+            let ComentariosEscritos = document.getElementById('ComentariosEscritos')
+
+            class MostrarComentario {
+                constructor(ComentarioDoComentario) {
+                    this.ComentarioDoComentario = ComentarioDoComentario
+                }
+
+                GetComentarioDoComentario() {
+                    return this.ComentarioDoComentario
+                }
+
+                GetNomeComentarioEmailComentarioComentarioDoComentario() {
+                    console.log(`Comentario = ${this.ComentarioDoComentario}`)
+                }
+            }
+
+            let ComentariosArmazenados = []
+
+            let ComentariosAdicionados = () => {
+                ComentariosArmazenados.forEach((Comentarios) => {
+                    let NovoElemento = document.createElement('div')
+
+                    ComentariosEscritos.appendChild(NovoElemento)
+                    NovoElemento.classList.add('ComentariosDoPublico')
+                    NovoElemento.innerHTML = `${Comentarios.GetComentarioDoComentario()}`
+                })
+            }
+
+            ComentarBotao.addEventListener('click', (EventoComentario) => {
+                let EscreverNome = document.getElementById('EscreverNome').value
+                let EscreverEmail = document.getElementById('EscreverEmail').value
+                let EscrevendoComentarios = document.getElementById('EscrevendoComentarios').value
+
+                if (EscreverNome && EscreverEmail && EscrevendoComentarios) {
+                    let OsComentarios = new MostrarComentario(EscrevendoComentarios)
+                    ComentariosArmazenados.push(OsComentarios)
+                    ComentariosEscritos.innerHTML = ``
+                    document.getElementById('EscreverNome').value = ''
+                    document.getElementById('EscreverEmail').value = ''
+                    document.getElementById('EscrevendoComentarios').value = ``
+                    OsComentarios.GetNomeComentarioEmailComentarioComentarioDoComentario()
+                    ComentariosAdicionados()
+                }
+            })
+        }
+
+        EscreverComentario()
     </script>
 </body>
 
