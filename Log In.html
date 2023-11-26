@@ -35,7 +35,7 @@
             border-radius: 10px;
             background-color: wheat;
             background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg/670px-%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg);
-            box-shadow: 2px 2px 2px 2px black;
+            box-shadow: 2px 2px 2px 2px black;  
         }
 
         form:hover {
@@ -92,6 +92,21 @@
             background-color: black;
             cursor: pointer;
         }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: bisque;
+            box-shadow: 1px 1px 1px 1px black;
+        }
     </style>
 
     <!--Caixa de Login da Página-->
@@ -123,6 +138,7 @@
                     console.log(`Senha: ${this.SenhaDeLogin}`)
                 }
             }
+            
             let MatrizDeEmailESenha = []
 
             ButãoDeLogin.addEventListener('click', () => {
