@@ -47,7 +47,7 @@
 
         main {
             display: flex;
-            margin-top: 70px;
+            margin-top: 65px;
             padding: 20px;
         }
 
@@ -141,7 +141,7 @@
         .tamanho {
             width: 100px;
             box-shadow: 2px 2px 2px 2px black;
-            margin: 0px 20px 0px 0px;
+            margin: 0px 20px 15px 0px;
             float: left;
         }
 
@@ -282,6 +282,37 @@
             width: 100%;
             display: block;
         }
+
+        .SetaParaRetornarParaCima {
+            display: inline;
+            width: 3%;
+            position: fixed;
+            top: 92%;
+            left: 95%;
+        }
+
+        .SetaParaRetornarParaCima:hover {
+            cursor: pointer;
+        }
+
+        .FormatoDaSetaParaRetornarParaCima {
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: bisque;
+            box-shadow: 1px 1px 1px 1px black;
+        }
     </style>
 
     <header class="ConteudoFixoNaTela" id="ConteudoFixoNaTela">
@@ -384,7 +415,7 @@
                     Em outras palavras, a essência das coisas é permanente, não sofre ação do tempo. Parmênides afirma
                     que se as coisas não possuíssem uma permanência e mudassem o tempo todo, nada poderia ser conhecido
                     e o conhecimento seria impossível.
-                    <br><br><br>
+                    <br><br>
                     Para Parmênides, tudo o que pode ser pensado existe, já que não se pode pensar no não-ser. Não é
                     possível pensar naquilo que não existe. Assim, a mudança seria falsa, baseada na ideia do que é
                     (ser) se modificando para aquilo que não é (não-ser).
@@ -482,15 +513,13 @@
                     A produção de Aristóteles é muito vasta, seus escritos possuem como temas: ética, política, lógica,
                     física, poética, retórica, etc.
                     <br><br>
-                    Diferente de Platão, Aristóteles afirmava que o conhecimento tem início nos <br><br> sentidos, mas
-                    que podem
-                    evoluir ao pensamento racional.
+                    Diferente de Platão, Aristóteles afirmava que o conhecimento tem início nos sentidos, mas
+                    que podem evoluir ao pensamento racional.
                     <br><br>
                     Seus escritos sobre a política afirmam que os seres humanos são determinados pela natureza a viver
                     em sociedade.
                     <br><br>
                     Assim, para Aristóteles, fazer política é o que diferencia o ser humano dos outros animais.
-                    <br><br>
                     No campo da ética, o filósofo acreditava que o objetivo da vida humana era a felicidade e o Bem, que
                     só poderia ser alcançado através do conhecimento e da prática das virtudes.
                     <br><br>
@@ -519,7 +548,7 @@
                     <br><br>
                     O filósofo buscou unir a tradição da filosofia grega desenvolvida em um período politeísta, no qual
                     se acreditava em muitos deuses, com a religião cristã, monoteísta (crença em apenas um Deus).
-                    <br><br><br>
+                    <br><br>
                     Para isso, Agostinho de Hipona, tomou como base o pensamento de Platão. A distinção feita por Platão
                     entre aparência (falsa) e essência (verdadeira) e a compreensão da alma como sendo superior e mais
                     pura que o corpo serviu de base para o desenvolvimento da doutrina cristã.
@@ -684,7 +713,7 @@
                     <br><br>
                     Para isso, Kant buscou unir as concepções empiristas e racionalistas e criar uma nova compreensão
                     sobre a razão e os limites do conhecimento humano.
-                    <br><br><br>
+                    <br><br>
                     No campo da Ética, Kant buscou fundamentar a moral na própria razão, não mais em agentes externos
                     como a religião e criar regras para o seu desenvolvimento.
                 </p>
@@ -710,7 +739,7 @@
                     <br><br>
                     Seu pensamento é centrado na figura do ser, o sujeito, que compreende a si e a tudo o que existe
                     através de sua estrutura dialética: tese, antítese e síntese:
-                    <br><br><br><br>
+                    <br><br>
                     <b>Tese:</b> aquilo que é dito ou pensado.
                     <br><br>
                     <b>Antítese:</b> o oposto da tese.
@@ -739,7 +768,6 @@
                     <br><br>
                     Boa parte de sua obra se desenvolve através de aforismos, frases curtas que transmitem uma ideia ou
                     preceito, talvez isso faça com que o autor possua muitas frases conhecidas.
-                    <br><br><br>
                     Para o filósofo, a cultura judaico-cristã é a negação da vida por estar fundamentada na morte e no
                     desprezo ao corpo.
                     <br><br>
@@ -798,9 +826,8 @@
                     <br><br>
                     A princípio sentiu vocação para ser padre e ingressou num seminário jesuíta. Estudou teologia e
                     filosofia na Universidade de Friburgo.
-                    <br><br>
                     No entanto, ao ler os escritos de Calvino e Lutero, desiste da vida religiosa e se casa em 1917.
-                    <br><br><br>
+                    <br><br>
                     Trabalha como assistente do professor Edmund Husserl na Universidade de Marburg. Posteriormente, o
                     sucederia na disciplina de Filosofia, na Universidade de Friburgo.
                 </p>
@@ -849,15 +876,37 @@
 
     <div id="ComentariosEscritos" class="ComentariosEscritos"></div>
 
+    <div id="SetaParaRetornarParaCima" class="SetaParaRetornarParaCima FormatoDaSetaParaRetornarParaCima">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.YNH6UZiHyA6TCQqIUZR6jgHaHa%26pid%3DApi&f=1&ipt=7c107ec7c25723afd482d6134946cc9f055c775bdd1ee08157c78ff757c58987&ipo=images"
+            alt="" class="SetaParaRetornarParaCima FormatoDaSetaParaRetornarParaCima"
+            onclick="MoverParaCimaQuandoClicado()">
+    </div>
+
     <footer>
     </footer>
 
     <script>
 
+        //Barra de Navegação Oculta Quando Rola o Scroll
+        const EventoDoScrollQuandoRolado = () => {
+            window.addEventListener('scroll', (EventoDoScroll) => {
+                let ConteudoFixoNaTela = document.getElementById('ConteudoFixoNaTela')
+
+                if (window.scrollY > 40) {
+                    ConteudoFixoNaTela.style.display = 'none'
+                } else {
+                    ConteudoFixoNaTela.style.display = 'block'
+                }
+            })
+        }
+
+        EventoDoScrollQuandoRolado()
+
         //Os Comentarios Dos Espectadores
         const EscreverComentario = () => {
             let ComentarBotao = document.getElementById('ComentarBotao')
             let ComentariosEscritos = document.getElementById('ComentariosEscritos')
+
             class MostrarComentario {
                 constructor(ComentarioDoComentario) {
                     this.ComentarioDoComentario = ComentarioDoComentario
@@ -891,6 +940,7 @@
 
                 if (EscreverNome && EscreverEmail && EscrevendoComentarios) {
                     let OsComentarios = new MostrarComentario(EscrevendoComentarios)
+
                     ComentariosArmazenados.push(OsComentarios)
                     ComentariosEscritos.innerHTML = ``
                     document.getElementById('EscreverNome').value = ''
@@ -904,20 +954,34 @@
 
         EscreverComentario()
 
-        //Barra de Navegação Oculta Quando Rola o Scroll
-        const EventoDoScrollQuandoRolado = () => {
-            window.addEventListener('scroll', (EventoDoScroll) => {
-                let ConteudoFixoNaTela = document.getElementById('ConteudoFixoNaTela')
+        //Seta é ocultada quando proximo do fim da pagina
+        document.addEventListener('DOMContentLoaded', () => {
+            let BottomSetaParaCima = document.getElementById('BottomSetaParaCima')
+            let SetaParaRetornarParaCima = document.getElementById('SetaParaRetornarParaCima')
 
-                if (window.scrollY > 40) {
-                    ConteudoFixoNaTela.style.display = 'none'
+            SetaParaRetornarParaCima.style.display = 'none'
+
+            window.addEventListener('scroll', (EventoDoScroll) => {
+                let PosicaoAtualDaTela = window.pageYOffset
+                let AlturaTotalDaTela = document.documentElement.scrollHeight
+                let AlturaDaTela = window.innerHeight
+
+                let LimiteAtingido = AlturaTotalDaTela - AlturaDaTela
+
+                if (window.scrollY || PosicaoAtualDaTela == LimiteAtingido) {
+                    SetaParaRetornarParaCima.style.display = 'inline'
                 } else {
-                    ConteudoFixoNaTela.style.display = 'block'
+                    SetaParaRetornarParaCima.style.display = 'none'
                 }
             })
-        }
+        })
 
-        EventoDoScrollQuandoRolado()
+        //Pagina é movida para o topo quando clicada no botao
+        const MoverParaCimaQuandoClicado = () => {
+            let NovaPosicao = 0
+
+            window.scrollTo(0, NovaPosicao)
+        }
     </script>
 </body>
 
