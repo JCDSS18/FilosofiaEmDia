@@ -249,6 +249,37 @@
             border-radius: 10px;
             box-shadow: 2px 2px 2px 2px black;
         }
+
+        .SetaParaRetornarParaCima {
+            display: inline;
+            width: 3%;
+            position: fixed;
+            top: 92%;
+            left: 95%;
+        }
+
+        .SetaParaRetornarParaCima:hover {
+            cursor: pointer;
+        }
+
+        .FormatoDaSetaParaRetornarParaCima {
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: bisque;
+            box-shadow: 1px 1px 1px 1px black;
+        }
     </style>
 
     <header class="ConteudoFixoNaTela" id="ConteudoFixoNaTela">
@@ -754,6 +785,12 @@
 
     <div id="ComentariosEscritos" class="ComentariosEscritos"></div>
 
+    <div id="SetaParaRetornarParaCima" class="SetaParaRetornarParaCima FormatoDaSetaParaRetornarParaCima">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.YNH6UZiHyA6TCQqIUZR6jgHaHa%26pid%3DApi&f=1&ipt=7c107ec7c25723afd482d6134946cc9f055c775bdd1ee08157c78ff757c58987&ipo=images"
+            alt="" class="SetaParaRetornarParaCima FormatoDaSetaParaRetornarParaCima"
+            onclick="MoverParaCimaQuandoClicado()">
+    </div>
+
     <footer>
     </footer>
 
@@ -811,6 +848,7 @@
 
                 if (EscreverNome && EscreverEmail && EscrevendoComentarios) {
                     let OsComentarios = new MostrarComentario(EscrevendoComentarios)
+
                     ComentariosArmazenados.push(OsComentarios)
                     ComentariosEscritos.innerHTML = ``
                     document.getElementById('EscreverNome').value = ''
@@ -823,6 +861,35 @@
         }
 
         EscreverComentario()
+
+        //Seta é ocultada quando proximo do fim da pagina
+        document.addEventListener('DOMContentLoaded', () => {
+            let BottomSetaParaCima = document.getElementById('BottomSetaParaCima')
+            let SetaParaRetornarParaCima = document.getElementById('SetaParaRetornarParaCima')
+
+            SetaParaRetornarParaCima.style.display = 'none'
+
+            window.addEventListener('scroll', (EventoDoScroll) => {
+                let PosicaoAtualDaTela = window.pageYOffset
+                let AlturaTotalDaTela = document.documentElement.scrollHeight
+                let AlturaDaTela = window.innerHeight
+
+                let LimiteAtingido = AlturaTotalDaTela - AlturaDaTela
+
+                if (window.scrollY || PosicaoAtualDaTela == LimiteAtingido) {
+                    SetaParaRetornarParaCima.style.display = 'inline'
+                } else {
+                    SetaParaRetornarParaCima.style.display = 'none'
+                }
+            })
+        })
+
+        //Pagina é movida para o topo quando clicada no botao
+        const MoverParaCimaQuandoClicado = () => {
+            let NovaPosicao = 0
+
+            window.scrollTo(0, NovaPosicao)
+        }
     </script>
 </body>
 
