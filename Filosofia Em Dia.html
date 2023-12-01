@@ -21,6 +21,8 @@
             background-color: white;
             background-image: url();
             background-size: cover;
+            margin: 0px;
+            padding: 0px;
         }
 
         header {
@@ -300,7 +302,7 @@
         }
 
         ::-webkit-scrollbar {
-            width: 10px;
+            width: 8px;
         }
 
         ::-webkit-scrollbar-track {
@@ -857,6 +859,9 @@
                 <a href="" class="url">Link</a>
                 <hr>
             </article>
+            <article>
+                
+            </article>
         </aside>
     </main>
 
@@ -889,10 +894,10 @@
 
         //Barra de Navegação Oculta Quando Rola o Scroll
         const EventoDoScrollQuandoRolado = () => {
-            window.addEventListener('scroll', (EventoDoScroll) => {
-                let ConteudoFixoNaTela = document.getElementById('ConteudoFixoNaTela')
+            let ConteudoFixoNaTela = document.getElementById('ConteudoFixoNaTela')
 
-                if (window.scrollY > 40) {
+            window.addEventListener('scroll', (EventoDoScroll) => {
+                if (window.scrollY > 50) {
                     ConteudoFixoNaTela.style.display = 'none'
                 } else {
                     ConteudoFixoNaTela.style.display = 'block'
@@ -901,6 +906,21 @@
         }
 
         EventoDoScrollQuandoRolado()
+
+        // const RolaAPagina = () => {
+        //     let ConteudoFixoNaTela = document.getElementById('ConteudoFixoNaTela')
+        //     let UltimaPosicao = window.scrollY
+
+        //     window.addEventListener('wheel', (EventoScroll) => {
+        //         if(EventoScroll.deltaY < 0) {
+        //             ConteudoFixoNaTela.style.position = 'fixed'
+        //         } else {
+        //             ConteudoFixoNaTela.style.position = 'relative'
+        //         }
+        //     })
+        // }
+
+        // RolaAPagina()
 
         //Os Comentarios Dos Espectadores
         const EscreverComentario = () => {
@@ -948,8 +968,15 @@
                     document.getElementById('EscrevendoComentarios').value = ``
                     OsComentarios.GetNomeComentarioEmailComentarioComentarioDoComentario()
                     ComentariosAdicionados()
+
+                    // localStorage.setItem(EscreverNome, EscreverEmail)
+
+                    // let MostrarComentariosArmazenados = localStorage.getItem(EscreverNome)
+
+                    // console.log(MostrarComentariosArmazenados)
                 }
             })
+
         }
 
         EscreverComentario()
@@ -961,13 +988,13 @@
 
             SetaParaRetornarParaCima.style.display = 'none'
 
+            let PosicaoAtualDaTela = window.pageYOffset
+            let AlturaTotalDaTela = document.documentElement.scrollHeight
+            let AlturaDaTela = window.innerHeight
+
+            let LimiteAtingido = AlturaTotalDaTela - AlturaDaTela
+
             window.addEventListener('scroll', (EventoDoScroll) => {
-                let PosicaoAtualDaTela = window.pageYOffset
-                let AlturaTotalDaTela = document.documentElement.scrollHeight
-                let AlturaDaTela = window.innerHeight
-
-                let LimiteAtingido = AlturaTotalDaTela - AlturaDaTela
-
                 if (window.scrollY || PosicaoAtualDaTela == LimiteAtingido) {
                     SetaParaRetornarParaCima.style.display = 'inline'
                 } else {
