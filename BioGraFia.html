@@ -267,7 +267,7 @@
         }
 
         ::-webkit-scrollbar {
-            width: 10px;
+            width: 8px;
         }
 
         ::-webkit-scrollbar-track {
@@ -766,6 +766,45 @@
                     </p>
                 </div>
             </article>
+
+            <article>
+
+                <!--René Descartes-->
+                <a href="" class="nomes">
+                    <h2 class="espaço">René Descartes</h2>
+                </a>
+
+                <div class="flex espaço">
+                    <p class="FlexItem">
+                        René Descartes nasceu em 31 de março de 1596 em La Haye en Touraine, França, e morreu em 11 de
+                        fevereiro de 1650 em Estocolmo, Suécia. Ele foi um filósofo, matemático e cientista francês que
+                        desempenhou um papel significativo no desenvolvimento da filosofia moderna e na revolução
+                        científica do século XVII.
+                        <br><br>
+                        Descartes recebeu uma educação jesuíta na França, onde estudou retórica, gramática e filosofia.
+                        Em seus primeiros anos, mostrou interesse pela matemática e ciências naturais. Após concluir
+                        seus estudos, Descartes viajou por diferentes partes da Europa, serviu como soldado em diversos
+                        exércitos e dedicou-se ao estudo da matemática e da filosofia.
+                        <br><br>
+                        Sua obra mais conhecida, "Discurso do Método", foi publicada em 1637 e apresenta suas ideias
+                        fundamentais sobre o método científico, a dúvida metódica e a famosa frase "Cogito, ergo sum"
+                        (Penso, logo existo). Descartes também é lembrado por suas "Meditações Metafísicas", nas quais
+                        desenvolve suas concepções sobre a natureza da mente, do corpo e da relação entre mente e corpo.
+                    </p>
+
+                    <p class="FlexItem">
+                        No campo da matemática, Descartes é conhecido por desenvolver a geometria analítica, que combina
+                        álgebra e geometria, e por introduzir coordenadas cartesianas, que possibilitaram a
+                        representação gráfica de equações. Ele fez contribuições significativas para a álgebra e a
+                        teoria das equações.
+                        <br><br>
+                        Descartes passou os últimos anos de sua vida na Suécia, onde foi convidado pela rainha Cristina
+                        para lecionar filosofia. Sua saúde deteriorou-se, e ele faleceu em 1650. O legado de René
+                        Descartes é marcado por sua influência na filosofia, na matemática e na ciência, deixando uma
+                        marca duradoura na história do pensamento ocidental.
+                    </p>
+                </div>
+            </article>
         </section>
     </main>
 
@@ -800,7 +839,7 @@
             window.addEventListener('scroll', (EventoDoScroll) => {
                 let ConteudoFixoNaTela = document.getElementById('ConteudoFixoNaTela')
 
-                if (window.scrollY > 40) {
+                if (window.scrollY > 50) {
                     ConteudoFixoNaTela.style.display = 'none'
                 } else {
                     ConteudoFixoNaTela.style.display = 'block'
