@@ -62,7 +62,8 @@
         }
 
         section {
-            width: 50%;
+            width: 55%;
+            margin-right: 15px;
         }
 
         article {
@@ -77,6 +78,12 @@
             box-shadow: 2px 2px 2px 2px white;
         }
 
+        aside {
+            width: 42%;
+            margin-left: 15px;
+            padding: 0px;
+        }
+
         label {
             font-weight: bold;
             margin-left: 5px;
@@ -88,7 +95,7 @@
 
         footer {
             padding: 100px 100px 50px 100px;
-            margin-top: 30px;
+            margin-top: 20px;
             background-color: bisque;
             box-shadow: 0px 0px 2px 2px black;
         }
@@ -133,9 +140,9 @@
         }
 
         .comentarios {
-            width: 42.5%;
+            width: 85.8%;
             background-color: wheat;
-            margin: 0px 0px 20px 20px;
+            margin: 0px 0px 20px 0px;
             padding: 30px;
             padding-right: 40px;
             border-radius: 10px;
@@ -198,9 +205,9 @@
         }
 
         .ComentariosDoPublico {
-            width: 43.4%;
+            width: 87.8%;
             background-color: wheat;
-            margin: 0px 0px 30px 20px;
+            margin: 0px 0px 30px 0px;
             padding: 30px;
             border-radius: 10px;
             box-shadow: 2px 2px 2px 2px black;
@@ -223,7 +230,7 @@
         }
 
         ::-webkit-scrollbar {
-            width: 10px;
+            width: 8px;
         }
 
         ::-webkit-scrollbar-track {
@@ -294,22 +301,31 @@
                 <p>Créditos: <a href="" class="url"></a></p>
             </article>
         </section>
+        <aside>
+            <article>
+                <h3>InFormaÇões ComPlemenTares</h3>
+            </article>
+
+            <article>
+                
+            </article>
+
+            <form class="comentarios">
+                <label>Nome</label>
+                <input type="text" id="EscreverNome" class="largura" placeholder="Seu nome*" required>
+                <label>Email</label>
+                <input type="email" id="EscreverEmail" class="largura" placeholder="Seu email*" required>
+                <button type="button" id="ComentarBotao" class="comentar">Comentar</button>
+            </form>
+
+            <form class="comentarios">
+                <h3 class="espaço deixeseucomentario">Deixe seu comentario</h3>
+                <input type="text" id="EscrevendoComentarios" class="comentario largura" placeholder="Sua mensagem*">
+            </form>
+
+            <div id="ComentariosEscritos" class="ComentariosEscritos"></div>
+        </aside>
     </main>
-
-    <form class="comentarios">
-        <label>Nome</label>
-        <input type="text" id="EscreverNome" class="largura" placeholder="Seu nome*" required>
-        <label>Email</label>
-        <input type="email" id="EscreverEmail" class="largura" placeholder="Seu email*" required>
-        <button type="button" id="ComentarBotao" class="comentar">Comentar</button>
-    </form>
-
-    <form class="comentarios">
-        <h3 class="espaço deixeseucomentario">Deixe seu comentario</h3>
-        <input type="text" id="EscrevendoComentarios" class="comentario largura" placeholder="Sua mensagem*">
-    </form>
-
-    <div id="ComentariosEscritos" class="ComentariosEscritos"></div>
 
     <div id="SetaParaRetornarParaCima" class="SetaParaRetornarParaCima FormatoDaSetaParaRetornarParaCima">
         <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.YNH6UZiHyA6TCQqIUZR6jgHaHa%26pid%3DApi&f=1&ipt=7c107ec7c25723afd482d6134946cc9f055c775bdd1ee08157c78ff757c58987&ipo=images"
@@ -327,7 +343,7 @@
             window.addEventListener('scroll', (EventoDoScroll) => {
                 let ConteudoFixoNaTela = document.getElementById('ConteudoFixoNaTela')
 
-                if (window.scrollY > 40) {
+                if (window.scrollY > 50) {
                     ConteudoFixoNaTela.style.display = 'none'
                 } else {
                     ConteudoFixoNaTela.style.display = 'block'
