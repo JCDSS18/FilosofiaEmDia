@@ -266,6 +266,15 @@
             border-radius: 10px;
         }
 
+        .ConteudoOculto {
+            visibility: hidden;
+        }
+
+        .ConteudoFixo {
+            position: fixed;
+            visibility: visible;
+        }
+
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -834,15 +843,26 @@
     </footer>
 
     <script>
+
         //Barra de Navegação Oculta Quando Rola o Scroll
         const EventoDoScrollQuandoRolado = () => {
-            window.addEventListener('scroll', (EventoDoScroll) => {
-                let ConteudoFixoNaTela = document.getElementById('ConteudoFixoNaTela')
+            let ConteudoFixoNaTela = document.getElementById('ConteudoFixoNaTela')
 
-                if (window.scrollY > 50) {
-                    ConteudoFixoNaTela.style.display = 'none'
+            //Fixa a Barra de Navegação na Tela Quando Scroll do Mouse Rola para Cima
+            window.addEventListener('wheel', (EventoScroll) => {
+                if (EventoScroll.deltaY < 0) {
+                    ConteudoFixoNaTela.classList.add('ConteudoFixo')
                 } else {
-                    ConteudoFixoNaTela.style.display = 'block'
+                    ConteudoFixoNaTela.classList.remove('ConteudoFixo')
+                }
+            })
+
+            //Oculta a Barra de Navegação Quando Scroll do Mouse Rola para Baixo
+            window.addEventListener('scroll', (EventoDoScroll) => {
+                if (window.scrollY > 50) {
+                    ConteudoFixoNaTela.classList.add('ConteudoOculto')
+                } else {
+                    ConteudoFixoNaTela.classList.remove('ConteudoOculto')
                 }
             })
         }
