@@ -17,6 +17,7 @@
             margin: 0px;
         }
 
+        /*Barra de Navegação da Pagina*/
         header {
             display: flex;
             background-color: wheat;
@@ -28,37 +29,39 @@
         }
 
         nav {
-            margin: 20px 10px 20px 100px;
+            margin: 20px 10px 20px 125px;
             display: flex;
         }
 
         form {
-            margin: 0px 0px -10px 220px;
+            margin: 0px 0px -10px 250px;
         }
 
+        label {
+            font-weight: bold;
+            margin-left: 5px;
+        }
+
+        /*Conteudo Principal da Pagina*/
         main {
             padding: 20px;
             margin-top: 65px;
             margin-bottom: -20px;
             display: flex;
         }
-
-        input {
-            width: 100px;
-            padding: 1px 1px 1px 7px;
-            border-radius: 10px;
-        }
-
+        
         input {
             display: block;
             margin-top: 3px;
             margin-left: 130px;
             margin-right: -40px;
             margin-bottom: 10px;
-            padding-left: 10px;
+            padding-left: 6px;
             padding-top: 2px;
             padding-right: 40px;
             padding-bottom: 2px;
+            width: 100px;
+            border-radius: 8px;
         }
 
         section {
@@ -68,7 +71,7 @@
 
         article {
             margin-bottom: 20px;
-            padding: 30px;
+            padding: 32px;
             border-radius: 10px;
             background-color: wheat;
             box-shadow: 2px 2px 2px 2px black;
@@ -76,23 +79,21 @@
 
         article:hover {
             box-shadow: 2px 2px 2px 2px white;
+            border-radius: 10px 40px;
         }
 
+        /*Conteudo Adicional da Pagina*/
         aside {
             width: 42%;
             margin-left: 15px;
             padding: 0px;
         }
 
-        label {
-            font-weight: bold;
-            margin-left: 5px;
-        }
-
         h3 {
             margin-left: 5px;
         }
 
+        /*Rodape da Pagina*/
         footer {
             padding: 100px 100px 50px 100px;
             margin-top: 20px;
@@ -102,6 +103,15 @@
 
         footer:hover {
             box-shadow: 0px 0px 2px 2px white;
+        }
+
+        /*Classes da Barra de Navegação da Pagina*/
+        .ConteudoFixoNaTela {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: block;
         }
 
         .link {
@@ -115,6 +125,15 @@
             color: white;
         }
 
+        /*Classes do Conteudo Principal da Pagina*/
+        .FormatoDasFrases:hover {
+            border-radius: 10px 40px;
+        }
+
+        .margin {
+            margin-bottom: 10px;
+        }
+
         .url {
             text-decoration: none;
         }
@@ -123,22 +142,7 @@
             color: white;
         }
 
-        .margin {
-            margin-bottom: 10px;
-        }
-
-        .contato {
-            margin-bottom: 10px;
-        }
-
-        .ConteudoFixoNaTela {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            display: block;
-        }
-
+        /*Classes dos Comentarios do Publico*/
         .comentarios {
             width: 85.8%;
             background-color: wheat;
@@ -151,6 +155,7 @@
 
         .comentarios:hover {
             box-shadow: 2px 2px 2px 2px white;
+            border-radius: 10px 40px;
         }
 
         .largura {
@@ -204,15 +209,6 @@
             background-color: black;
         }
 
-        .ComentariosDoPublico {
-            width: 87.8%;
-            background-color: wheat;
-            margin: 0px 0px 30px 0px;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 2px 2px 2px 2px black;
-        }
-
         .SetaParaRetornarParaCima {
             display: inline;
             width: 3%;
@@ -225,10 +221,22 @@
             cursor: pointer;
         }
 
+        .ComentariosDoPublico {
+            width: 87.8%;
+            background-color: wheat;
+            margin: 0px 0px 30px 0px;
+            padding: 30px;
+            padding-left: 35px;
+            border-radius: 10px 40px;
+            box-shadow: 2px 2px 2px 2px black;
+        }
+
+        /*Classes da Seta para Retornar para o Topo da Pagina*/
         .FormatoDaSetaParaRetornarParaCima {
             border-radius: 10px;
         }
 
+        /*Classes da Barra de Navegação da Pagina que Oculta*/
         .ConteudoOculto {
             visibility: hidden;
         }
@@ -238,6 +246,11 @@
             visibility: visible;
         }
 
+        .contato {
+            margin-bottom: 10px;
+        }
+
+        /*Classes do Scroll do Mouse*/
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -269,19 +282,19 @@
 
     <main>
         <section>
-            <article>
+            <article class="FormatoDasFrases">
                 <p class="margin">"Eles consequem dinheiro para a guerra, mas não consequem acabar com a pobreza."</p>
 
                 <p>Créditos: <a href="https://www.instagram.com/p/Cyds6VrrOSr/" class="url">filosofia.liquida</a></p>
             </article>
 
-            <article>
+            <article class="FormatoDasFrases">
                 <p class="margin">"Chega de homenagens. Eu quero o dinheiro."</p>
 
                 <p>Créditos: <a href="https://www.instagram.com/p/Cyb_E77rC_I/" class="url">filosofia.liquida</a></p>
             </article>
 
-            <article>
+            <article class="FormatoDasFrases">
                 <p class="margin">"Infeliz quem não amou mais do que corpos, formas e aparências. A morte irá tirar
                     tudo. Tente amar as
                     almas e um dia você as encontrará novamente."
@@ -290,33 +303,42 @@
                 <p>Créditos: <a href="https://www.instagram.com/p/CybOA6ZgAcL/" class="url">filosofia.incerta</a></p>
             </article>
 
-            <article>
+            <article class="FormatoDasFrases">
                 <p class="margin">"O que te preocupa te escraviza."</p>
 
                 <p>Créditos: <a href="https://www.instagram.com/p/CzfE5Khr_bK/" class="url">filosofia.liquida</a></p>
             </article>
 
-            <article>
+            <article class="FormatoDasFrases">
                 <p class="margin">"Qual é o sentido da vida? Não há sentido algum, mas você pode criar o seu!"</p>
 
                 <p>Créditos: <a href="https://www.instagram.com/p/CzdpgCdrid_/" class="url">filosofia.liquida</a></p>
             </article>
 
-            <article>
+            <article class="FormatoDasFrases">
                 <p class="margin">"Tenho que encontrar uma verdade para mim mesmo, encontrar aquela ideia pela qual
-                    quero
-                    viver e morrer. -Soren Kierkegaard-"</p>
+                    quero viver e morrer."</p>
 
-                <p>Créditos: <a href="" class="url"></a></p>
+                <p>Créditos: <a href="https://pt.wikipedia.org/wiki/S%C3%B8ren_Kierkegaard" class="url">Soren
+                        Kierkegaard</a></p>
             </article>
 
-            <article>
+            <article class="FormatoDasFrases">
                 <p class="margin">
                     "Tenha duas armas para lutar contra o desespero, a tristeza e até a morte: o riso a cavalo e o
                     galope do sonho. É com isso que enfrento essa dura e fascinante tarefa de viver"
                 </p>
 
-                <p>Créditos: <a href="" class="url"></a></p>
+                <p>Créditos: <a href="https://pt.wikipedia.org/wiki/Ariano_Suassuna" class="url">Ariano Suassuna</a></p>
+            </article>
+
+            <article class="FormatoDasFrases">
+                <p class="margin">
+                    "Você tem que montar sua própria vida, ação por ação."
+                </p>
+
+                <p>Créditos: <a href="https://pt.wikipedia.org/wiki/Marco_Aur%C3%A9lio" class="url">Marco Aurélio</a>
+                </p>
             </article>
         </section>
         <aside>
