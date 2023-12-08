@@ -39,12 +39,12 @@
 
         nav {
             width: 100%;
-            margin: 20px 10px 20px 100px;
+            margin: 20px 10px 20px 125px;
             display: flex;
         }
 
         form {
-            margin: 0px 0px -10px 270px;
+            margin: 0px 0px -10px 300px;
         }
 
         /*Conteudo Principal da Pagina*/
@@ -61,7 +61,7 @@
 
         article {
             box-shadow: 2px 2px 2px 2px black;
-            padding: 30px;
+            padding: 35px;
             border: 1px solid white;
             border-radius: 10px;
             color: black;
@@ -70,6 +70,7 @@
 
         article:hover {
             box-shadow: 2px 2px 2px 2px white;
+            border-radius: 10px 50px;
         }
 
         img {
@@ -93,37 +94,34 @@
         label {
             font-weight: bold;
         }
-
+        
         input {
             width: 100px;
-            padding: 1px 1px 1px 7px;
-            border-radius: 10px;
-        }
-
-        input {
             display: block;
             margin-top: 3px;
             margin-left: 80px;
             margin-right: -40px;
             margin-bottom: 10px;
-            padding-left: 10px;
+            padding-left: 6px;
             padding-top: 2px;
             padding-right: 40px;
             padding-bottom: 2px;
+            border-radius: 8px;
         }
 
         /*Rodape da Pagina*/
         footer {
-            padding: 100px 100px 50px 100px;
+            padding: 120px 100px 50px 100px;
             margin-top: 30px;
             background-color: bisque;
             box-shadow: 0px 0px 2px 2px black;
+            display: flex;
         }
 
         footer:hover {
             box-shadow: 0px 0px 2px 2px white;
         }
-        
+
         picture {
             margin: 0px 0px 0px -240px;
         }
@@ -132,7 +130,7 @@
             margin: 50px 0px 0px 30px;
             display: flex;
         }
-        
+
         /*Classes da Barra de Navegação*/
         .ConteudoFixoNaTela {
             position: fixed;
@@ -152,6 +150,10 @@
         .link:hover {
             color: white;
         }
+
+        /* .EncolherOtamanhoDaPesquisa:hover {
+            width: 100px;
+        } */
 
         /*Classes do Conteudo Principal da Pagina*/
         .nomes {
@@ -180,11 +182,18 @@
             width: 100px;
             box-shadow: 2px 2px 2px 2px black;
             margin: 0px 20px 15px 0px;
+            border-radius: 2px;
             float: left;
         }
 
         .tamanho:hover {
             box-shadow: 2px 2px 2px 2px white;
+            width: 101px;
+            border-radius: 5px;
+        }
+
+        .FormatoDoConteudoPrincipal:hover {
+            border-radius: 20px 40px;
         }
 
         /*Classes dos Comentarios do Publico*/
@@ -199,6 +208,7 @@
 
         .comentarios:hover {
             box-shadow: 2px 2px 2px 2px white;
+            border-radius: 10px 40px;
         }
 
         .largura {
@@ -287,7 +297,8 @@
             background-color: wheat;
             margin: 0px 0px 30px 20px;
             padding: 30px;
-            border-radius: 10px;
+            padding-left: 35px;
+            border-radius: 10px 40px;
             box-shadow: 2px 2px 2px 2px black;
         }
 
@@ -316,6 +327,30 @@
         .ConteudoFixo {
             position: fixed;
             visibility: visible;
+        }
+
+        /*Classes para o Rodape da Pagina*/
+        .NumerosDeContato {
+            margin-left: 50px;
+            margin-right: -150px;
+        }
+
+        .InverterCoresDosNumeros:hover {
+            color: white;
+            cursor: pointer;
+        }
+
+        .RedesSociaisParaContato {
+            margin-left: -150px;
+        }
+
+        .InverterCoresDasRedeSociais:hover {
+            color: white;
+            cursor: pointer;
+        }
+
+        .DisplayFlex {
+            display: flex;
         }
 
         /*Classes para Estilizar o scroll do mouse da pagina*/
@@ -347,7 +382,7 @@
             <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/BioGraFia.html" class="link">BioGraFia</a>
 
             <form>
-                <input type="text" class="">
+                <input type="text" class="EncolherOtamanhoDaPesquisa">
             </form>
 
             <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/Log%20In.html" class="link">Log In</a>
@@ -357,7 +392,7 @@
     <!--Conteúdo Principal da página-->
     <main>
         <section>
-            <article>
+            <article class="FormatoDoConteudoPrincipal">
                 <a href="https://www.todamateria.com.br/filosofos-mais-importantes/" class="nomes">
                     <h1 class="espaço">Os MaiOres FilóSofos da HisTória</h1>
                 </a>
@@ -378,7 +413,6 @@
                     <br><br>
                     Se dedicou também à matemática, criando o teorema que leva seu nome (Teorema de Tales), no qual
                     demonstra relações de proporcionalidade de um feixe de retas paralelas cortadas por transversais.
-                    <br><br>
                     Na filosofia, a busca pela essência do universo (physis), fez com que ele definisse a água como
                     elemento primordial que constitui tudo aquilo que existe na natureza.
                 </p>
@@ -906,6 +940,26 @@
     </div>
 
     <footer>
+
+        <!--Numeros para Contato-->
+        <section class="NumerosDeContato">
+            <h3 class="espaço InverterCoresDosNumeros">NúmeRos PaRa ConTaTo</h3>
+            <p class="espaço">(79) 99989-6270</p>
+            <p class="espaço">(79) 99860-7239</p>
+        </section>
+
+        <!--Redes Sociais Para Contato-->
+        <section class="RedesSociaisParaContato">
+            <h3 class="espaço InverterCoresDasRedeSociais">ReDes SoCiaIs PaRa ConTaTo</h3>
+            <div class="DisplayFlex espaço">
+                <img src="" alt="">
+                <p>devhoracio</p>
+            </div>
+            <div class="DisplayFlex espaço">
+                <img src="" alt="">
+                <p>objecthoracio</p>
+            </div>
+        </section>
     </footer>
 
     <script>
