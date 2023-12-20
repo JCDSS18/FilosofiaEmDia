@@ -49,7 +49,7 @@
             margin-bottom: -20px;
             display: flex;
         }
-        
+
         input {
             display: block;
             margin-top: 3px;
@@ -231,6 +231,25 @@
             box-shadow: 2px 2px 2px 2px black;
         }
 
+        .LimparOsComentarios {
+            width: 99%;
+            margin: 10px 0px 10px 0px;
+            border-radius: 10px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            box-shadow: 2px 2px 0px 0px black;
+            color: black;
+            font-weight: bold;
+            background-color: white;
+        }
+
+        .LimparOsComentarios:hover {
+            box-shadow: 2px 2px 0px 0px white;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+        }
+
         /*Classes da Seta para Retornar para o Topo da Pagina*/
         .FormatoDaSetaParaRetornarParaCima {
             border-radius: 10px;
@@ -283,43 +302,10 @@
     <main>
         <section>
             <article class="FormatoDasFrases">
-                <p class="margin">"Eles consequem dinheiro para a guerra, mas não consequem acabar com a pobreza."</p>
-
-                <p>Créditos: <a href="https://www.instagram.com/p/Cyds6VrrOSr/" class="url">filosofia.liquida</a></p>
-            </article>
-
-            <article class="FormatoDasFrases">
-                <p class="margin">"Chega de homenagens. Eu quero o dinheiro."</p>
-
-                <p>Créditos: <a href="https://www.instagram.com/p/Cyb_E77rC_I/" class="url">filosofia.liquida</a></p>
-            </article>
-
-            <article class="FormatoDasFrases">
-                <p class="margin">"Infeliz quem não amou mais do que corpos, formas e aparências. A morte irá tirar
-                    tudo. Tente amar as
-                    almas e um dia você as encontrará novamente."
-                </p>
-
-                <p>Créditos: <a href="https://www.instagram.com/p/CybOA6ZgAcL/" class="url">filosofia.incerta</a></p>
-            </article>
-
-            <article class="FormatoDasFrases">
-                <p class="margin">"O que te preocupa te escraviza."</p>
-
-                <p>Créditos: <a href="https://www.instagram.com/p/CzfE5Khr_bK/" class="url">filosofia.liquida</a></p>
-            </article>
-
-            <article class="FormatoDasFrases">
-                <p class="margin">"Qual é o sentido da vida? Não há sentido algum, mas você pode criar o seu!"</p>
-
-                <p>Créditos: <a href="https://www.instagram.com/p/CzdpgCdrid_/" class="url">filosofia.liquida</a></p>
-            </article>
-
-            <article class="FormatoDasFrases">
                 <p class="margin">"Tenho que encontrar uma verdade para mim mesmo, encontrar aquela ideia pela qual
                     quero viver e morrer."</p>
 
-                <p>Créditos: <a href="https://pt.wikipedia.org/wiki/S%C3%B8ren_Kierkegaard" class="url">Soren
+                <p>Autor: <a href="https://pt.wikipedia.org/wiki/S%C3%B8ren_Kierkegaard" class="url">Soren
                         Kierkegaard</a></p>
             </article>
 
@@ -329,7 +315,7 @@
                     galope do sonho. É com isso que enfrento essa dura e fascinante tarefa de viver"
                 </p>
 
-                <p>Créditos: <a href="https://pt.wikipedia.org/wiki/Ariano_Suassuna" class="url">Ariano Suassuna</a></p>
+                <p>Autor: <a href="https://pt.wikipedia.org/wiki/Ariano_Suassuna" class="url">Ariano Suassuna</a></p>
             </article>
 
             <article class="FormatoDasFrases">
@@ -337,7 +323,35 @@
                     "Você tem que montar sua própria vida, ação por ação."
                 </p>
 
-                <p>Créditos: <a href="https://pt.wikipedia.org/wiki/Marco_Aur%C3%A9lio" class="url">Marco Aurélio</a>
+                <p>Autor: <a href="https://pt.wikipedia.org/wiki/Marco_Aur%C3%A9lio" class="url">Marco Aurélio</a>
+                </p>
+            </article>
+
+            <article class="FormatoDasFrases">
+                <p class="margin">
+                    "Não é o que acontece com você, mas como você reage a isso que acontece."
+                </p>
+
+                <p>Autor: <a href="https://pt.wikipedia.org/wiki/Epiteto" class="url">Epicteto</a>
+                </p>
+            </article>
+
+            <article class="FormatoDasFrases">
+                <p class="margin">
+                    "É impossível progredir sem mudanças. Aqueles que não mudam suas mentes não podem mudar nada."
+                </p>
+
+                <p>Autor: <a href="https://pt.wikipedia.org/wiki/George_Bernard_Shaw" class="url">George Bernard
+                        Shaw</a>
+                </p>
+            </article>
+
+            <article class="FormatoDasFrases">
+                <p class="margin">
+                    "Não deixe que nenhum ato seja feito sem um propósito."
+                </p>
+
+                <p>Autor: <a href="https://pt.wikipedia.org/wiki/Marco_Aur%C3%A9lio" class="url">Marco Aurélio</a>
                 </p>
             </article>
         </section>
@@ -353,14 +367,20 @@
             <form class="comentarios">
                 <label>Nome</label>
                 <input type="text" id="EscreverNome" class="largura" placeholder="Seu nome*" required>
+
                 <label>Email</label>
                 <input type="email" id="EscreverEmail" class="largura" placeholder="Seu email*" required>
-                <button type="button" id="ComentarBotao" class="comentar">Comentar</button>
+
+                <button onclick="addComment()" type="button" id="ComentarBotao" class="comentar">Comentar</button>
             </form>
 
             <form class="comentarios">
                 <h3 class="espaço deixeseucomentario">Deixe seu comentario</h3>
+
                 <input type="text" id="EscrevendoComentarios" class="comentario largura" placeholder="Sua mensagem*">
+
+                <button onclick="clearComments()" id="LimparOsComentarios" class="LimparOsComentarios"
+                    type="button">Limpar Comentarios</button>
             </form>
 
             <div id="ComentariosEscritos" class="ComentariosEscritos"></div>
@@ -421,8 +441,10 @@
                 }
             }
 
+            //Matriz com os Comentarios
             let ComentariosArmazenados = []
 
+            //Os Comentarios São Mostrados Na Tela
             let ComentariosAdicionados = () => {
                 ComentariosArmazenados.forEach((Comentarios) => {
                     let NovoElemento = document.createElement('div')
@@ -433,6 +455,7 @@
                 })
             }
 
+            //Os Comentarios São Escritos e Armazenados na Matriz
             ComentarBotao.addEventListener('click', (EventoComentario) => {
                 let EscreverNome = document.getElementById('EscreverNome').value
                 let EscreverEmail = document.getElementById('EscreverEmail').value
@@ -452,6 +475,52 @@
         }
 
         EscreverComentario()
+
+        //Armazena os Comentarios no Servidor da Web
+        document.addEventListener('DOMContentLoaded', () => {
+            loadComments()
+        })
+
+        //Armazena os Comentarios
+        const loadComments = () => {
+            const ComentariosEscritos = document.getElementById('ComentariosEscritos')
+
+            ComentariosEscritos.innerHTML = ''
+
+            const comments = JSON.parse(localStorage.getItem('comments')) || []
+
+            comments.forEach(comment => {
+                const div = document.createElement('div')
+                div.textContent = comment
+                ComentariosEscritos.appendChild(div)
+                div.classList.add('ComentariosDoPublico')
+            });
+        }
+
+        //Armazena os Comentarios Quando Clicado
+        const addComment = () => {
+            const EscrevendoComentarios = document.getElementById('EscrevendoComentarios')
+            const TextoDoEscrevendoComentarios = EscrevendoComentarios.value.trim()
+
+            if (TextoDoEscrevendoComentarios !== '') {
+                const comments = JSON.parse(localStorage.getItem('comments')) || []
+
+                comments.push(TextoDoEscrevendoComentarios)
+
+                localStorage.setItem('comments', JSON.stringify(comments))
+
+                EscrevendoComentarios.value = ''
+
+                loadComments()
+            }
+        }
+
+        //Limpa os Comentarios Quando Clicado
+        const clearComments = () => {
+            localStorage.removeItem('comments')
+
+            loadComments()
+        }
 
         //Seta é ocultada quando proximo do fim da pagina
         document.addEventListener('DOMContentLoaded', () => {
