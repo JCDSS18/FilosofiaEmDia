@@ -17,6 +17,10 @@
             padding: 0px;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             background-color: white;
             background-image: url();
@@ -31,6 +35,7 @@
             /* margin: 0px 0px 10px 0px; */
             background-color: wheat;
             box-shadow: 2px 2px 0px 0px black;
+            transition: 0.5s;
         }
 
         header:hover {
@@ -71,6 +76,7 @@
         article:hover {
             box-shadow: 2px 2px 2px 2px white;
             border-radius: 10px 50px;
+            transition: 0.5s;
         }
 
         img {
@@ -96,7 +102,7 @@
         }
 
         input {
-            width: 100px;
+            width: 120px;
             display: block;
             margin-top: 3px;
             margin-left: 80px;
@@ -107,6 +113,13 @@
             padding-right: 40px;
             padding-bottom: 2px;
             border-radius: 8px;
+        }
+
+        input:hover {
+            border-color: white;
+            background-color: black;
+            color: white;
+            transition: 0.5s;
         }
 
         /*Rodape da Pagina*/
@@ -120,6 +133,7 @@
 
         footer:hover {
             box-shadow: 0px 0px 2px 2px white;
+            transition: 0.5s ease;
         }
 
         picture {
@@ -149,16 +163,14 @@
 
         .link:hover {
             color: white;
+            transition: 0.5s;
         }
-
-        /* .EncolherOtamanhoDaPesquisa:hover {
-            width: 100px;
-        } */
 
         /*Classes do Conteudo Principal da Pagina*/
         .nomes {
             color: black;
             text-decoration: none;
+            transition: 0.5s;
         }
 
         .nomes:hover {
@@ -176,6 +188,7 @@
 
         .url:hover {
             color: white;
+            transition: 0.5s;
         }
 
         .tamanho {
@@ -185,11 +198,12 @@
             border-radius: 2px;
             float: left;
         }
-
+        
         .tamanho:hover {
             box-shadow: 2px 2px 2px 2px white;
             width: 101px;
-            border-radius: 5px;
+            border-radius: 5px 15px;
+            transition: 0.5s;
         }
 
         .FormatoDoConteudoPrincipal:hover {
@@ -204,6 +218,7 @@
             padding: 30px;
             border-radius: 10px;
             box-shadow: 2px 2px 2px 2px black;
+            transition: 0.5s;
         }
 
         .comentarios:hover {
@@ -219,6 +234,7 @@
             box-shadow: 2px 2px 0px 0px black;
             color: black;
             background-color: white;
+            transition: 0.5s;
         }
 
         .largura:hover {
@@ -237,6 +253,7 @@
             color: black;
             font-weight: bold;
             background-color: white;
+            transition: 0.5s;
         }
 
         .comentar:hover {
@@ -253,6 +270,7 @@
             box-shadow: 2px 2px 0px 0px black;
             color: black;
             background-color: white;
+            transition: 0.5s;
         }
 
         .comentario:hover {
@@ -336,6 +354,7 @@
             color: black;
             font-weight: bold;
             background-color: white;
+            transition: 0.5s;
         }
 
         .LimparOsComentarios:hover {
@@ -348,11 +367,13 @@
         /*Classes para Ocultar e Posicionar a Barra de Navegação*/
         .ConteudoOculto {
             visibility: hidden;
+            transition: 0.5s;
         }
 
         .ConteudoFixo {
             position: fixed;
             visibility: visible;
+            transition: 0.5s;
         }
 
         /*Classes para o Rodape da Pagina*/
@@ -408,7 +429,7 @@
             <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/BioGraFia.html" class="link">BioGraFia</a>
 
             <form>
-                <input type="text" class="EncolherOtamanhoDaPesquisa">
+                <input type="search" class="EncolherOtamanhoDaPesquisa" id="PesquisaDaPagina">
             </form>
 
             <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/Log%20In.html" class="link">Log In</a>
@@ -1053,6 +1074,104 @@
                 </p>
 
                 <hr class="espaço">
+
+                <!--Os MaIoRes FiLoSoFos MoDerNos-->
+                <a href="https://pt.wikipedia.org/wiki/Filosofia_moderna" class="nomes">
+                    <h1 class="espaço">Os MaIoRes FiLoSoFos MoDerNos</h1>
+                </a>
+
+                <!--René Descartes-->
+                <a href="https://pt.wikipedia.org/wiki/Ren%C3%A9_Descartes" class="nomes">
+                    <h2 class="espaço">René Descartes</h2>
+                </a>
+
+                <a href="https://pt.wikipedia.org/wiki/Ren%C3%A9_Descartes">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg/300px-Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg"
+                        alt="" class="espaço tamanho">
+                </a>
+
+                <p class="espaço">
+                    René Descartes foi um filósofo, matemático e cientista francês do século XVII, muitas vezes
+                    considerado o pai da filosofia moderna. Ele nasceu em 31 de março de 1596, em La Haye en Touraine,
+                    França, e faleceu em 11 de fevereiro de 1650, em Estocolmo, Suécia.
+                    <br><br>
+                    Descartes é conhecido por sua contribuição significativa para a filosofia, a matemática e a ciência.
+                    Algumas das ideias e obras mais importantes de Descartes incluem:
+                    <br><br>
+                    1. <b>Método Cartesiano:</b> Descartes desenvolveu um método de investigação sistemática conhecido
+                    como
+                    "método cartesiano". Esse método enfatizava a dúvida metódica, encorajando a rejeição de quaisquer
+                    crenças que não pudessem ser submetidas à dúvida razoável e sistemática.
+                    <br><br>
+                    2. <b>Cogito, ergo sum (Penso, logo existo):</b> Essa famosa afirmação, encontrada em sua obra
+                    "Discurso do Método" (1637), representa a certeza que Descartes encontrou na própria existência como
+                    um ponto indubitável de partida para o conhecimento.
+                    <br><br>
+                    3. <b>Dualismo Cartesiano:</b> Descartes propôs uma divisão fundamental entre a mente (res cogitans)
+                    e
+                    o corpo (res extensa). Essa dualidade influenciou significativamente o pensamento filosófico
+                    posterior sobre a relação entre mente e corpo.
+                    <br><br>
+                    4. <b>Contribuições à Matemática:</b> Descartes fez contribuições notáveis para a matemática,
+                    especialmente com o desenvolvimento da geometria analítica, que permitia a representação de objetos
+                    geométricos por meio de equações algébricas.
+                    <br><br>
+                    5. <b>Meditações Metafísicas:</b> Publicadas em 1641, as "Meditações Metafísicas" exploram questões
+                    filosóficas fundamentais, incluindo a existência de Deus, a natureza da mente e do corpo, e a
+                    relação entre a alma e o corpo.
+                    <br><br>
+                    O trabalho de Descartes teve um impacto profundo no pensamento ocidental, influenciando não apenas a
+                    filosofia, mas também áreas como a ciência e a matemática. Suas ideias desencadearam debates e
+                    críticas, mas sua influência perdura até os dias de hoje.
+                </p>
+
+                <hr class="espaço">
+
+                <!--John Locke-->
+                <a href="https://pt.wikipedia.org/wiki/John_Locke" class="nomes">
+                    <h2 class="espaço">John Locke</h2>
+                </a>
+
+                <a href="https://pt.wikipedia.org/wiki/John_Locke">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/JohnLocke.png/300px-JohnLocke.png" alt="" class="espaço tamanho">
+                </a>
+
+                <p class="espaço">
+                    John Locke (1632–1704) foi um filósofo e médico inglês, uma figura chave do pensamento do século
+                    XVII e um dos pensadores mais influentes da era moderna. Ele é conhecido principalmente por suas
+                    contribuições à teoria política e à filosofia da mente. Aqui estão alguns pontos-chave sobre John
+                    Locke:
+                    <br><br>
+                    1. <b>Teoria do Contrato Social:</b> Locke é famoso por sua teoria do contrato social, que ele
+                    desenvolveu em sua obra mais importante, "Dois Tratados sobre o Governo Civil" (1689). Nessa obra,
+                    ele argumentou que as pessoas nascem com direitos naturais inalienáveis, incluindo vida, liberdade e
+                    propriedade. Para proteger esses direitos, as pessoas concordam em formar um governo, e o poder do
+                    governo deriva do consentimento dos governados.
+                    <br><br>
+                    2. <b>Tabula Rasa:</b> Locke introduziu a ideia da "tabula rasa" ou "tábula rasa", que significa "tábua
+                    rasa" em latim. Ele afirmava que a mente humana, no nascimento, é como uma folha em branco, sem
+                    ideias inatas. Isso contrastava com a visão anterior de que a mente já possuía conhecimento inato.
+                    <br><br>
+                    3. <b>Empirismo:</b> Locke é considerado um dos principais representantes do empirismo, uma corrente
+                    filosófica que argumenta que o conhecimento é adquirido através da experiência sensorial e
+                    observação. Ele acreditava que todas as nossas ideias derivam da experiência, seja através dos
+                    sentidos externos ou da reflexão interna.
+                    <br><br>
+                    4. <b>Tolerância Religiosa:</b> Locke defendeu a tolerância religiosa em sua obra "Carta sobre a
+                    Tolerância" (1689). Ele argumentou que a liberdade religiosa deveria ser estendida a todos,
+                    independentemente de sua afiliação religiosa, e que a intolerância religiosa era prejudicial à
+                    sociedade civil.
+                    <br><br>
+                    5. <b>Influência Política:</b> As ideias de Locke tiveram uma influência significativa no
+                    desenvolvimento do pensamento político, especialmente durante a Era da Ilustração. Suas teorias
+                    sobre o governo limitado, a separação de poderes e os direitos individuais foram incorporadas nas
+                    constituições de várias nações, incluindo a dos Estados Unidos.
+                    <br><br>
+                    John Locke teve um impacto duradouro não apenas na filosofia política, mas também nas áreas da
+                    epistemologia, ética e teoria do conhecimento. Sua ênfase na liberdade individual e na proteção dos
+                    direitos fundamentais teve uma influência profunda nas concepções modernas de democracia e direitos
+                    humanos.
+                </p>
             </article>
         </section>
 
@@ -1105,7 +1224,8 @@
 
         <input type="text" id="EscrevendoComentarios" class="comentario largura" placeholder="Sua mensagem*">
 
-        <button onclick="clearComments()" id="LimparOsComentarios" class="LimparOsComentarios" type="button">Limpar Comentarios</button>
+        <button onclick="clearComments()" id="LimparOsComentarios" class="LimparOsComentarios" type="button">Limpar
+            Comentarios</button>
     </form>
 
     <div id="ComentariosEscritos" class="ComentariosEscritos"></div>
@@ -1118,25 +1238,6 @@
 
     <footer>
 
-        <!--Numeros para Contato-->
-        <section class="NumerosDeContato">
-            <h3 class="espaço InverterCoresDosNumeros">NúmeRos PaRa ConTaTo</h3>
-            <p class="espaço">(79) 99989-6270</p>
-            <p class="espaço">(79) 99860-7239</p>
-        </section>
-
-        <!--Redes Sociais Para Contato-->
-        <section class="RedesSociaisParaContato">
-            <h3 class="espaço InverterCoresDasRedeSociais">ReDes SoCiaIs PaRa ConTaTo</h3>
-            <div class="DisplayFlex espaço">
-                <img src="" alt="">
-                <p>devhoracio</p>
-            </div>
-            <div class="DisplayFlex espaço">
-                <img src="" alt="">
-                <p>objecthoracio</p>
-            </div>
-        </section>
     </footer>
 
     <script>
@@ -1156,7 +1257,7 @@
 
             //Oculta a Barra de Navegação Quando Scroll do Mouse Rola para Baixo
             window.addEventListener('scroll', (EventoDoScroll) => {
-                if (window.scrollY > 50) {
+                if (window.scrollY > 0) {
                     ConteudoFixoNaTela.classList.add('ConteudoOculto')
                 } else {
                     ConteudoFixoNaTela.classList.remove('ConteudoOculto')
@@ -1316,6 +1417,23 @@
 
             window.scrollTo(0, NovaPosicao)
         }
+
+        //Pesquisar Sobre Conteudo Da Pagina
+        const PesquisaConteudoNaPagina = () => {
+            let PesquisaDaPagina = document.getElementById('PesquisaDaPagina')
+
+            class PesquisarConteudo {
+                constructor(Pesquisar) {
+                    this.Pesquisar = Pesquisar
+                }
+
+                GetPesquisar() {
+                    return this.Pesquisar
+                }
+            }
+        }
+
+        PesquisaConteudoNaPagina()
     </script>
 </body>
 
