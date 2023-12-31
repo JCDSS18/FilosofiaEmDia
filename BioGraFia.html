@@ -17,6 +17,10 @@
             margin: 0px;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         /*Barra de Navegação da Pagina*/
         header {
             display: flex;
@@ -26,6 +30,7 @@
 
         header:hover {
             box-shadow: 2px 2px 0px 0px white;
+            transition: 0.5s;
         }
 
         nav {
@@ -62,11 +67,13 @@
         article:hover {
             box-shadow: 2px 2px 2px 2px white;
             border-radius: 10px 40px;
+            transition: 0.5s;
         }
 
         b:hover {
             color: white;
             cursor: pointer;
+            transition: 0.5s;
         }
 
         input {
@@ -79,8 +86,15 @@
             padding-top: 2px;
             padding-right: 40px;
             padding-bottom: 2px;
-            width: 100px;
+            width: 120px;
             border-radius: 8px;
+        }
+
+        input:hover {
+            border-color: white;
+            background-color: black;
+            color: white;
+            transition: 0.5s;
         }
 
         /*Rodape da Pagina*/
@@ -93,6 +107,7 @@
 
         footer:hover {
             box-shadow: 0px 0px 2px 2px white;
+            transition: 0.5s;
         }
 
         .link {
@@ -104,6 +119,7 @@
 
         .link:hover {
             color: white;
+            transition: 0.5s;
         }
 
         .contato {
@@ -126,6 +142,7 @@
 
         .url:hover {
             color: white;
+            transition: 0.5s;
         }
 
         .nomes {
@@ -136,6 +153,7 @@
         .nomes:hover {
             color: white;
             cursor: pointer;
+            transition: 0.5s;
         }
 
         .esquerda {
@@ -190,6 +208,7 @@
         .comentarios:hover {
             box-shadow: 2px 2px 2px 2px white;
             border-radius: 10px 40px;
+            transition: 0.5s;
         }
 
         .largura {
@@ -206,6 +225,7 @@
             box-shadow: 2px 2px 0px 0px white;
             color: white;
             background-color: black;
+            transition: 0.5s;
         }
 
         .comentar {
@@ -225,6 +245,7 @@
             cursor: pointer;
             background-color: black;
             color: white;
+            transition: 0.5s;
         }
 
         .comentario {
@@ -240,6 +261,7 @@
             box-shadow: 2px 2px 0px 0px white;
             color: white;
             background-color: black;
+            transition: 0.5s;
         }
 
         .ComentariosDoPublico {
@@ -270,11 +292,13 @@
 
         .ConteudoOculto {
             visibility: hidden;
+            transition: 0.5s;
         }
 
         .ConteudoFixo {
             position: fixed;
             visibility: visible;
+            transition: 0.5s;
         }
 
         .LimparOsComentarios {
@@ -294,6 +318,7 @@
             cursor: pointer;
             background-color: black;
             color: white;
+            transition: 0.5s;
         }
 
         /*Classes para o Scroll do Mouse*/
@@ -325,7 +350,7 @@
             <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/BioGrafia.html" class="link">BioGraFia</a>
 
             <form>
-                <input type="text" class="">
+                <input type="search" class="" id="PesquisaDaPagina">
             </form>
 
             <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/Log%20In.html" class="link">Log In</a>
@@ -1243,7 +1268,7 @@
 
             //Oculta a Barra de Navegação Quando Scroll do Mouse Rola para Baixo
             window.addEventListener('scroll', (EventoDoScroll) => {
-                if (window.scrollY > 50) {
+                if (window.scrollY > 0) {
                     ConteudoFixoNaTela.classList.add('ConteudoOculto')
                 } else {
                     ConteudoFixoNaTela.classList.remove('ConteudoOculto')
