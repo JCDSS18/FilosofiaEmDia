@@ -17,6 +17,10 @@
             margin: 0px;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         /*Barra de Navegação da Pagina*/
         header {
             display: flex;
@@ -26,6 +30,7 @@
 
         header:hover {
             box-shadow: 2px 2px 0px 0px white;
+            transition: 0.5s;
         }
 
         nav {
@@ -60,8 +65,15 @@
             padding-top: 2px;
             padding-right: 40px;
             padding-bottom: 2px;
-            width: 100px;
+            width: 120px;
             border-radius: 8px;
+        }
+
+        input:hover {
+            border-color: white;
+            background-color: black;
+            color: white;
+            transition: 0.5s;
         }
 
         section {
@@ -80,6 +92,7 @@
         article:hover {
             box-shadow: 2px 2px 2px 2px white;
             border-radius: 10px 40px;
+            transition: 0.5s;
         }
 
         /*Conteudo Adicional da Pagina*/
@@ -103,6 +116,7 @@
 
         footer:hover {
             box-shadow: 0px 0px 2px 2px white;
+            transition: 0.5s;
         }
 
         /*Classes da Barra de Navegação da Pagina*/
@@ -123,11 +137,13 @@
 
         .link:hover {
             color: white;
+            transition: 0.5s;
         }
 
         /*Classes do Conteudo Principal da Pagina*/
         .FormatoDasFrases:hover {
             border-radius: 10px 40px;
+            transition: 0.5s;
         }
 
         .margin {
@@ -140,6 +156,7 @@
 
         .url:hover {
             color: white;
+            transition: 0.5s;
         }
 
         /*Classes dos Comentarios do Publico*/
@@ -156,6 +173,7 @@
         .comentarios:hover {
             box-shadow: 2px 2px 2px 2px white;
             border-radius: 10px 40px;
+            transition: 0.5s;
         }
 
         .largura {
@@ -172,6 +190,7 @@
             box-shadow: 2px 2px 0px 0px white;
             color: white;
             background-color: black;
+            transition: 0.5s;
         }
 
         .comentar {
@@ -191,6 +210,7 @@
             cursor: pointer;
             background-color: black;
             color: white;
+            transition: 0.5s;
         }
 
         .comentario {
@@ -207,6 +227,7 @@
             box-shadow: 2px 2px 0px 0px white;
             color: white;
             background-color: black;
+            transition: 0.5s;
         }
 
         .SetaParaRetornarParaCima {
@@ -248,6 +269,7 @@
             cursor: pointer;
             background-color: black;
             color: white;
+            transition: 0.5s;
         }
 
         /*Classes da Seta para Retornar para o Topo da Pagina*/
@@ -258,11 +280,13 @@
         /*Classes da Barra de Navegação da Pagina que Oculta*/
         .ConteudoOculto {
             visibility: hidden;
+            transition: 0.5s;
         }
 
         .ConteudoFixo {
             position: fixed;
             visibility: visible;
+            transition: 0.5s;
         }
 
         .contato {
@@ -287,14 +311,20 @@
     </style>
 
     <header class="ConteudoFixoNaTela" id="ConteudoFixoNaTela">
+
+        <!--Barra de Navegação da Página-->
         <nav>
             <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/Filosofia%20Em%20Dia.html"
                 class="link">FiloSofos</a>
+
             <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/FraSes.html" class="link">FraSes</a>
+
             <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/BioGrafia.html" class="link">BioGraFia</a>
+
             <form>
-                <input type="text" class="">
+                <input type="search" class="" id="PesquisaDaPagina">
             </form>
+
             <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/Log%20In.html" class="link">Log In</a>
         </nav>
     </header>
@@ -413,7 +443,7 @@
 
             //Oculta a Barra de Navegação Quando Scroll do Mouse Rola para Baixo
             window.addEventListener('scroll', (EventoDoScroll) => {
-                if (window.scrollY > 50) {
+                if (window.scrollY > 0) {
                     ConteudoFixoNaTela.classList.add('ConteudoOculto')
                 } else {
                     ConteudoFixoNaTela.classList.remove('ConteudoOculto')
