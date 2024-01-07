@@ -107,20 +107,6 @@
             font-weight: bold;
         }
 
-        input {
-            width: 120px;
-            display: block;
-            margin-top: 3px;
-            margin-left: 80px;
-            margin-right: -40px;
-            margin-bottom: 10px;
-            padding-left: 6px;
-            padding-top: 2px;
-            padding-right: 40px;
-            padding-bottom: 2px;
-            border-radius: 8px;
-        }
-
         input:hover {
             border-color: white;
             background-color: black;
@@ -169,6 +155,41 @@
 
         .link:hover {
             color: white;
+            transition: 0.5s;
+        }
+
+        .FormularioDePesquisaDeRedirecionamento {
+            display: flex;
+            margin-right: -30px;
+            margin-top: 2px;
+        }
+
+        .EncolherOtamanhoDaPesquisa {
+            height: 20px;
+            padding-left: 5px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 0px 0px black;
+        }
+
+        .EncolherOtamanhoDaPesquisa:hover {
+            box-shadow: 2px 2px 0px 0px white;
+            transition: 0.5s;
+        }
+
+        .FormatoDoBotaoDePesquisa {
+            width: 50px;
+            height: 25px;
+            border-radius: 10px;
+            background-color: white;
+            color: black;
+            box-shadow: 2px 2px 0px 0px black;
+            margin-left: 3px;
+        }
+
+        .FormatoDoBotaoDePesquisa:hover {
+            background-color: black;
+            color: white;
+            box-shadow: 2px 2px 0px 0px white;
             transition: 0.5s;
         }
 
@@ -434,8 +455,10 @@
 
             <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/BioGraFia.html" class="link">BioGraFia</a>
 
-            <form>
-                <input type="search" class="EncolherOtamanhoDaPesquisa" id="PesquisaDaPagina">
+            <form class="FormularioDePesquisaDeRedirecionamento">
+                <input type="text" class="EncolherOtamanhoDaPesquisa" id="PesquisaDaPagina">
+                <input type="submit" id="Pesquisar" class="FormatoDoBotaoDePesquisa" value="Ir"
+                    onclick="PesquisarOsFilosofosERedirecionar()">
             </form>
 
             <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/Log%20In.html" class="link">Log In</a>
@@ -459,7 +482,7 @@
 
                 <!--Tales de Mileto-->
                 <a href="https://pt.wikipedia.org/wiki/Tales_de_Mileto" class="nomes">
-                    <h2 class="espaço">Tales de Mileto</h2>
+                    <h2 class="espaço" id="TalesdeMileto">Tales de Mileto</h2>
                 </a>
 
                 <a href="https://pt.wikipedia.org/wiki/Tales_de_Mileto">
@@ -489,7 +512,7 @@
 
                 <!--Anaximandro -->
                 <a href="https://pt.wikipedia.org/wiki/Anaximandro" class="nomes">
-                    <h2 class="espaço">Anaximandro</h2>
+                    <h2 class="espaço" id="Anaximandro">Anaximandro</h2>
                 </a>
 
                 <a href="https://pt.wikipedia.org/wiki/Anaximandro">
@@ -523,7 +546,7 @@
 
                 <!--Anaxímenes-->
                 <a href="https://pt.wikipedia.org/wiki/Anax%C3%ADmenes_de_Mileto" class="nomes">
-                    <h2 class="espaço">Anaxímenes</h2>
+                    <h2 class="espaço" id="Anaxímenes">Anaxímenes</h2>
                 </a>
 
                 <a href="https://pt.wikipedia.org/wiki/Anax%C3%ADmenes_de_Mileto">
@@ -557,7 +580,7 @@
 
                 <!--Pitágoras-->
                 <a href="https://pt.wikipedia.org/wiki/Pit%C3%A1goras" class="nomes">
-                    <h2 class="espaço">Pitágoras</h2>
+                    <h2 class="espaço" id="Pitágoras">Pitágoras</h2>
                 </a>
 
                 <a href="https://pt.wikipedia.org/wiki/Pit%C3%A1goras">
@@ -593,7 +616,7 @@
 
                 <!--Heráclito-->
                 <a href="https://pt.wikipedia.org/wiki/Her%C3%A1clito" class="nomes">
-                    <h2 class="espaço">Heráclito</h2>
+                    <h2 class="espaço" id="Heráclito">Heráclito</h2>
                 </a>
 
                 <a href="https://pt.wikipedia.org/wiki/Her%C3%A1clito">
@@ -628,7 +651,7 @@
 
                 <!--Parmênides-->
                 <a href="https://pt.wikipedia.org/wiki/Parm%C3%AAnides" class="nomes">
-                    <h2 class="espaço">Parmênides</h2>
+                    <h2 class="espaço" id="Parmênides">Parmênides</h2>
                 </a>
 
                 <a href="https://pt.wikipedia.org/wiki/Parm%C3%AAnides">
@@ -666,7 +689,7 @@
 
                 <!--Empédocles-->
                 <a href="https://pt.wikipedia.org/wiki/Emp%C3%A9docles" class="nomes">
-                    <h2 class="espaço">Empédocles</h2>
+                    <h2 class="espaço" id="Empédocles">Empédocles</h2>
                 </a>
 
                 <a href="https://pt.wikipedia.org/wiki/Emp%C3%A9docles">
@@ -706,7 +729,7 @@
 
                 <!--Anaxágoras-->
                 <a href="https://pt.wikipedia.org/wiki/Anax%C3%A1goras" class="nomes">
-                    <h2 class="espaço">Anaxágoras</h2>
+                    <h2 class="espaço" id="Anaxágoras">Anaxágoras</h2>
                 </a>
 
                 <a href="https://pt.wikipedia.org/wiki/Anax%C3%A1goras">
@@ -746,7 +769,7 @@
 
                 <!--Demócrito-->
                 <a href="https://pt.wikipedia.org/wiki/Dem%C3%B3crito" class="nomes">
-                    <h2 class="espaço">Demócrito</h2>
+                    <h2 class="espaço" id="Demócrito">Demócrito</h2>
                 </a>
 
                 <a href="https://pt.wikipedia.org/wiki/Dem%C3%B3crito">
@@ -788,7 +811,7 @@
 
                 <!--Sócrates-->
                 <a href="https://pt.wikipedia.org/wiki/S%C3%B3crates" class="nomes">
-                    <h2 class="espaço">Sócrates</h2>
+                    <h2 class="espaço" id="Sócrates">Sócrates</h2>
                 </a>
 
                 <a href="https://pt.wikipedia.org/wiki/S%C3%B3crates">
@@ -836,7 +859,7 @@
 
                 <!--Platão-->
                 <a href="https://pt.wikipedia.org/wiki/Plat%C3%A3o" class="nomes">
-                    <h2 class="espaço">Platão</h2>
+                    <h2 class="espaço" id="Platão">Platão</h2>
                 </a>
 
                 <a href="https://pt.wikipedia.org/wiki/Plat%C3%A3o">
@@ -889,7 +912,7 @@
 
                 <!--Aristóteles-->
                 <a href="https://pt.wikipedia.org/wiki/Arist%C3%B3teles" class="nomes">
-                    <h2 class="espaço">Aristóteles</h2>
+                    <h2 class="espaço" id="Aristóteles">Aristóteles</h2>
                 </a>
 
                 <a href="https://pt.wikipedia.org/wiki/Arist%C3%B3teles">
@@ -943,7 +966,7 @@
 
                 <!--Epicuro-->
                 <a href="https://pt.wikipedia.org/wiki/Epicuro" class="nomes">
-                    <h2 class="espaço">Epicuro</h2>
+                    <h2 class="espaço" id="Epicuro">Epicuro</h2>
                 </a>
 
                 <a href="https://pt.wikipedia.org/wiki/Epicuro">
@@ -992,7 +1015,7 @@
 
                 <!--Zenão de Cítio-->
                 <a href="https://pt.wikipedia.org/wiki/Zen%C3%A3o_de_C%C3%ADtio" class="nomes">
-                    <h2 class="espaço">Zenão de Cítio</h2>
+                    <h2 class="espaço" id="ZenãodeCítio">Zenão de Cítio</h2>
                 </a>
 
                 <a href="https://pt.wikipedia.org/wiki/Zen%C3%A3o_de_C%C3%ADtio">
@@ -1037,7 +1060,7 @@
 
                 <!--Cícero-->
                 <a href="https://pt.wikipedia.org/wiki/C%C3%ADcero" class="nomes">
-                    <h2 class="espaço">Cícero</h2>
+                    <h2 class="espaço" id="Cícero">Cícero</h2>
                 </a>
 
                 <a href="https://pt.wikipedia.org/wiki/C%C3%ADcero">
@@ -1088,7 +1111,7 @@
 
                 <!--René Descartes-->
                 <a href="https://pt.wikipedia.org/wiki/Ren%C3%A9_Descartes" class="nomes">
-                    <h2 class="espaço">René Descartes (1596-1650)</h2>
+                    <h2 class="espaço" id="RenéDescartes">René Descartes (1596-1650)</h2>
                 </a>
 
                 <a href="https://pt.wikipedia.org/wiki/Ren%C3%A9_Descartes">
@@ -1135,7 +1158,7 @@
 
                 <!--John Locke-->
                 <a href="https://pt.wikipedia.org/wiki/John_Locke" class="nomes">
-                    <h2 class="espaço">John Locke (1632-1704)</h2>
+                    <h2 class="espaço" id="JohnLocke">John Locke (1632-1704)</h2>
                 </a>
 
                 <a href="https://pt.wikipedia.org/wiki/John_Locke">
@@ -1185,7 +1208,7 @@
 
                 <!--Baruch Spinoza-->
                 <a href="https://pt.wikipedia.org/wiki/Baruch_Espinoza" class="nomes">
-                    <h2 class="espaço">Baruch Spinoza (1632-1677)</h2>
+                    <h2 class="espaço" id="BaruchSpinoza">Baruch Spinoza (1632-1677)</h2>
                 </a>
 
                 <a href="https://pt.wikipedia.org/wiki/Baruch_Espinoza">
@@ -1236,7 +1259,7 @@
 
                 <!--Gottfried Wilhelm Leibniz-->
                 <a href="https://pt.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz" class="nomes">
-                    <h2 class="espaço">Gottfried Wilhelm Leibniz (1646-1716)</h2>
+                    <h2 class="espaço" id="GottfriedWilhelmLeibniz">Gottfried Wilhelm Leibniz (1646-1716)</h2>
                 </a>
 
                 <a href="https://pt.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz">
@@ -1292,7 +1315,7 @@
 
                 <!--Thomas Hobbes-->
                 <a href="https://pt.wikipedia.org/wiki/Thomas_Hobbes" class="nomes">
-                    <h2 class="espaço">Thomas Hobbes (1646-1716)</h2>
+                    <h2 class="espaço" id="ThomasHobbes">Thomas Hobbes (1646-1716)</h2>
                 </a>
 
                 <a href="https://pt.wikipedia.org/wiki/Thomas_Hobbes">
@@ -1323,7 +1346,7 @@
 
                 <!--Jean-Jacques Rousseau-->
                 <a href="https://pt.wikipedia.org/wiki/Jean-Jacques_Rousseau" class="nomes">
-                    <h2 class="espaço">Jean-Jacques Rousseau (1712-1778)</h2>
+                    <h2 class="espaço" id="Jean-JacquesRousseau">Jean-Jacques Rousseau (1712-1778)</h2>
                 </a>
 
                 <a href="https://pt.wikipedia.org/wiki/Jean-Jacques_Rousseau">
@@ -1356,7 +1379,7 @@
 
                 <!--Immanuel Kant-->
                 <a href="https://pt.wikipedia.org/wiki/Immanuel_Kant" class="nomes">
-                    <h2 class="espaço">Immanuel Kant (1724-1804)</h2>
+                    <h2 class="espaço" id="ImmanuelKant">Immanuel Kant (1724-1804)</h2>
                 </a>
 
                 <a href="https://pt.wikipedia.org/wiki/Immanuel_Kant">
@@ -1390,7 +1413,7 @@
 
                 <!--David Hume-->
                 <a href="https://pt.wikipedia.org/wiki/David_Hume" class="nomes">
-                    <h2 class="espaço">David Hume (1711-1776)</h2>
+                    <h2 class="espaço" id="DavidHume">David Hume (1711-1776)</h2>
                 </a>
 
                 <a href="https://pt.wikipedia.org/wiki/David_Hume">
@@ -1428,7 +1451,7 @@
 
                 <!--Voltaire-->
                 <a href="https://pt.wikipedia.org/wiki/Voltaire" class="nomes">
-                    <h2 class="espaço">François-Marie Arouet (1694-1778)</h2>
+                    <h2 class="espaço" id="François-MarieArouet">François-Marie Arouet (1694-1778)</h2>
                 </a>
 
                 <a href="https://pt.wikipedia.org/wiki/Voltaire">
@@ -1463,7 +1486,7 @@
 
                 <!--Georg Wilhelm Friedrich Hegel-->
                 <a href="https://pt.wikipedia.org/wiki/Georg_Wilhelm_Friedrich_Hegel" class="nomes">
-                    <h2 class="espaço">Georg Wilhelm Friedrich Hegel (1770-1831)</h2>
+                    <h2 class="espaço" id="GeorgWilhelmFriedrichHegel">Georg Wilhelm Friedrich Hegel (1770-1831)</h2>
                 </a>
 
                 <a href="https://pt.wikipedia.org/wiki/Georg_Wilhelm_Friedrich_Hegel">
@@ -1757,6 +1780,194 @@
         }
 
         PesquisaConteudoNaPagina()
+
+        //Pesquisa pelo Filosofo que Busca Conhecer
+        function PesquisarOsFilosofosERedirecionar() {
+
+            event.preventDefault()
+
+            let PesquisaDaPagina = document.getElementById('PesquisaDaPagina').value
+
+            //Pesquisa por Tales de Mileto
+            if (PesquisaDaPagina === 'Tales de Mileto') {
+                let TalesdeMileto = document.getElementById('TalesdeMileto')
+
+                TalesdeMileto.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Anaximandro
+            else if (PesquisaDaPagina === 'Anaximandro') {
+                let Anaximandro = document.getElementById('Anaximandro')
+
+                Anaximandro.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Anaxímenes
+            else if (PesquisaDaPagina === 'Anaxímenes') {
+                let Anaxímenes = document.getElementById('Anaxímenes')
+
+                Anaxímenes.scrollIntoView({ behavior: 'smooth' })
+            }
+            
+            //Pesquisa por Pitágoras
+            else if (PesquisaDaPagina === 'Pitágoras') {
+                let Pitágoras = document.getElementById('Pitágoras')
+                
+                Pitágoras.scrollIntoView({ behavior: 'smooth' })
+            }
+            
+            //Pesquisa por Heráclito
+            else if (PesquisaDaPagina === 'Heráclito') {
+                let Heráclito = document.getElementById('Heráclito')
+
+                Heráclito.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Parmênides
+            else if (PesquisaDaPagina === 'Parmênides') {
+                let Parmênides = document.getElementById('Parmênides')
+
+                Parmênides.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Empédocles
+            else if (PesquisaDaPagina === 'Empédocles') {
+                let Empédocles = document.getElementById('Empédocles')
+
+                Empédocles.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Anaxágoras
+            else if (PesquisaDaPagina === 'Anaxágoras') {
+                let Anaxágoras = document.getElementById('Anaxágoras')
+
+                Anaxágoras.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Demócrito
+            else if (PesquisaDaPagina === 'Demócrito') {
+                let Demócrito = document.getElementById('Demócrito')
+
+                Demócrito.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Sócrates
+            else if (PesquisaDaPagina === 'Sócrates') {
+                let Sócrates = document.getElementById('Sócrates')
+
+                Sócrates.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Platão
+            else if (PesquisaDaPagina === 'Platão') {
+                let Platão = document.getElementById('Platão')
+
+                Platão.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Aristóteles
+            else if (PesquisaDaPagina === 'Aristóteles') {
+                let Aristóteles = document.getElementById('Aristóteles')
+
+                Aristóteles.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Epicuro
+            else if (PesquisaDaPagina === 'Epicuro') {
+                let Epicuro = document.getElementById('Epicuro')
+
+                Epicuro.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Zenão de Cítio
+            else if (PesquisaDaPagina === 'Zenão de Cítio') {
+                let ZenãodeCítio = document.getElementById('ZenãodeCítio')
+
+                ZenãodeCítio.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Cícero
+            else if (PesquisaDaPagina === 'Cícero') {
+                let Cícero = document.getElementById('Cícero')
+
+                Cícero.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por René Descartes
+            else if (PesquisaDaPagina === 'René Descartes') {
+                let RenéDescartes = document.getElementById('RenéDescartes')
+
+                RenéDescartes.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por John Locke
+            else if (PesquisaDaPagina === 'John Locke') {
+                let JohnLocke = document.getElementById('JohnLocke')
+
+                JohnLocke.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Baruch Spinoza
+            else if (PesquisaDaPagina === 'Baruch Spinoza') {
+                let BaruchSpinoza = document.getElementById('BaruchSpinoza')
+
+                BaruchSpinoza.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Gottfried Wilhelm Leibniz
+            else if (PesquisaDaPagina === 'Gottfried Wilhelm Leibniz') {
+                let GottfriedWilhelmLeibniz = document.getElementById('GottfriedWilhelmLeibniz')
+
+                GottfriedWilhelmLeibniz.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Thomas Hobbes
+            else if (PesquisaDaPagina === 'Thomas Hobbes') {
+                let ThomasHobbes = document.getElementById('ThomasHobbes')
+
+                ThomasHobbes.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Jean-Jacques Rousseau
+            else if (PesquisaDaPagina === 'Jean-Jacques Rousseau') {
+                let JeanJacquesRousseau = document.getElementById('Jean-JacquesRousseau')
+
+                JeanJacquesRousseau.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Immanuel Kant
+            else if (PesquisaDaPagina === 'Immanuel Kant') {
+                let ImmanuelKant = document.getElementById('ImmanuelKant')
+
+                ImmanuelKant.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por David Hume
+            else if (PesquisaDaPagina === 'David Hume') {
+                let DavidHume = document.getElementById('DavidHume')
+
+                DavidHume.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por François-Marie Arouet
+            else if (PesquisaDaPagina === 'François-Marie Arouet') {
+                let FrançoisMarieArouet = document.getElementById('François-MarieArouet')
+
+                FrançoisMarieArouet.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Georg Wilhelm Friedrich Hegel
+            else if (PesquisaDaPagina === 'Georg Wilhelm Friedrich Hegel') {
+                let GeorgWilhelmFriedrichHegel = document.getElementById('GeorgWilhelmFriedrichHegel')
+
+                GeorgWilhelmFriedrichHegel.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Mensagem é envia se não for pesquisado nada ou não corretamente
+            else {
+                alert('Pesquisa Invalida!')
+            }
+        }
     </script>
 </body>
 
