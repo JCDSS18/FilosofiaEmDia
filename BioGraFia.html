@@ -76,27 +76,6 @@
             transition: 0.5s;
         }
 
-        input {
-            display: block;
-            margin-top: 3px;
-            margin-left: 130px;
-            margin-right: -40px;
-            margin-bottom: 10px;
-            padding-left: 6px;
-            padding-top: 2px;
-            padding-right: 40px;
-            padding-bottom: 2px;
-            width: 120px;
-            border-radius: 8px;
-        }
-
-        input:hover {
-            border-color: white;
-            background-color: black;
-            color: white;
-            transition: 0.5s;
-        }
-
         /*Rodape da Pagina*/
         footer {
             padding: 100px 100px 50px 100px;
@@ -119,6 +98,46 @@
 
         .link:hover {
             color: white;
+            transition: 0.5s;
+        }
+
+        .FormularioDePesquisaDeRedirecionamento {
+            display: flex;
+            margin-right: -30px;
+            margin-left: 300px;
+            margin-top: 2px;
+        }
+
+        .EncolherOtamanhoDaPesquisa {
+            height: 20px;
+            padding-left: 5px;
+            border-radius: 10px;
+            background-color: white;
+            color: black;
+            box-shadow: 2px 2px 0px 0px black;
+        }
+
+        .EncolherOtamanhoDaPesquisa:hover {
+            box-shadow: 2px 2px 0px 0px white;
+            background-color: black;
+            color: white;
+            transition: 0.5s;
+        }
+
+        .FormatoDoBotaoDePesquisa {
+            width: 50px;
+            height: 25px;
+            border-radius: 10px;
+            background-color: white;
+            color: black;
+            box-shadow: 2px 2px 0px 0px black;
+            margin-left: 3px;
+        }
+
+        .FormatoDoBotaoDePesquisa:hover {
+            background-color: black;
+            color: white;
+            box-shadow: 2px 2px 0px 0px white;
             transition: 0.5s;
         }
 
@@ -349,8 +368,10 @@
 
             <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/BioGrafia.html" class="link">BioGraFia</a>
 
-            <form>
-                <input type="search" class="" id="PesquisaDaPagina">
+            <form class="FormularioDePesquisaDeRedirecionamento">
+                <input type="text" class="EncolherOtamanhoDaPesquisa" id="PesquisaDaPagina">
+                <input type="submit" id="Pesquisar" class="FormatoDoBotaoDePesquisa" value="Ir"
+                    onclick="PesquisarOsFilosofosERedirecionar()">
             </form>
 
             <a href="http://127.0.0.1:5501/PJT%20-%20(New)/PJT%20-%2002/Log%20In.html" class="link">Log In</a>
@@ -369,7 +390,7 @@
                     <h2 class="espaço">Os MaIoRes FiLoSoFos GreGos</h2>
                 </a>
                 <a href="https://pt.wikipedia.org/wiki/Tales_de_Mileto" class="nomes">
-                    <h2 class="espaço">Tales de Mileto</h2>
+                    <h2 class="espaço" id="TalesdeMileto">Tales de Mileto</h2>
                 </a>
 
                 <div class="flex espaço">
@@ -432,7 +453,7 @@
             <!--Anaximandro-->
             <article>
                 <a href="https://pt.wikipedia.org/wiki/Anaximandro" class="nomes">
-                    <h2 class="espaço">Anaximandro</h2>
+                    <h2 class="espaço" id="Anaximandro">Anaximandro</h2>
                 </a>
 
                 <div class="flex espaço">
@@ -479,7 +500,7 @@
             <!--Anaxímenes-->
             <article>
                 <a href="https://pt.wikipedia.org/wiki/Anax%C3%ADmenes_de_Mileto" class="nomes">
-                    <h2 class="espaço">Anaxímenes</h2>
+                    <h2 class="espaço" id="Anaxímenes">Anaxímenes</h2>
                 </a>
 
                 <div class="flex espaço">
@@ -525,7 +546,7 @@
             <!--Pitágoras-->
             <article>
                 <a href="https://pt.wikipedia.org/wiki/Pit%C3%A1goras" class="nomes">
-                    <h2 class="espaço">Pitágoras</h2>
+                    <h2 class="espaço" id="Pitágoras">Pitágoras</h2>
                 </a>
 
                 <div class="flex espaço">
@@ -586,7 +607,7 @@
             <!--Heráclito-->
             <article>
                 <a href="https://pt.wikipedia.org/wiki/Her%C3%A1clito" class="nomes">
-                    <h2 class="espaço">Heráclito</h2>
+                    <h2 class="espaço" id="Heráclito">Heráclito</h2>
                 </a>
 
                 <div class="flex espaço">
@@ -643,7 +664,7 @@
             <!--Parmênides-->
             <article>
                 <a href="https://pt.wikipedia.org/wiki/Parm%C3%AAnides" class="nomes">
-                    <h2 class="espaço">Parmênides</h2>
+                    <h2 class="espaço" id="Parmênides">Parmênides</h2>
                 </a>
 
                 <div class="flex espaço">
@@ -695,7 +716,7 @@
             <!--Empédocles-->
             <article>
                 <a href="https://pt.wikipedia.org/wiki/Emp%C3%A9docles" class="nomes">
-                    <h2 class="espaço">Empédocles</h2>
+                    <h2 class="espaço" id="Empédocles">Empédocles</h2>
                 </a>
 
                 <div class="flex espaço">
@@ -752,7 +773,7 @@
             <!--Anaxágoras-->
             <article>
                 <a href="https://pt.wikipedia.org/wiki/Anax%C3%A1goras" class="nomes">
-                    <h2 class="espaço">Anaxágoras</h2>
+                    <h2 class="espaço" id="Anaxágoras">Anaxágoras</h2>
                 </a>
 
                 <div class="flex espaço">
@@ -806,7 +827,7 @@
             <!--Demócrito-->
             <article>
                 <a href="https://pt.wikipedia.org/wiki/Dem%C3%B3crito" class="nomes">
-                    <h2 class="espaço">Demócrito</h2>
+                    <h2 class="espaço" id="Demócrito">Demócrito</h2>
                 </a>
 
                 <div class="flex espaço">
@@ -863,7 +884,7 @@
             <!--Sócrates-->
             <article>
                 <a href="https://pt.wikipedia.org/wiki/S%C3%B3crates" class="nomes">
-                    <h2 class="espaço">Sócrates</h2>
+                    <h2 class="espaço" id="Sócrates">Sócrates</h2>
                 </a>
 
                 <div class="flex espaço">
@@ -923,7 +944,7 @@
             <!--Platão-->
             <article>
                 <a href="https://pt.wikipedia.org/wiki/Plat%C3%A3o" class="nomes">
-                    <h2 class="espaço">Platão</h2>
+                    <h2 class="espaço" id="Platão">Platão</h2>
                 </a>
 
                 <div class="flex espaço">
@@ -990,7 +1011,7 @@
             <!--Aristóteles-->
             <article>
                 <a href="https://pt.wikipedia.org/wiki/Arist%C3%B3teles" class="nomes">
-                    <h2 class="espaço">Aristóteles</h2>
+                    <h2 class="espaço" id="Aristóteles">Aristóteles</h2>
                 </a>
 
                 <div class="flex espaço">
@@ -1058,7 +1079,7 @@
             <!--Epicuro-->
             <article>
                 <a href="https://pt.wikipedia.org/wiki/Epicuro" class="nomes">
-                    <h2 class="espaço">Epicuro</h2>
+                    <h2 class="espaço" id="Epicuro">Epicuro</h2>
                 </a>
 
                 <div class="flex espaço">
@@ -1113,7 +1134,7 @@
             <!--Zenão de Cítio-->
             <article>
                 <a href="https://pt.wikipedia.org/wiki/Zen%C3%A3o_de_C%C3%ADtio" class="nomes">
-                    <h2 class="espaço">Zenão de Cítio</h2>
+                    <h2 class="espaço" id="ZenãodeCítio">Zenão de Cítio</h2>
                 </a>
 
                 <div class="flex espaço">
@@ -1172,7 +1193,7 @@
             <!--Marco Túlio Cícero-->
             <article>
                 <a href="https://pt.wikipedia.org/wiki/C%C3%ADcero" class="nomes">
-                    <h2 class="espaço">Marco Túlio Cícero</h2>
+                    <h2 class="espaço" id="MarcoTúlioCícero">Marco Túlio Cícero</h2>
                 </a>
 
                 <div class="flex espaço">
@@ -1233,7 +1254,7 @@
                 </a>
 
                 <a href="https://pt.wikipedia.org/wiki/Ren%C3%A9_Descartes" class="nomes">
-                    <h2 class="espaço">René Descartes (1596-1650)</h2>
+                    <h2 class="espaço" id="RenéDescartes">René Descartes (1596-1650)</h2>
                 </a>
 
                 <div class="flex espaço">
@@ -1264,7 +1285,7 @@
             <!--John Locke-->
             <article>
                 <a href="https://pt.wikipedia.org/wiki/John_Locke" class="nomes">
-                    <h2 class="espaço">John Locke (1632-1704)</h2>
+                    <h2 class="espaço" id="JohnLocke">John Locke (1632-1704)</h2>
                 </a>
 
                 <div class="flex espaço">
@@ -1308,7 +1329,7 @@
             <!--Baruch Spinoza-->
             <article>
                 <a href="https://pt.wikipedia.org/wiki/Baruch_Espinoza" class="nomes">
-                    <h2 class="espaço">Baruch Spinoza (1632-1677)</h2>
+                    <h2 class="espaço" id="BaruchSpinoza">Baruch Spinoza (1632-1677)</h2>
                 </a>
 
                 <div class="flex espaço">
@@ -1349,6 +1370,113 @@
                         impacto duradouro no pensamento filosófico, e ele é frequentemente lembrado como um precursor do
                         Iluminismo e do pensamento secular moderno. Sua abordagem racionalista e sua visão de Deus como
                         natureza foram inovadoras para sua época.
+                    </p>
+                </div>
+            </article>
+
+            <!--Gottfried Wilhelm Leibniz-->
+            <article>
+                <a href="https://pt.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz" class="nomes">
+                    <h2 class="espaço" id="GottfriedWilhelmLeibniz">Gottfried Wilhelm Leibniz (1646-1716)</h2>
+                </a>
+
+                <div class="flex espaço">
+                    <p class="FlexItem">
+                        Gottfried Wilhelm Leibniz (1646-1716) foi um filósofo, matemático, cientista, diplomata e
+                        bibliotecário alemão. Ele é mais conhecido por suas contribuições para a filosofia e a
+                        matemática, sendo co-criador do cálculo infinitesimal (independente de Isaac Newton), além de
+                        ter feito avanços significativos em lógica, metafísica, teologia, história, jurisprudência e
+                        várias outras disciplinas.
+                        <br><br>
+                        1. <b>Juventude e Educação:</b> Leibniz nasceu em Leipzig, Alemanha, em 1º de julho de 1646. Ele
+                        recebeu uma educação
+                        excepcional e demonstrou grande habilidade em línguas, filosofia e matemática desde jovem.
+                        <br><br>
+                        2. <b>Estudos Universitários:</b> Leibniz frequentou a Universidade de Leipzig e, mais tarde,
+                        estudou
+                        direito na Universidade de Altdorf. Durante esse tempo, ele começou a desenvolver suas ideias
+                        filosóficas e matemáticas.
+                        <br><br>
+                        3. <b>Invenção do Cálculo Diferencial e Integral:</b> Leibniz é creditado por desenvolver de
+                        forma
+                        independente o cálculo diferencial e integral na década de 1670. No entanto, isso levou a uma
+                        controvérsia amarga com Isaac Newton, que também estava trabalhando no mesmo campo.
+                    </p>
+
+                    <p class="FlexItem">
+                        4. <b>Trabalhos em Filosofia:</b> Leibniz fez contribuições significativas para a filosofia,
+                        principalmente através de suas obras "Monadologia" e "Teodiceia". Ele desenvolveu a ideia das
+                        mônadas, unidades fundamentais de realidade, e propôs uma teodiceia (uma defesa da bondade de
+                        Deus em face do mal no mundo).
+                        <br><br>
+                        5. <b>Serviço Diplomático:</b> Leibniz ocupou vários cargos diplomáticos ao longo de sua vida,
+                        servindo
+                        cortes europeias, incluindo a corte real em Hanôver. Ele buscava promover seus
+                        projetosintelectuais e reconciliar as igrejas cristãs.
+                        <br><br>
+                        6. <b>Contribuições para a Lógica e a Matemática:</b> Além do cálculo, Leibniz fez contribuições
+                        importantes para a lógica, inventando o sistema binário, fundamental para a computação moderna.
+                        <br><br>
+                        7. <b>Morte:</b> Leibniz faleceu em Hanôver, em 14 de novembro de 1716.
+                        <br><br>
+                        A influência de Leibniz se estende por várias disciplinas, e suas ideias continuam a ser
+                        estudadas e debatidas até os dias atuais. Ele é considerado uma figura central no Iluminismo e
+                        um dos grandes pensadores da história.
+                    </p>
+                </div>
+            </article>
+
+            <!--Thomas Hobbes-->
+            <article>
+                <a href="https://pt.wikipedia.org/wiki/Thomas_Hobbes" class="nomes">
+                    <h2 class="espaço" id="ThomasHobbes">Thomas Hobbes (1588-1679)</h2>
+                </a>
+
+                <div class="flex espaço">
+                    <p class="FlexItem">
+                        Thomas Hobbes (1588-1679) foi um filósofo e teórico político inglês, mais conhecido por suas
+                        contribuições à filosofia política. Aqui estão alguns pontos chave em sua biografia:
+                        <br><br>
+                        1. <b>Juventude e Educação:</b>
+                        Hobbes nasceu em Westport, Wiltshire, Inglaterra, em 5 de abril de 1588. Ele estudou na
+                        Universidade de Oxford, onde adquiriu uma sólida educação em filosofia e ciências clássicas.
+                        <br><br>
+                        2. <b>Tutoria e Viagens:</b>
+                        Hobbes tornou-se tutor de William Cavendish, filho do Conde de Devonshire, e isso o levou a
+                        viajar pela Europa durante vários anos. Durante suas viagens, ele encontrou e estudou com muitos
+                        dos grandes filósofos e cientistas da época.
+                        <br><br>
+                        3. <b>Obra "Leviatã":</b>
+                        Em 1651, Hobbes publicou sua obra mais famosa, "Leviatã". Neste livro, ele apresenta suas ideias
+                        sobre a natureza do homem e a necessidade de um governo forte para evitar o caos e manter a
+                        ordem na sociedade.
+                        <br><br>
+                        4. <b>Teoria do Contrato Social:</b>
+                        Hobbes é conhecido por sua teoria do contrato social, na qual argumenta que os indivíduos abrem
+                        mão de parte de sua liberdade natural em troca de proteção e ordem fornecidas pelo Estado. Ele
+                        acreditava que, sem um governo forte, a vida seria "solitária, pobre, sórdida, brutal e curta".
+                    </p>
+
+                    <p class="FlexItem">
+                        5. <b>Visões sobre a Natureza Humana:</b>
+                        Hobbes tinha uma visão pessimista da natureza humana, argumentando que os seres humanos eram
+                        motivados principalmente pelo desejo de autopreservação e que a competição e o conflito eram
+                        inerentes à condição humana.
+                        <br><br>
+                        6. <b>Exílio e Retorno:</b>
+                        Durante a Guerra Civil Inglesa, Hobbes se viu em dificuldades devido às suas visões políticas.
+                        Ele passou um tempo no exílio na França, mas eventualmente retornou à Inglaterra após a
+                        Restauração, quando Carlos II assumiu o trono.
+                        <br><br>
+                        7. <b>Outras Obras:</b>
+                        Além de "Leviatã", Hobbes escreveu várias outras obras filosóficas e políticas, incluindo "Do
+                        Cidadão" e "Do Corpo".
+                        <br><br>
+                        8. <b>Morte:</b>
+                        Thomas Hobbes faleceu em 4 de dezembro de 1679, em Hardwick Hall, Derbyshire, Inglaterra.
+                        <br><br>
+                        Hobbes teve uma influência duradoura no pensamento político e filosófico, e suas ideias
+                        continuam a ser objeto de estudo e debate nos campos da filosofia, política e ciências sociais.
                     </p>
                 </div>
             </article>
@@ -1541,6 +1669,194 @@
             let NovaPosicao = 0
 
             window.scrollTo(0, NovaPosicao)
+        }
+
+        //Pesquisa pelo Filosofo que Busca Conhecer
+        function PesquisarOsFilosofosERedirecionar() {
+
+            event.preventDefault()
+
+            let PesquisaDaPagina = document.getElementById('PesquisaDaPagina').value
+
+            //Pesquisa por Tales de Mileto
+            if (PesquisaDaPagina === 'Tales de Mileto') {
+                let TalesdeMileto = document.getElementById('TalesdeMileto')
+
+                TalesdeMileto.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Anaximandro
+            else if (PesquisaDaPagina === 'Anaximandro') {
+                let Anaximandro = document.getElementById('Anaximandro')
+
+                Anaximandro.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Anaxímenes
+            else if (PesquisaDaPagina === 'Anaxímenes') {
+                let Anaxímenes = document.getElementById('Anaxímenes')
+
+                Anaxímenes.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Pitágoras
+            else if (PesquisaDaPagina === 'Pitágoras') {
+                let Pitágoras = document.getElementById('Pitágoras')
+
+                Pitágoras.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Heráclito
+            else if (PesquisaDaPagina === 'Heráclito') {
+                let Heráclito = document.getElementById('Heráclito')
+
+                Heráclito.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Parmênides
+            else if (PesquisaDaPagina === 'Parmênides') {
+                let Parmênides = document.getElementById('Parmênides')
+
+                Parmênides.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Empédocles
+            else if (PesquisaDaPagina === 'Empédocles') {
+                let Empédocles = document.getElementById('Empédocles')
+
+                Empédocles.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Anaxágoras
+            else if (PesquisaDaPagina === 'Anaxágoras') {
+                let Anaxágoras = document.getElementById('Anaxágoras')
+
+                Anaxágoras.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Demócrito
+            else if (PesquisaDaPagina === 'Demócrito') {
+                let Demócrito = document.getElementById('Demócrito')
+
+                Demócrito.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Sócrates
+            else if (PesquisaDaPagina === 'Sócrates') {
+                let Sócrates = document.getElementById('Sócrates')
+
+                Sócrates.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Platão
+            else if (PesquisaDaPagina === 'Platão') {
+                let Platão = document.getElementById('Platão')
+
+                Platão.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Aristóteles
+            else if (PesquisaDaPagina === 'Aristóteles') {
+                let Aristóteles = document.getElementById('Aristóteles')
+
+                Aristóteles.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Epicuro
+            else if (PesquisaDaPagina === 'Epicuro') {
+                let Epicuro = document.getElementById('Epicuro')
+
+                Epicuro.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Zenão de Cítio
+            else if (PesquisaDaPagina === 'Zenão de Cítio') {
+                let ZenãodeCítio = document.getElementById('ZenãodeCítio')
+
+                ZenãodeCítio.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Marco Túlio Cícero
+            else if (PesquisaDaPagina === 'Marco Túlio Cícero') {
+                let MarcoTúlioCícero = document.getElementById('MarcoTúlioCícero')
+
+                MarcoTúlioCícero.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por René Descartes
+            else if (PesquisaDaPagina === 'René Descartes') {
+                let RenéDescartes = document.getElementById('RenéDescartes')
+
+                RenéDescartes.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por John Locke
+            else if (PesquisaDaPagina === 'John Locke') {
+                let JohnLocke = document.getElementById('JohnLocke')
+
+                JohnLocke.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Baruch Spinoza
+            else if (PesquisaDaPagina === 'Baruch Spinoza') {
+                let BaruchSpinoza = document.getElementById('BaruchSpinoza')
+
+                BaruchSpinoza.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Gottfried Wilhelm Leibniz
+            else if (PesquisaDaPagina === 'Gottfried Wilhelm Leibniz') {
+                let GottfriedWilhelmLeibniz = document.getElementById('GottfriedWilhelmLeibniz')
+
+                GottfriedWilhelmLeibniz.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Thomas Hobbes
+            else if (PesquisaDaPagina === 'Thomas Hobbes') {
+                let ThomasHobbes = document.getElementById('ThomasHobbes')
+
+                ThomasHobbes.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Jean-Jacques Rousseau
+            else if (PesquisaDaPagina === 'Jean-Jacques Rousseau') {
+                let JeanJacquesRousseau = document.getElementById('Jean-JacquesRousseau')
+
+                JeanJacquesRousseau.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Immanuel Kant
+            else if (PesquisaDaPagina === 'Immanuel Kant') {
+                let ImmanuelKant = document.getElementById('ImmanuelKant')
+
+                ImmanuelKant.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por David Hume
+            else if (PesquisaDaPagina === 'David Hume') {
+                let DavidHume = document.getElementById('DavidHume')
+
+                DavidHume.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por François-Marie Arouet
+            else if (PesquisaDaPagina === 'François-Marie Arouet') {
+                let FrançoisMarieArouet = document.getElementById('François-MarieArouet')
+
+                FrançoisMarieArouet.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Pesquisa por Georg Wilhelm Friedrich Hegel
+            else if (PesquisaDaPagina === 'Gottfried Wilhelm Leibniz') {
+                let GottfriedWilhelmLeibniz = document.getElementById('GottfriedWilhelmLeibniz')
+
+                GottfriedWilhelmLeibniz.scrollIntoView({ behavior: 'smooth' })
+            }
+
+            //Mensagem é envia se não for pesquisado nada ou não corretamente
+            else {
+                alert('Pesquisa Invalida!')
+            }
         }
     </script>
 </body>
