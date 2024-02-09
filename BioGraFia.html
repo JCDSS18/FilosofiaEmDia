@@ -56,8 +56,8 @@
 
         article {
             padding: 35px;
-            padding-left: 45px;
-            padding-right: 40px;
+            padding-left: 50px;
+            padding-right: 30px;
             margin-bottom: 20px;
             border-radius: 10px;
             background-color: wheat;
@@ -89,6 +89,15 @@
             transition: 0.5s;
         }
 
+        /*Classes da Barra de Navegação*/
+        .ConteudoFixoNaTela {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: block;
+        }
+
         .link {
             margin: 5px 40px 0px 50px;
             font-weight: bold;
@@ -101,69 +110,7 @@
             transition: 0.5s;
         }
 
-        .FormularioDePesquisaDeRedirecionamento {
-            display: flex;
-            margin-right: -30px;
-            margin-left: 300px;
-            margin-top: 2px;
-        }
-
-        .EncolherOtamanhoDaPesquisa {
-            height: 20px;
-            padding-left: 5px;
-            border-radius: 10px;
-            background-color: white;
-            color: black;
-            box-shadow: 2px 2px 0px 0px black;
-        }
-
-        .EncolherOtamanhoDaPesquisa:hover {
-            box-shadow: 2px 2px 0px 0px white;
-            background-color: black;
-            color: white;
-            transition: 0.5s;
-        }
-
-        .FormatoDoBotaoDePesquisa {
-            width: 50px;
-            height: 25px;
-            border-radius: 10px;
-            background-color: white;
-            color: black;
-            box-shadow: 2px 2px 0px 0px black;
-            margin-left: 3px;
-        }
-
-        .FormatoDoBotaoDePesquisa:hover {
-            background-color: black;
-            color: white;
-            box-shadow: 2px 2px 0px 0px white;
-            transition: 0.5s;
-        }
-
-        .contato {
-            margin-bottom: 10px;
-        }
-
-        .tamanho {
-            width: 80px;
-            box-shadow: 2px 2px 2px 2px black;
-            margin: 0px 20px 0px 0px;
-        }
-
-        .espaço {
-            margin-bottom: 20px;
-        }
-
-        .url {
-            text-decoration: none;
-        }
-
-        .url:hover {
-            color: white;
-            transition: 0.5s;
-        }
-
+        /*Classes do Conteúdo Principal*/
         .nomes {
             color: black;
             text-decoration: none;
@@ -175,20 +122,8 @@
             transition: 0.5s;
         }
 
-        .esquerda {
-            width: 50%;
-            float: left;
-            margin-right: 20px;
-            margin-top: 10px;
-        }
-
-        .linha-vertical {
-            height: 400px;
-            border-left: 1px solid;
-            display: flex;
-            float: left;
-            margin-right: 20px;
-            margin-top: 40px;
+        .espaço {
+            margin-bottom: 20px;
         }
 
         .flex {
@@ -200,21 +135,7 @@
             margin-right: 30px;
         }
 
-        .VerticalLinha {
-            border-left: 1px solid;
-            height: 300px;
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-
-        .ConteudoFixoNaTela {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            display: block;
-        }
-
+        /*Classes dos Comentarios*/
         .comentarios {
             width: 91.5%;
             background-color: wheat;
@@ -283,14 +204,24 @@
             transition: 0.5s;
         }
 
-        .ComentariosDoPublico {
-            width: 91.5%;
-            background-color: wheat;
-            margin: 0px 0px 30px 20px;
-            padding: 30px;
-            padding-left: 35px;
-            border-radius: 10px 40px;
-            box-shadow: 2px 2px 2px 2px black;
+        .LimparOsComentarios {
+            width: 99%;
+            margin: 10px 0px 10px 0px;
+            border-radius: 10px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            box-shadow: 2px 2px 0px 0px black;
+            color: black;
+            font-weight: bold;
+            background-color: white;
+        }
+
+        .LimparOsComentarios:hover {
+            box-shadow: 2px 2px 0px 0px white;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            transition: 0.5s;
         }
 
         .SetaParaRetornarParaCima {
@@ -309,6 +240,100 @@
             border-radius: 10px;
         }
 
+        /**/
+
+        .FormularioDePesquisaDeRedirecionamento {
+            display: flex;
+            margin-right: -30px;
+            margin-left: 300px;
+            margin-top: 2px;
+        }
+
+        .EncolherOtamanhoDaPesquisa {
+            height: 20px;
+            padding-left: 5px;
+            border-radius: 10px;
+            background-color: white;
+            color: black;
+            box-shadow: 2px 2px 0px 0px black;
+        }
+
+        .EncolherOtamanhoDaPesquisa:hover {
+            box-shadow: 2px 2px 0px 0px white;
+            background-color: black;
+            color: white;
+            transition: 0.5s;
+        }
+
+        .FormatoDoBotaoDePesquisa {
+            width: 50px;
+            height: 25px;
+            border-radius: 10px;
+            background-color: white;
+            color: black;
+            box-shadow: 2px 2px 0px 0px black;
+            margin-left: 3px;
+        }
+
+        .FormatoDoBotaoDePesquisa:hover {
+            background-color: black;
+            color: white;
+            box-shadow: 2px 2px 0px 0px white;
+            transition: 0.5s;
+        }
+
+        .contato {
+            margin-bottom: 10px;
+        }
+
+        .tamanho {
+            width: 80px;
+            box-shadow: 2px 2px 2px 2px black;
+            margin: 0px 20px 0px 0px;
+        }
+
+        .url {
+            text-decoration: none;
+        }
+
+        .url:hover {
+            color: white;
+            transition: 0.5s;
+        }
+
+        .esquerda {
+            width: 50%;
+            float: left;
+            margin-right: 20px;
+            margin-top: 10px;
+        }
+
+        .linha-vertical {
+            height: 400px;
+            border-left: 1px solid;
+            display: flex;
+            float: left;
+            margin-right: 20px;
+            margin-top: 40px;
+        }
+
+        .VerticalLinha {
+            border-left: 1px solid;
+            height: 300px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .ComentariosDoPublico {
+            width: 91.5%;
+            background-color: wheat;
+            margin: 0px 0px 30px 20px;
+            padding: 30px;
+            padding-left: 35px;
+            border-radius: 10px 40px;
+            box-shadow: 2px 2px 2px 2px black;
+        }
+
         .ConteudoOculto {
             visibility: hidden;
             transition: 0.5s;
@@ -317,26 +342,6 @@
         .ConteudoFixo {
             position: fixed;
             visibility: visible;
-            transition: 0.5s;
-        }
-
-        .LimparOsComentarios {
-            width: 99%;
-            margin: 10px 0px 10px 0px;
-            border-radius: 10px;
-            padding-top: 3px;
-            padding-bottom: 3px;
-            box-shadow: 2px 2px 0px 0px black;
-            color: black;
-            font-weight: bold;
-            background-color: white;
-        }
-
-        .LimparOsComentarios:hover {
-            box-shadow: 2px 2px 0px 0px white;
-            cursor: pointer;
-            background-color: black;
-            color: white;
             transition: 0.5s;
         }
 
@@ -883,6 +888,11 @@
 
             <!--Sócrates-->
             <article>
+
+                <!--Sócrates-->
+                <a href="" class="nomes">
+                    <h2 class="espaço">Socráticos (Século V a.c.)</h2>
+                </a>
                 <a href="https://pt.wikipedia.org/wiki/S%C3%B3crates" class="nomes">
                     <h2 class="espaço" id="Sócrates">Sócrates</h2>
                 </a>
@@ -1480,6 +1490,184 @@
                     </p>
                 </div>
             </article>
+
+            <!--Jean-Jacques Rousseau-->
+            <article>
+                <a href="https://pt.wikipedia.org/wiki/Jean-Jacques_Rousseau" class="nomes">
+                    <h2 class="espaço" id="Jean-JacquesRousseau">Jean-Jacques Rousseau (1712-1778)</h2>
+                </a>
+
+                <div class="flex espaço">
+                    <p class="FlexItem">
+                        Jean-Jacques Rousseau (1712-1778) foi um filósofo, escritor e teórico político suíço-francês do
+                        século XVIII, uma figura central no movimento iluminista. Ele é conhecido por suas contribuições
+                        para a filosofia política, educação, música e literatura.
+                        <br><br>
+                        Rousseau é mais lembrado por suas obras "Discurso sobre a Origem e os Fundamentos da
+                        Desigualdade entre os Homens" (1755) e "O Contrato Social" (1762). Em "O Contrato Social",
+                        Rousseau argumentou que a sociedade civil, com suas instituições e leis, emerge de um contrato
+                        social voluntário entre os indivíduos, onde cada um concorda em renunciar à liberdade natural em
+                        favor da liberdade civil e da proteção mútua. Ele enfatizou a ideia de que o governo deve ser
+                        baseado na vontade geral do povo, representando os interesses comuns da comunidade.
+                    </p>
+
+                    <p class="FlexItem">
+                        Além de suas contribuições para a filosofia política, Rousseau também escreveu sobre educação em
+                        sua obra "Emílio, ou Da Educação" (1762), onde propôs um método educacional baseado na natureza
+                        e no desenvolvimento individual da criança.
+                        <br><br>
+                        Sua obra literária inclui o romance epistolar "Júlia, ou a Nova Heloísa" (1761), que aborda
+                        temas como o amor, a paixão e a moralidade.
+                        <br><br>
+                        As ideias de Rousseau influenciaram profundamente o pensamento político e social subsequente e
+                        continuam a ser objeto de estudo e debate até os dias de hoje.
+                    </p>
+                </div>
+            </article>
+
+            <!--Immanuel Kant-->
+            <article>
+                <a href="https://pt.wikipedia.org/wiki/Immanuel_Kant" class="nomes">
+                    <h2 class="espaço" id="ImmanuelKant">Immanuel Kant (1724-1804)</h2>
+                </a>
+
+                <div class="flex espaço">
+                    <p class="FlexItem">
+                        Immanuel Kant (1724-1804) foi um filósofo alemão que teve um impacto monumental na história da
+                        filosofia. Ele nasceu em Königsberg, Prússia (hoje Kaliningrado, Rússia), e passou a maior parte
+                        de sua vida lá, trabalhando como professor de filosofia na Universidade de Königsberg.
+                        <br><br>
+                        Kant é amplamente reconhecido por sua síntese das tradições filosóficas racionalista e
+                        empirista. Sua obra mais influente é "Crítica da Razão Pura" (1781), na qual ele investiga as
+                        possibilidades e limites do conhecimento humano. Kant argumenta que o conhecimento é formado
+                        pela interação entre a mente e a experiência sensorial, mas também é moldado por estruturas
+                        inatas da mente humana, que ele chama de "categorias".
+                        <br><br>
+                        Além da "Crítica da Razão Pura", Kant também escreveu obras importantes como "Crítica da Razão
+                        Prática" (1788), na qual ele discute questões éticas e morais, e "Crítica do Juízo" (1790), onde
+                        explora questões estéticas e teleológicas.
+                    </p>
+
+                    <p class="FlexItem">
+                        Kant também fez contribuições significativas para a filosofia política, defendendo a ideia de
+                        que os indivíduos devem ser tratados como fins em si mesmos e não apenas como meios para os
+                        objetivos de outros. Essa ideia é central em sua ética, que é conhecida como o "imperativo
+                        categórico".
+                        <br><br>
+                        As ideias de Kant influenciaram profundamente a filosofia ocidental e continuam a ser estudadas
+                        e debatidas nos dias de hoje. Ele é considerado um dos principais pensadores da era moderna.
+                    </p>
+                </div>
+            </article>
+
+            <!--David Hume-->
+            <article>
+                <a href="" class="nomes">
+                    <h2 class="espaço" id="DavidHume">David Hume (1711-1776)</h2>
+                </a>
+
+                <div class="flex espaço">
+                    <p class="FlexItem">
+                        David Hume (1711-1776) foi um filósofo, historiador e ensaísta escocês, uma figura proeminente
+                        durante o período da Ilustração. Ele é amplamente considerado um dos maiores filósofos do mundo
+                        de língua inglesa e uma figura central na tradição filosófica empirista.
+                        <br><br>
+                        Hume é conhecido principalmente por suas contribuições à epistemologia (teoria do conhecimento)
+                        e à filosofia da mente. Em sua obra "Tratado da Natureza Humana" (1739-1740), Hume apresentou
+                        uma análise crítica da natureza da crença e do conhecimento humano, argumentando que nossas
+                        crenças são baseadas em impressões sensoriais e experiências passadas, mas não podem ser
+                        justificadas racionalmente. Ele questionou a noção de que poderíamos ter conhecimento seguro
+                        sobre o mundo além das nossas experiências imediatas.
+                    </p>
+
+                    <p class="FlexItem">
+                        Além disso, Hume é famoso por suas investigações sobre a natureza da causalidade em sua obra
+                        "Investigação sobre o Entendimento Humano" (1748). Ele argumentou que não podemos observar
+                        diretamente a causalidade e que nossa crença nesse conceito é baseada em uma associação
+                        constante de eventos, mas não em uma conexão necessária entre eles.
+                        <br><br>
+                        Hume também escreveu extensivamente sobre ética, política, religião e história. Ele é conhecido
+                        por suas críticas à religião organizada e ao conceito de milagres, bem como por suas reflexões
+                        sobre a natureza da justiça, do governo e da moralidade.
+                        <br><br>
+                        As ideias de Hume tiveram um impacto significativo no desenvolvimento da filosofia ocidental e
+                        continuam a ser estudadas e debatidas até os dias de hoje.
+                    </p>
+                </div>
+            </article>
+
+            <!--Voltaire-->
+            <article>
+                <a href="https://pt.wikipedia.org/wiki/Voltaire" class="nomes">
+                    <h2 class="espaço" id="François-MarieArouet">Voltaire (1694-1778)</h2>
+                </a>
+
+                <div class="flex espaço">
+                    <p class="FlexItem">
+                        Voltaire, cujo nome verdadeiro era François-Marie Arouet (1694-1778), foi um dos mais influentes
+                        escritores e filósofos do Iluminismo francês. Ele era conhecido por sua vasta produção
+                        literária, que incluiu peças teatrais, ensaios, poesia, romances históricos e cartas.
+                        <br><br>
+                        Voltaire era um crítico ferrenho do absolutismo, da intolerância religiosa e das injustiças
+                        sociais de sua época. Ele defendia valores como liberdade de pensamento, tolerância religiosa,
+                        justiça e razão. Sua escrita era marcada por uma mistura de inteligência afiada, ironia e humor.
+                        <br><br>
+                        Algumas de suas obras mais famosas incluem "Cândido, ou o Otimismo" (1759), uma sátira que
+                        critica o otimismo cego diante da injustiça e do sofrimento no mundo, e "Dicionário Filosófico"
+                        (1764), uma coleção de ensaios onde ele aborda uma variedade de questões sociais, políticas,
+                        filosóficas e religiosas.
+                    </p>
+
+                    <p class="FlexItem">
+                        Além de suas contribuições literárias, Voltaire era um defensor apaixonado da liberdade de
+                        expressão e da separação entre Igreja e Estado. Sua famosa frase "Posso não concordar com o que
+                        dizes, mas defenderei até a morte o teu direito de dizê-lo" resume seu compromisso com a
+                        liberdade de pensamento e expressão.
+                        <br><br>
+                        Voltaire exerceu uma influência duradoura no pensamento político e filosófico da Europa e além,
+                        e suas ideias continuam a ressoar nos debates contemporâneos sobre liberdade, tolerância e
+                        justiça.
+                    </p>
+                </div>
+            </article>
+
+            <!--Georg Wilhelm Friedrich Hegel-->
+            <article>
+                <a href="https://pt.wikipedia.org/wiki/Georg_Wilhelm_Friedrich_Hegel" class="nomes">
+                    <h2 class="espaço" id="Georg WilhelmFriedrichHegel">Georg Wilhelm Friedrich Hegel (1770-1831)</h2>
+                </a>
+
+                <div class="flex espaço">
+                    <p class="FlexItem">
+                        Georg Wilhelm Friedrich Hegel (1770-1831) foi um filósofo alemão que teve uma influência
+                        profunda e duradoura no pensamento ocidental. Ele é conhecido principalmente por sua abordagem
+                        filosófica sistemática, que ficou conhecida como idealismo absoluto.
+                        <br><br>
+                        Hegel desenvolveu uma visão abrangente da realidade que incorporava elementos da filosofia,
+                        história, religião e cultura. Sua obra mais importante é "A Fenomenologia do Espírito" (1807),
+                        na qual ele explora o desenvolvimento da consciência humana desde formas mais simples até níveis
+                        mais complexos de autoconsciência e liberdade.
+                        <br><br>
+                        Uma das ideias centrais de Hegel é o conceito de "dialética", um processo pelo qual as
+                        contradições inerentes em qualquer sistema de pensamento ou realidade se resolvem através de um
+                        movimento de tese, antítese e síntese. Essa abordagem dialética é aplicada em muitos aspectos de
+                        sua filosofia, incluindo sua concepção da história como um processo dialético de progresso
+                        espiritual.
+                    </p>
+
+                    <p class="FlexItem">
+                        Hegel também é conhecido por sua filosofia política, particularmente sua defesa do Estado como a
+                        encarnação da razão e da liberdade ética. Ele via o Estado como uma manifestação da vontade
+                        racional coletiva, onde os indivíduos poderiam realizar plenamente sua liberdade dentro de uma
+                        ordem social justa.
+                        <br><br>
+                        Embora muitas vezes difícil de entender devido à sua linguagem densa e complexa, a obra de Hegel
+                        teve um impacto profundo em uma ampla gama de áreas, incluindo filosofia, ciências sociais,
+                        teologia e arte. Sua influência pode ser vista em pensadores tão diversos como Karl Marx,
+                        Friedrich Nietzsche, Søren Kierkegaard e muitos outros.
+                    </p>
+                </div>
+            </article>
         </section>
     </main>
 
@@ -1840,7 +2028,7 @@
             }
 
             //Pesquisa por François-Marie Arouet
-            else if (PesquisaDaPagina === 'François-Marie Arouet') {
+            else if (PesquisaDaPagina === 'François-Marie Arouet' || 'Voltaire') {
                 let FrançoisMarieArouet = document.getElementById('François-MarieArouet')
 
                 FrançoisMarieArouet.scrollIntoView({ behavior: 'smooth' })
