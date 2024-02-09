@@ -307,6 +307,7 @@
         }
 
         .ComentariosDoPublico {
+            display: flex;
             padding: 30px;
             background-color: bisque;
             box-shadow: 1px 1px 1px 1px black;
@@ -343,8 +344,14 @@
             margin: 0px 0px 30px 20px;
             padding: 30px;
             padding-left: 35px;
-            border-radius: 10px 40px;
+            border-radius: 10px;
             box-shadow: 2px 2px 2px 2px black;
+        }
+
+        .ComentariosDoPublico:hover {
+            box-shadow: 2px 2px 2px 2px white;
+            transition: 0.5s;
+            border-radius: 10px 40px;
         }
 
 
@@ -389,6 +396,23 @@
             cursor: pointer;
             background-color: black;
             color: white;
+        }
+
+        .BotaoDeDelete {
+            margin-left: 20%;
+            padding: 4px;
+            border-radius: 10px;
+            background-color: white;
+            color: black;
+            box-shadow: 2px 2px 0px 0px black;
+        }
+
+        .BotaoDeDelete:hover {
+            background-color: black;
+            color: white;
+            box-shadow: 2px 2px 0px 0px white;
+            transition: 0.5s;
+            cursor: pointer;
         }
 
         /*Classes para Ocultar e Posicionar a Barra de Navegação*/
@@ -470,7 +494,7 @@
         <section>
 
             <!--Os Maiores Filosofos Gregos-->
-            <article class="FormatoDoConteudoPrincipal">
+            <article class="FormatoDoConteudoPrincipal espaço">
                 <a href="https://pt.wikipedia.org/wiki/Lista_de_fil%C3%B3sofos_da_Gr%C3%A9cia_Antiga" class="nomes">
                     <h1 class="espaço">Os MaIoRes FiLoSoFos GreGos</h1>
                 </a>
@@ -801,8 +825,10 @@
                     obras de Demócrito não sobreviveu, e o conhecimento sobre suas ideias é derivado de fragmentos e
                     referências em trabalhos de outros autores antigos.
                 </p>
+            </article>
 
-                <hr class="espaço">
+            <!--Socráticos (Século V a.c.)-->
+            <article class="espaço">
 
                 <!--Socráticos (Século V a.c.)-->
                 <a href="" class="nomes">
@@ -849,8 +875,10 @@
                     filosofia ocidental. Seus métodos de questionamento e sua busca pela verdade e virtude influenciaram
                     gerações de pensadores, e sua abordagem socrática ainda é estudada e debatida nos dias de hoje.
                 </p>
+            </article>
 
-                <hr class="espaço">
+            <!--Pós-Socráticos ou Filósofos Clássicos (séculos V e IV a.C.)-->
+            <article class="espaço">
 
                 <!--Pós-Socráticos ou Filósofos Clássicos (séculos V e IV a.C.)-->
                 <a href="" class="nomes">
@@ -956,8 +984,10 @@
                     por mais de dois milênios. Sua obra foi preservada e estudada ao longo da história, e muitas de suas
                     contribuições ainda são relevantes nos debates filosóficos contemporâneos.
                 </p>
+            </article>
 
-                <hr class="espaço">
+            <!--Filósofos Helenísticos (Séculos IV a.C. Em Diante)-->
+            <article class="espaço">
 
                 <!--Filósofos Helenísticos (Séculos IV a.C. Em Diante)-->
                 <a href="" class="nomes">
@@ -1101,8 +1131,10 @@
                     prematura, o legado de Cícero como orador e pensador influenciou profundamente a tradição literária
                     e filosófica ocidental. Suas obras continuam sendo estudadas e lidas até hoje.
                 </p>
+            </article>
 
-                <hr class="espaço">
+            <!--Os MaIoRes FiLoSoFos MoDerNos-->
+            <article>
 
                 <!--Os MaIoRes FiLoSoFos MoDerNos-->
                 <a href="https://pt.wikipedia.org/wiki/Filosofia_moderna" class="nomes">
@@ -1707,6 +1739,11 @@
                 div.textContent = comment
                 ComentariosEscritos.appendChild(div)
                 div.classList.add('ComentariosDoPublico')
+
+                const button = document.createElement('button')
+                div.appendChild(button)
+                button.classList.add('BotaoDeDelete')
+                button.innerHTML = 'Limpar'
             });
         }
 
@@ -1808,14 +1845,14 @@
 
                 Anaxímenes.scrollIntoView({ behavior: 'smooth' })
             }
-            
+
             //Pesquisa por Pitágoras
             else if (PesquisaDaPagina === 'Pitágoras') {
                 let Pitágoras = document.getElementById('Pitágoras')
-                
+
                 Pitágoras.scrollIntoView({ behavior: 'smooth' })
             }
-            
+
             //Pesquisa por Heráclito
             else if (PesquisaDaPagina === 'Heráclito') {
                 let Heráclito = document.getElementById('Heráclito')
