@@ -165,6 +165,10 @@
             margin-bottom: 10px;
         }
 
+        .centralizar {
+            text-align: center;
+        }
+
         .url {
             text-decoration: none;
         }
@@ -172,6 +176,10 @@
         .url:hover {
             color: white;
             transition: 0.5s;
+        }
+
+        .cor {
+            color: black;
         }
 
         /*Classes dos Comentarios do Publico*/
@@ -325,6 +333,7 @@
         }
     </style>
 
+    <!--Barra de Navegação da Página-->
     <header class="ConteudoFixoNaTela" id="ConteudoFixoNaTela">
 
         <!--Barra de Navegação da Página-->
@@ -346,44 +355,72 @@
         </nav>
     </header>
 
+    <!--Conteúdo principal da página-->
     <main>
+
+        <!--Frases filosoficas-->
         <section>
+
+            <!--As maiores frases dos filosofos-->
+            <article class="espaço">
+
+                <!--As maiores frases dos filosofos-->
+                <a href="" class="cor url nomes centralizar">
+                    <h2>As MaIoReS FraSes DoS FiLoSoFoS</h2>
+                </a>
+
+            </article>
+
+            <!--Soren Kierkegaard-->
             <article class="FormatoDasFrases">
+
                 <p class="margin">"Tenho que encontrar uma verdade para mim mesmo, encontrar aquela ideia pela qual
                     quero viver e morrer."</p>
 
                 <p>Autor: <a href="https://pt.wikipedia.org/wiki/S%C3%B8ren_Kierkegaard" class="url">Soren
                         Kierkegaard</a></p>
+
             </article>
 
+            <!--Ariano Suassuna-->
             <article class="FormatoDasFrases">
+
                 <p class="margin">
                     "Tenha duas armas para lutar contra o desespero, a tristeza e até a morte: o riso a cavalo e o
                     galope do sonho. É com isso que enfrento essa dura e fascinante tarefa de viver"
                 </p>
 
                 <p>Autor: <a href="https://pt.wikipedia.org/wiki/Ariano_Suassuna" class="url">Ariano Suassuna</a></p>
+
             </article>
 
+            <!--Marco Aurélio-->
             <article class="FormatoDasFrases">
+
                 <p class="margin">
                     "Você tem que montar sua própria vida, ação por ação."
                 </p>
 
                 <p>Autor: <a href="https://pt.wikipedia.org/wiki/Marco_Aur%C3%A9lio" class="url">Marco Aurélio</a>
                 </p>
+
             </article>
 
+            <!--Epicteto-->
             <article class="FormatoDasFrases">
+
                 <p class="margin">
                     "Não é o que acontece com você, mas como você reage a isso que acontece."
                 </p>
 
                 <p>Autor: <a href="https://pt.wikipedia.org/wiki/Epiteto" class="url">Epicteto</a>
                 </p>
+
             </article>
 
+            <!--George Bernard Shaw-->
             <article class="FormatoDasFrases">
+
                 <p class="margin">
                     "É impossível progredir sem mudanças. Aqueles que não mudam suas mentes não podem mudar nada."
                 </p>
@@ -391,27 +428,72 @@
                 <p>Autor: <a href="https://pt.wikipedia.org/wiki/George_Bernard_Shaw" class="url">George Bernard
                         Shaw</a>
                 </p>
+
             </article>
 
+            <!--Marco Aurélio-->
             <article class="FormatoDasFrases">
+
                 <p class="margin">
                     "Não deixe que nenhum ato seja feito sem um propósito."
                 </p>
 
                 <p>Autor: <a href="https://pt.wikipedia.org/wiki/Marco_Aur%C3%A9lio" class="url">Marco Aurélio</a>
                 </p>
+
             </article>
+
+            <!--Friedrich Nietzsche-->
+            <article class="FormatoDasFrases">
+
+                <p class="margin">
+                    "Aquilo que se faz por amor está sempre além do bem e do mal."
+                </p>
+
+                <p>Autor: <a href="https://pt.wikipedia.org/wiki/Friedrich_Nietzsche" class="url">Friedrich
+                        Nietzsche</a>
+                </p>
+
+            </article>
+
+            <!--Cícero-->
+            <article class="FormatoDasFrases">
+
+                <p class="margin">
+                    "A vida feliz consiste na tranquilidade da mente."
+                </p>
+
+                <p>Autor: <a href="https://pt.wikipedia.org/wiki/C%C3%ADcero" class="url">Cícero</a>
+                </p>
+
+            </article>
+
+            <!--Henry Thoreau-->
+            <article class="FormatoDasFrases">
+
+                <p class="margin">
+                    "Felicidade é como uma borboleta: quanto mais você tenta apanhá-la, mais ela se afasta de você. Mas
+                    se você dirigir sua atenção para outras coisas, ela virá e pousará suavemente no seu ombro."
+                </p>
+
+                <p>Autor: <a href="https://pt.wikipedia.org/wiki/Henry_David_Thoreau" class="url">Henry Thoreau</a>
+                </p>
+
+            </article>
+
         </section>
+
+        <!--Conteúdo secundario da página-->
         <aside>
+
+            <!--Informações adicionais-->
             <article>
                 <h3>InFormaÇões ComPlemenTares</h3>
             </article>
 
-            <article>
-
-            </article>
-
+            <!--Formulario da página-->
             <form class="comentarios">
+
                 <label>Nome</label>
                 <input type="text" id="EscreverNome" class="largura" placeholder="Seu nome*" required>
 
@@ -419,25 +501,32 @@
                 <input type="email" id="EscreverEmail" class="largura" placeholder="Seu email*" required>
 
                 <button onclick="addComment()" type="button" id="ComentarBotao" class="comentar">Comentar</button>
+
             </form>
 
             <form class="comentarios">
+
                 <h3 class="espaço deixeseucomentario">Deixe seu comentario</h3>
 
                 <input type="text" id="EscrevendoComentarios" class="comentario largura" placeholder="Sua mensagem*">
 
                 <button onclick="clearComments()" id="LimparOsComentarios" class="LimparOsComentarios"
                     type="button">Limpar Comentarios</button>
+
             </form>
 
             <div id="ComentariosEscritos" class="ComentariosEscritos"></div>
+
         </aside>
+
     </main>
 
     <div id="SetaParaRetornarParaCima" class="SetaParaRetornarParaCima FormatoDaSetaParaRetornarParaCima">
+
         <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.YNH6UZiHyA6TCQqIUZR6jgHaHa%26pid%3DApi&f=1&ipt=7c107ec7c25723afd482d6134946cc9f055c775bdd1ee08157c78ff757c58987&ipo=images"
             alt="" class="SetaParaRetornarParaCima FormatoDaSetaParaRetornarParaCima"
             onclick="MoverParaCimaQuandoClicado()">
+
     </div>
 
     <footer>
@@ -605,7 +694,7 @@
 
             let PesquisaDaPagina = document.getElementById('PesquisaDaPagina').value
 
-            
+
         }
     </script>
 </body>
